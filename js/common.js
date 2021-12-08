@@ -20,22 +20,21 @@ $(document).ready(function(){
         slidesPerView: 1,
         centeredSlides: true,
         loop: true,
-        
+        speed: 600,
         autoplay: {
             delay: 3000,
-            disableOnInteraction: false,
         },
         
         touchMoveStopPropagation : true,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
+            clickable : true,
         },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        speed: 600,
     });
 
 
