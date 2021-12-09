@@ -47,7 +47,7 @@
   main.about.product_info .sub_section_01 .content.content_02 .content_wrap .item_point .img_01 img { width: 100%; }
   main.about.product_info .sub_section_01 .content.content_02 .content_wrap .item_point .img_02 { position: relative; right: 75px; }
   main.about.product_info .sub_section_01 .content.content_02 .content_wrap .item_point .img_02 img { width: 100%; }
-  main.about.product_info .sub_section_01 .content.content_02 .content_wrap .item_point .item_point_text { font-size: 10rem; }
+  main.about.product_info .sub_section_01 .content.content_02 .content_wrap .item_point .item_point_text { font-size: 8rem; }
   main.about.product_info .sub_section_02 .content.content_01 { padding-top: 80px; }
   main.about.product_info .sub_section_02 .content.content_02 .content_wrap .item_list_wrap { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; max-width: 100%; margin-top: 50px; }
   main.about.product_info .sub_section_02 .content.content_02 .content_wrap .item_list_wrap .item_list_01 { margin-right: 10px; width: calc(25% - 10px); }
