@@ -180,38 +180,60 @@ $(document).ready(function(){
     })
 
 
-    // sub_manu_navi 
-    let sub_depth = document.querySelector('#sub_depth');
-
-
 
     
 
     // jj_add window Scroll event
-    $(window).scroll(function () {
-    let y = $(this).scrollTop(),
-        scrolltop = $(window).scrollTop();
-        IndexHome = '/',
-        path = location.pathname,
-        sub_depth = $('.header_center .depth_01');
 
-        if (y >= 70) {
-            $("#header").addClass('active') 
-            if (path.indexOf("/about/") >= 0) {
-                sub_depth[2].style['display'] = 'flex'
-            }
+    let this_scroll = 0;
+   
+
+    $(window).scroll(function (e) {
+        let y = $(this).scrollTop(),
+            path = location.pathname,
+            sub_depth = $('.header_center .depth_01');
+
+        if (y > 0) {
+            $("#header").addClass('active')
         } else {
-            $("#header").removeClass('active');
-            sub_depth[2].style['display'] = 'none'
+            $("#header").removeClass('active')
+            sub_depth.removeClass('active');
         }
 
 
+        if ($(window).scrollTop() > this_scroll) {
+            $("#header").addClass('change_top');
+
+            sub_depth.hover(function(){
+                sub_depth.removeClass('active');
+            });
+
+            // if about_page 이부분 로직 수정해야함ㅋㅋ
+            (path.indexOf("/about/") >= 0) ? sub_depth[2].classList.add('active') : sub_depth[2].classList.remove('active');
+
+        } else {
+            $("#header").removeClass('change_top');
+
+        }
+        this_scroll = y
     });
+
+
+
     // jj_add window Scroll event
 
 
 
 
+    // if (y >= 70) {
+    //     $("#header").addClass('active') 
+    //     if (path.indexOf("/about/") >= 0) {
+    //         sub_depth[2].style['display'] = 'flex'
+    //     }
+    // } else {
+    //     $("#header").removeClass('active');
+    //     sub_depth[2].style['display'] = 'none'
+    // }
 
     // function IndexPop() {
     //     let popbanner = document.querySelector('.event_banner_01'),
