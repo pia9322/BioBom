@@ -255,7 +255,6 @@
     font-size: 15px;
   }
   main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_02.img_item .img_item_list > .img_wrap_02 .detail_text {
-    margin-top: 25px;
     font-size: 15px;
   }
   main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_02.img_item .img_item_list > .img_wrap_02 .detail_table {
@@ -477,13 +476,9 @@
     font-size: 14.5px;
   }
   main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_02.img_item .img_item_list > .img_wrap_02 .detail_table {
-    margin-top: 25px;
-  }
-  main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_02.img_item .img_item_list > .img_wrap_02 .detail_table caption {
-    font-size: 15px;
+    overflow: scroll;
   }
   main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_02.img_item .img_item_list > .img_wrap_02 .detail_table tr th, main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_02.img_item .img_item_list > .img_wrap_02 .detail_table tr td {
-    padding: 5px 0;
     font-size: 14px;
   }
   main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_02.img_item .img_item_list > .img_wrap_03 {

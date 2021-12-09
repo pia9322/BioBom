@@ -663,7 +663,6 @@
                                             }
                                         }
                                         .detail_text {
-                                            margin-top: 25px;
                                             font-size: 15px;
                                         }
                                         .detail_table {
@@ -1305,15 +1304,14 @@
                                             font-size: 14.5px;
                                         }
                                         .detail_table {
-                                            margin-top: 25px;
+                                            overflow: scroll;
+
                                             caption {
-                                                font-size: 15px; 
                                                 small {
                                                 }
                                             }
                                             tr {
                                                 th,td {
-                                                    padding: 5px 0;
                                                     font-size: 14px;
                                                 }
                                                 th{
