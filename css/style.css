@@ -1139,7 +1139,7 @@
 }
 
 #header > .header_wrap .header_full .header_full_wrap a:hover {
-  color: #34b2e7;
+  color: #44c1a3;
 }
 
 #header > .header_wrap .header_full .header_full_wrap .header_full_list {
@@ -1163,15 +1163,15 @@
 
 #header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 > a {
   font-size: 5.5rem;
-  color: #34b2e7;
+  color: #fff;
   padding-top: 50px;
   text-align: left;
   -webkit-transition: all .15s;
   transition: all .15s;
 }
 
-#header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 > a:hover {
-  opacity: .5;
+#header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 > a.active, #header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 > a:hover {
+  color: #44c1a3;
 }
 
 #header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01:nth-child(1) > a {
@@ -1193,9 +1193,14 @@
 }
 
 #header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 .depth_02 > li > a {
+  color: #fff;
   text-align: left;
   font-size: 4rem;
   padding: 30px 0 0 30px;
+}
+
+#header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 .depth_02 > li > a:hover {
+  color: #44c1a3;
 }
 
 #header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 .depth_02 > li .depth_03 {
@@ -1218,14 +1223,14 @@
 }
 
 #header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 .depth_02 > li .depth_03 > li > a:hover {
-  color: #34b2e7;
+  color: #44c1a3;
 }
 
 #header:hover {
   background: #fff;
 }
 
-#header:hover a {
+#header:hover:hover a {
   color: #000;
 }
 
@@ -2008,11 +2013,6 @@ main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_
   margin-top: 40px;
 }
 
-main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_02.img_item .graph_item .graph_item_wrap .graph_item_list img {
-  max-width: 414px;
-  width: 100%;
-}
-
 main.about.product_info .sub_section_03 .content.content_01 .content_wrap .item_02.img_item .graph_item .graph_item_wrap .graph_item_list figcaption {
   margin-top: 30px;
   font-size: 16px;
@@ -2172,9 +2172,10 @@ main.about.product_info .sub_section_06 .content.content_01 .content_wrap .item_
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+#footer .footer_wrap .content_01 {
+  margin-left: 80px;
 }
 
 #footer .footer_wrap .content_01 .link_wrap {
@@ -2191,7 +2192,6 @@ main.about.product_info .sub_section_06 .content.content_01 .content_wrap .item_
 
 #footer .footer_wrap .content_01 .link_wrap .footer_link a {
   color: #fff;
-  font-weight: 700;
   -webkit-transition: all .15s;
   transition: all .15s;
 }

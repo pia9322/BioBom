@@ -464,6 +464,7 @@
             visibility: visible;
             max-width: 600px;
             display: flex;
+         
             a { display: block; }
 
             .header_bg {
@@ -637,7 +638,7 @@
                     text-align: center;
                     line-height: 1;
                     &:hover {
-                        color: #34b2e7;
+                        color: #44c1a3;
                     }
                 }
            
@@ -651,12 +652,12 @@
                         width: 100%;
                         > a {
                             font-size: 5.5rem;
-                            color: #34b2e7;
+                            color: #fff;
                             padding-top: 50px;
                             text-align: left;
                             transition: all .15s;
-                            &:hover {
-                                opacity: .5;
+                            &.active, &:hover {
+                                color: #44c1a3;
                             }
                         }
                         &:nth-child(1){
@@ -671,9 +672,13 @@
                                 display: flex;
                                 flex-direction: column;
                                 > a {
+                                    color: #fff;
                                     text-align: left;
                                     font-size: 4rem;
                                     padding: 30px 0 0 30px;
+                                    &:hover {
+                                        color: #44c1a3;
+                                    }
                                 }
                                 // depth_03
                                 .depth_03 {
@@ -687,7 +692,7 @@
                                             transition: all .15s;
                                             padding: 10px 0 0 30px;
                                             &:hover {
-                                                color: #34b2e7;
+                                                color: #44c1a3;
                                             }
                                         }
                                     }
@@ -698,6 +703,7 @@
                 }
             }
         }
+        
     }
 
     &.active {
@@ -707,7 +713,9 @@
     // hover, active 
     &:hover {
         background: #fff;
-        a { color: #000; }
+        &:hover {
+            a { color: #000; }
+        }
         .header_wrap {
             .header_left {
                 a {
@@ -1307,8 +1315,6 @@ main {
                                             margin-top: 40px;
                                         }
                                         img {
-                                            max-width: 414px;
-                                            width: 100%;
                                         }
                                         figcaption {
                                             margin-top: 30px;
@@ -1495,8 +1501,8 @@ main {
         @include max-width-1180;
         padding: 40px 0;
         display: flex;
-        justify-content: space-between;
         .content_01 {
+            margin-left: 80px;
             .link_wrap {
                 display: flex;
                 flex-wrap: wrap;
@@ -1504,10 +1510,8 @@ main {
                     &:not(:first-child) {
                         margin-left: 25px;
                     }
-
                     a {
                         color: #fff;
-                        font-weight: 700;
                         transition: all .15s;
                         &:hover {
                             color: #000;
