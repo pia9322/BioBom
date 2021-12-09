@@ -1368,6 +1368,7 @@ main {
             }
         }
 
+        // sub_section_04 
         .sub_section_04 {
             margin-top: 150px;
             .content {
@@ -1402,6 +1403,80 @@ main {
                 }
             }
         }
+
+        // sub_section_05 
+        .sub_section_05 {
+            margin-top: 150px;
+            .content {
+                &.content_01 {
+                    .content_wrap {
+                        .item_02 {
+                            .check_point {
+                                .check_point_wrap {
+                                    .check_box {
+                                        display: flex;
+                                        background-color: #ecf9f6;
+                                        border-radius: 40px;
+                                        margin-top: 20px;
+                                        &:first-child {
+                                            margin-top: 0;
+                                        }
+                                        .box_01 {
+                                            width: 100px; height: 100px;
+                                            display: flex; align-items: center; justify-content: center;
+                                            background-color: #44c1a3; border-radius: 100%;
+                                            font-size: 2rem; font-weight: 700; color: #fff;
+                                        }
+                                        .box_02 {
+                                            margin-left: 30px;
+                                            display: flex; justify-content: center; flex-direction: column;
+                                            .text_01 {
+                                                font-size: 2rem;
+                                                font-weight: 700;
+                                                .point_color {
+                                                    font-style: normal;
+                                                    color: #44c1a3;
+                                                }
+                                            }
+                                            .text_02 {
+                                                margin-top: 10px;
+                                                font-size: 16px;
+                                                letter-spacing: -0.4px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        // sub_section_06 
+        .sub_section_06 {
+            margin-top: 150px;
+            .content {
+                &.content_01 {
+                    .content_wrap {
+                        .item_02 {
+                            .text_wrap {
+                                margin-top: 50px;
+                                &:first-child {
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.content_02 {
+                    .content_wrap {}
+                }
+            }
+        }
+
+
     }
 
 
@@ -1413,6 +1488,7 @@ main {
 
 // ==========================footer==========================
 #footer {
+    margin-top: 200px;
     background: #44c1a3;
     font-size: 14px;
     .footer_wrap {

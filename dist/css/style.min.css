@@ -693,7 +693,29 @@ main.about.product_info .sub_section_04 .content.content_01 .content_wrap .item_
 
 main.about.product_info .sub_section_04 .content.content_01 .content_wrap .item_02 .table_item table thead tr th { font-weight: normal; }
 
-#footer { background: #44c1a3; font-size: 14px; }
+main.about.product_info .sub_section_05 { margin-top: 150px; }
+
+main.about.product_info .sub_section_05 .content.content_01 .content_wrap .item_02 .check_point .check_point_wrap .check_box { display: -webkit-box; display: -ms-flexbox; display: flex; background-color: #ecf9f6; border-radius: 40px; margin-top: 20px; }
+
+main.about.product_info .sub_section_05 .content.content_01 .content_wrap .item_02 .check_point .check_point_wrap .check_box:first-child { margin-top: 0; }
+
+main.about.product_info .sub_section_05 .content.content_01 .content_wrap .item_02 .check_point .check_point_wrap .check_box .box_01 { width: 100px; height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: #44c1a3; border-radius: 100%; font-size: 2rem; font-weight: 700; color: #fff; }
+
+main.about.product_info .sub_section_05 .content.content_01 .content_wrap .item_02 .check_point .check_point_wrap .check_box .box_02 { margin-left: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+main.about.product_info .sub_section_05 .content.content_01 .content_wrap .item_02 .check_point .check_point_wrap .check_box .box_02 .text_01 { font-size: 2rem; font-weight: 700; }
+
+main.about.product_info .sub_section_05 .content.content_01 .content_wrap .item_02 .check_point .check_point_wrap .check_box .box_02 .text_01 .point_color { font-style: normal; color: #44c1a3; }
+
+main.about.product_info .sub_section_05 .content.content_01 .content_wrap .item_02 .check_point .check_point_wrap .check_box .box_02 .text_02 { margin-top: 10px; font-size: 16px; letter-spacing: -0.4px; }
+
+main.about.product_info .sub_section_06 { margin-top: 150px; }
+
+main.about.product_info .sub_section_06 .content.content_01 .content_wrap .item_02 .text_wrap { margin-top: 50px; }
+
+main.about.product_info .sub_section_06 .content.content_01 .content_wrap .item_02 .text_wrap:first-child { margin-top: 0; }
+
+#footer { margin-top: 200px; background: #44c1a3; font-size: 14px; }
 
 #footer .footer_wrap { max-width: 1180px; margin: 0 auto; padding: 40px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
