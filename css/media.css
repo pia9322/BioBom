@@ -56,6 +56,9 @@
     font-size: 14px;
     margin-top: 10px;
   }
+  #header {
+    height: 60px;
+  }
   #header > .header_wrap {
     padding: 0 2.5%;
   }

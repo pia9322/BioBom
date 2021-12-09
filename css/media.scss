@@ -220,6 +220,7 @@
 
     // ==========================header==========================
     #header {
+        @include header-height-1180;
 
         &.active {}
 

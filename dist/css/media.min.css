@@ -14,6 +14,7 @@
   .table_wrap .table_news .news_wrap > a:nth-child(2n) { margin-right: 0; }
   .table_wrap .table_news .news_wrap > a .news_item figcaption { padding: 10px; }
   .table_wrap .table_news .news_wrap > a .news_item figcaption .text_02 { font-size: 14px; margin-top: 10px; }
+  #header { height: 60px; }
   #header > .header_wrap { padding: 0 2.5%; }
   #header > .header_wrap .header_left a { width: 80px; }
   #header > .header_wrap .header_center { opacity: 0; visibility: hidden; }
