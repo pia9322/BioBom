@@ -195,8 +195,16 @@ $(document).ready(function(){
         path = location.pathname,
         sub_depth = $('.header_center .depth_01');
 
-        (y >= 70) ? $("#header").addClass('active') : $("#header").removeClass('active');
-        (path.indexOf("/about/") >= 0) ? sub_depth[2].style['display'] = 'flex' : sub_depth.style['display'] = 'none'
+        if (y >= 70) {
+            $("#header").addClass('active') 
+            if (path.indexOf("/about/") >= 0) {
+                sub_depth[2].style['display'] = 'flex'
+            }
+        } else {
+            $("#header").removeClass('active');
+            sub_depth[2].style['display'] = 'none'
+        }
+
 
     });
     // jj_add window Scroll event
