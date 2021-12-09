@@ -705,12 +705,50 @@
         }
         
     }
-
+    // #header hover, active 
+    // active 
     &.active {
-        // background: transparent;
+        background: #fff;
+        top: -100px;
+        a {color: #000;}
+
+        .header_left {
+            a {
+                svg {
+                    .st0 {
+                        fill: #44c1a3;
+                    }
+                }
+            }
+        }
+
+        .header_center {
+            > li {
+                .depth_01 {
+                    justify-content: center; align-items: center;
+                }
+                &::after {
+                    opacity: 1;
+                }
+            }
+            .header_bg {
+                opacity: 1;
+                visibility: visible;
+            }
+
+        }
+
+        .header_right {
+            .header_ham {
+                span {
+                    border-color: #000;
+                }
+            }
+        }
     }
 
-    // hover, active 
+
+    // hover 
     &:hover {
         background: #fff;
         &:hover {
