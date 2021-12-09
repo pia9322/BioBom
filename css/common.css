@@ -115,10 +115,8 @@ html {
 
 
 
-@media (min-width: 2560px) {
-	html {
-		font-size: 73%;
-	}
+@media (min-width: 2561px) {
+	html {font-size: 73%;}
 }
 
 /* media br */

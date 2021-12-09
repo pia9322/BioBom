@@ -1,54 +1,50 @@
-@mixin max-width($width) {
-    max-width: $width;
-    margin: 0 auto;
-}
+@mixin max-width-1180 {max-width: 1180px;margin: 0 auto;}
+@mixin max-width-880 {max-width: 880px;}
+@mixin max-width-280 {max-width: 280px;}
 
-@mixin layoutBoxColor {
-    border: 2px solid #f00;
-}
+@mixin layoutBoxColor {border: 2px solid #f00;}
+@mixin header-height {height: 100px;}
 
-@mixin header-height {
-    height: 100px;
-}
+@mixin margin-top-1920() {margin-top: 100px;}
+@mixin margin-bottom-1920() {margin-bottom: 100px;}
 
-@mixin header-height-1100 {
+@mixin margin-top-1100() {margin-top: 75px;}
+@mixin margin-bottom-1100() {margin-bottom: 75px;}
+
+
+
+@mixin header-height-1180 {
     height: 60px;
 }
 
-
 @mixin absolute-left($left, $top) {
     position: absolute;
-    left: $left;
-    top: $top;
+    left: $left; top: $top;
     transform: translateX(-$left);
 }
-
 @mixin absolute-top($left, $top) {
     position: absolute;
-    left: $left;
-    top: $top;
+    left: $left; top: $top;
     transform: translateY(-$top);
 }
+@mixin absolute-center {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
 
-@mixin visual-text($fs) {
-    width: 100%;
-    height: 100%;
-    font-size: $fs;
+@mixin visual-text {
+    width: 100%; height: 100%;
     color: #fff;
-    font-family: "asn-t";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.25;
-    letter-spacing: -0.64px;
-    text-transform: uppercase;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    line-height: 1; letter-spacing: -0.6px;
+    font-weight: 500; text-transform: uppercase;
 }
 
 @mixin sub-menu-bar($height, $margin) {
     content: '';
     display: inline-block;
-    width: 1px;
-    height: $height;
+    width: 1px; height: $height;
     background: #7bcef1;
     margin-left: $margin;
 }
@@ -57,45 +53,18 @@
     font-size: $fs;
     letter-spacing: -0.4px;
     color: #1e3c5a;
-    font-family: "asn-sb";
     margin-top: 100px;
     text-align: center;
 }
 
-@mixin margin-top-1920() {
-    margin-top: 100px;
-}
-
-@mixin margin-bottom-1920() {
-    margin-bottom: 100px;
-}
-
-@mixin margin-top-1100() {
-    margin-top: 75px;
-}
-
-@mixin margin-bottom-1100() {
-    margin-bottom: 75px;
-}
 
 
 // ====================================4K====================================
-@media (min-width:2560px) {
-
-}
-
-
-
-// ====================================1440====================================
-
-@media (max-width: 1440px) {}
-
-
-
+@media (min-width:2560px) {}
 
 
 // ====================================1100====================================
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
 
     .view_more {
 
@@ -251,7 +220,6 @@
 
     // ==========================header==========================
     #header {
-        @include header-height-1100();
 
         &.active {}
 
@@ -489,859 +457,433 @@
                 height: 350px;
 
                 .visual_img {
-                    .visual_title {}
-                }
-
-                .sub_depth {
-                    justify-content: center;
-                    height: 50px;
-                    transform: translateY(-25px);
-
-                    a {}
-
-                    .sub_ico {
-                        padding-left: 15px;
-
-                        img {}
-
-                        &::after {
-                            @include sub-menu-bar(15px, 15px);
-                        }
-
-                        &:hover {
-                            img {
-                                padding-bottom: 5px;
-                            }
-                        }
-                    }
-
-                    .sub_nav {
-                        .depth_01 {
-                            padding-left: 30px;
-
-                            .depth_01_list {
-                                display: flex;
-
-                                >a {
-                                    padding-right: 20px;
-                                }
-
-                                >i {
-                                    img {}
-                                }
-                            }
-
-                            &::after {
-                                @include sub-menu-bar(15px, 30px);
-                            }
-                        }
-
-
-                        .depth_02 {
-                            .depth_02_list {
-                                a {
-
-                                    // padding: 20px 0 0 30px;
-                                    &:hover {}
-                                }
-
-                                &:last-child {}
-                            }
-                        }
-
-                        // sub_nav hover,active
-                        &:hover {
-                            .depth_01 {
-                                i {
-                                    img {}
-                                }
-                            }
-
-                            .depth_02 {}
-                        }
-                    }
-
-                    .sub_nav_02 {}
-                }
-            }
-
-            .sub_page_layout {
-                padding: 0 5%;
-
-                &.sub_section_01 {
-                    .sub_page_title {
-                        margin-top: 75px;
-                        font-weight: normal;
-
-                        >span {}
-
-                        .text_01 {
-                            margin-top: 75px;
-
-                            img {}
-                        }
-
-                        .sub_title {
-                            // margin-top: 30px;
-                        }
-                    }
-
-                    >article.content:last-child {
-                        @include margin-bottom-1100();
+                    .visual_title {
+                        .text_01 {}
+                        .text_02 {}
                     }
                 }
             }
-
-
-
         }
 
         // sub_page default (main visual / sub menu bar)
 
 
-        // about_company ============================================
-        &.about.company {
-            .sub_section_01 {
-                .content_01.company_slide {
-                    .swiper-wrapper {
-                        .swiper-slide {
-                            img {
-                            }
-                            figcaption {
-                                background: rgba($color: #000000, $alpha: .6);
-                                padding: 20px;
-                                right: 0; top: 50%; 
-                                width: 100%; height: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                flex-direction: column;
-                                span.text_01 {
-                                    text-align: center;
-                                    color: #fff !important;
-                                }
-                                span.text_02 {
-                                    text-align: center;
-                                    color: #fff !important;
-                                }
-                            }
-                        }
-                    }
-                    .swiper-pagination {
-                        margin-bottom: 10px;
-                        .swiper-pagination-bullet {}
-                        .swiper-pagination-bullet-active {}
-                    }
-                }
-
-                .content_02 {
-                    .content_wrap {
-                        .content_info {
-                            &:not(first-child) {
-                                margin-top: 60px;
-                            }
-                            &.info_01 {}
-                            img {
-                                order: 1;
-                                max-width: 250px;
-                            }
-                            figcaption {
-                                > span {
-                                    &.text_01 {
-                                        .point_num {
-                                        }
-                                    }
-                                    &.text_02 {
-                                        font-size: 16px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }       
-
-            .sub_section_02, .sub_section_03, .sub_section_04 {
-                margin-top: 50px; 
-                .content_01 {
-                    .content_wrap {
-                        .section_title {
-                            > span {
-                                i {
-                                }
-                            }
-                            .text_01 {
-                            }
-                            .text_02 {
-                                font-size: 16px;
-                            }
-                        }
-                        .section_content {
-                            margin-top: 60px;
-                            .content_wrap {
-                                .bar {
-                                } 
-                                .history_img {
-                                    img {
-                                        max-width: 100%;
-                                    }
-                                }
 
 
-                            }
-                        }
-                    }
-                }
-
-            }
-            .sub_section_03 {
-                margin-top: 0 !important;
-                .content_02 {
-                    margin-top: 50px;
-                    .content_wrap {
-                        figure {
-                            width: 30%;
-                            &:last-child {
-                            }
-                            img {}
-                            figcaption {
-                                font-size: 16px;
-                                margin-top: 10px;
-                            }
-                        }
-                    }   
-                }
-            }
-            .sub_section_04 {
-                margin: 50px 0 75px 0;
+            
+        // about_product_info ============================================
+        &.about.product_info {
+            > section:not(:first-child) {
+                margin-top: 80px;
                 padding: 0 5%;
-                .content_01 {
-                    .content_wrap {
-                        .section_table {
-                            .table_wrap {
-                                margin-top: 20px;
-                                table {
-                                    tbody {
-                                        tr {
-                                            &:nth-child(even) {
-                                            }
-                                            font-size: 14px;
-                                            th {
-                                            }
-                                            td {
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }   
-                }
             }
-        }
-
-        // about_ceo ============================================
-        &.about.ceo {
-            .sub_section_01 {
-
-                .content_01 {
-                    @include margin-top-1100();
-
-                    >figure {
-                        height: 200px;
-
-                        img {}
-
-                        figcaption {
-                            margin-left: 30px;
-
-                            span {}
-
-                            .text_01 {}
-
-                            .text_02 {}
-
-                            .text_03 {}
-                        }
-                    }
+            .content_wrap {
+                flex-direction: column;
+                > div {
                 }
-
-                .content_02 {
+                .item_01 {
                     .text_wrap {
-                        font-size: 16px;
-
-                        .text_01 {}
-                    }
-                }
-            }
-        }
-
-        // about_history ============================================
-        &.about.history {
-            .sub_section_01 {
-                .history_line {
-                    .history_wrap {
-
-                        // margin-top: 50px;
-                        .after_bar,
-                        .before_bar {
-                            left: 20px;
-                            top: 0;
-                            transform: translateX(0);
+                        > span {
                         }
-
-                        .after_bar {}
-
-                        .before_bar {}
-
-
-
-                        .history_ul {
-                            padding-left: 50px;
-                            padding-bottom: 40px;
-                            flex-direction: column;
-
-                            &.first::after {
-                                @include absolute-left(0, 0);
-                            }
-
-                            &:last-child::before {
-                                left: 20px;
-                            }
-
-                            &:first-child {
-                                padding-top: 40px;
-                            }
-
-                            >li {
-                                width: 100%;
-                                padding: 0 20px;
-
-                                &.history_year {
-                                    order: 0 !important;
-                                    padding: 0 !important;
-                                    margin: 0 !important;
-
-                                    >p {
-                                        padding: 0 !important;
-                                        margin: 0 !important;
-                                        font-size: 4rem;
-                                        text-align: left;
-                                    }
-                                }
-
-                                &.history_text_wrap {
-                                    padding: 0 !important;
-                                    margin: 0 !important;
-                                    padding-left: 0;
-
-                                    .history_list {
-                                        padding: 0 !important;
-                                        margin: 0 !important;
-                                        padding-right: 0;
-                                        padding-bottom: 10px !important;
-                                        display: flex;
-                                        justify-content: flex-start !important;
-                                        align-items: baseline !important;
-
-                                        .text_01 {
-                                            padding: 0 !important;
-                                            margin: 0 !important;
-                                            font-size: 16px;
-                                        }
-
-                                        .text_02 {
-                                            padding: 0 !important;
-                                            margin: 0 !important;
-                                            order: 1 !important;
-                                            margin-left: 5px !important;
-                                            font-size: 16px;
-                                            line-height: 1.5;
-                                            text-align: left !important;
-                                        }
-                                    }
-                                }
-                            }
+                        .text_bar {
+                        }
+                        .text_title {
+                            margin-top: 10px;
+                        }
+                    }
+                    
+                }
+                .item_02 {
+                    max-width: 100%;
+                    .text_wrap {
+                        > span {
+                        }
+                        .text_01 {
+                        }
+                        .text_02, .text_03 {
+                            font-size: 15px;
+                        }
+                        .point_number {
+                            left: 0;
                         }
                     }
                 }
             }
-        }
 
-        // about_certifi ============================================
-        &.about.certifi {
+
             .sub_section_01 {
-                .content_01 {
-
-                    // margin-top: 50px;
-                    .content_wrap {
-                        .certifi_list {
-                            width: 33%;
-                            margin-bottom: 30px;
-
-                            img {}
-
-                            figcaption {
-                                font-size: 16px;
-
-                                .text_01 {
-                                    font-size: 14px;
-                                }
-                            }
-                        }
+                .content {
+                    &.content_01 {
+                        .content_wrap {}
                     }
-                }
-
-                .content_02 {
-                    .btn_wrap {
-                        font-size: 14px;
-
-                        .btn_ico {
-                            &:first-child {
-                                margin-right: 30px;
-                            }
-
-                            &:last-child {
-                                margin-left: 30px;
-                            }
-                        }
-
-                        .btn_num {}
-
-
-
-                        .btn_num {
-
-                            &.active,
-                            &:hover {}
-                        }
-                    }
-                }
-            }
-        }
-
-        // about_direction ============================================
-        &.about.direction {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        display: flex;
-
-                        .content_list {
-                            &:last-child {}
-
-                            width: 50%;
-                            border-right: none;
-                            margin-bottom: 20px;
-
-                            >a {
-                                >div {
-                                    img {}
-                                }
-
-                                figcaption {
-                                    span {}
-
-                                    .text_01 {}
-
-                                    .text_02 {
-                                        margin-top: 10px;
-                                    }
-
-                                    .text_02,
-                                    .text_03 {
-                                        font-size: 16px;
-                                    }
-                                }
-
-                                // hover, active
-                                &:hover {
-                                    span {}
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .content_02 {
-                    margin-top: 60px;
-                }
-            }
-        }
-
-        // shop ============================================
-        &.shop {
-            .sub_section_01 {
-                .content_01 {
-                    margin-top: 50px;
-
-                    .content_wrap {
-                        .content_list {
-                            margin-bottom: 20px;
-
-                            >a {
-                                &:hover {
-                                    .text_01 {}
-                                }
-
-                                >div {
+                    &.content_02 {
+                        margin: 90px auto 150px;
+                        .content_wrap {
+                            .item_point {
+                                .img_01 {
+                                    position: relative;
                                     img {
-                                        max-width: 140px;
+                                        width: 100%;
                                     }
                                 }
+                                .img_02 {
+                                    position: relative;
+                                    right: 75px;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .item_point_text {
+                                    font-size: 10rem;
+                                }
+                            }
+                        }
+                    }
+                    &.content_03 {
+                    }
+                }
 
-                                figcaption {
-                                    .text_01 {
-                                        font-size: 16px;
+            }       
+            .sub_section_02 {
+                .content {
+                    &.content_01 {
+                        padding-top: 80px;
+                    }
+                    &.content_02 {
+                        .content_wrap {
+                            .item_list_wrap {
+                                justify-content: center;
+                                max-width: 100%;
+                                margin-top: 50px;
+                                .item_list_01 {
+                                    margin-right: 10px;
+                                    width: calc(25% - 10px);
+                                    &.last {}
+                                    .content_item {
+                                        position: relative;
+                                        > img {
+                                            width: 100%
+                                        }
+                                        > figcaption {
+                                            > span {
+                                                &.text_01 {
+                                                }
+                                                &.text_02 { margin-top: 10px; }
+                                                &.text_02, &.text_03 {
+                                                    font-size: 15px;
+                                                }
+                                            }
+                                            
+                                        }
                                     }
                                 }
                             }
                         }
                     }
-                }
-            }
-        }
-
-        // product ============================================
-        &.product {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        .product_navi {
-                            >ul {
+                    &.content_03 {
+                        padding-bottom: 80px;
+                        .content_wrap {
+                            align-items: center;
+                            .item_list_wrap {
                                 justify-content: center;
-                                flex-wrap: wrap;
-
-                                li {
-                                    margin-bottom: 10px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    height: 100%;
-
-                                    &:not(:last-child) {}
-
-                                    a {
-                                        padding: 10px 5px;
-                                        font-size: 14px;
+                                margin-top: 50px;
+                                .item_list_01 {
+                                    margin: 0 5px 20px 0;
+                                    width: calc(20% - 5px);
+                                    &:nth-child(5n) {
+                                        margin-right: 0;
                                     }
-
-                                    // active,hover
-                                    &.active {
-                                        a {}
-                                    }
-                                }
-                            }
-                        }
-
-                        .product_wrap {
-                            .product_list {
-                                flex-wrap: wrap;
-
-                                .product_item {
-                                    margin-bottom: 30px;
-                                    max-width: 100%;
-                                    width: calc(33% - 10px);
-                                    margin-right: 10px;
-                                    &:nth-child(3n) {
-                                        margin: 0;
-                                    }
-                                    >a {
-                                        figure {
-                                            img {
-                                                max-width: 100%;
-                                            }
-
-                                            figcaption {
-                                                padding: 10px 0 0 10px;
-
-                                                span {}
-
-                                                .text_01 {}
-
-                                                .text_02 {
+                                    .content_item {
+                                        > img {
+                                            width: 100%;
+                                        }
+                                        > figcaption {
+                                            > span {
+                                                &.text_01 {
                                                     font-size: 14px;
                                                 }
                                             }
                                         }
                                     }
                                 }
-
-                                &.active {}
-                            }
-
-                            // active, hover 
-
-                        }
-                    }
-                }
-
-                .content_02 {}
-            }
-        }
-
-        // product_more ============================================
-        &.product_more {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {}
-                }
-
-                .content_02 {
-                    margin-top: 50px;
-
-                    .product_more {
-                        .product_wrap {
-                            flex-wrap: wrap;
-
-                            .product_img {
-                                .product_thum {
-                                    img {
-                                        // max-width: 550px;
-                                        // max-height: 550px;
-                                    }
-                                }
-
-                                .product_thum_sub {
-                                    margin-top: 10px;
-
-                                    img {
-                                        &:hover {}
-                                    }
-                                }
-                            }
-
-                            .product_info {
-                                width: 50%;
-                                padding: 10px 25px;
-
-                                >span {}
-
-                                .text_01 {}
-
-                                .text_02 {
-                                    margin-top: 20px;
-                                    font-size: 14px;
-                                }
-
-                                .btn {
-                                    margin-top: 30px;
-                                    padding: 20px 45px;
-
-                                    &:hover {}
-                                }
-                            }
-                        }
-
-                    }
-                }
-
-                .content_03 {
-                    background: #f7f7f7;
-                    margin-top: 30px;
-
-                    .content_wrap {
-                        .product_table_wrap {
-                            padding: 4rem 9rem;
-
-                            .product_table_title {}
-
-                            .product_table {
-                                margin-top: 20px;
-
-                                tbody {
-                                    >tr {
-                                        font-size: 14px;
-
-                                        th {
-                                            width: 20%;
-                                        }
-
-                                        td {}
-                                    }
-
-                                }
                             }
                         }
                     }
                 }
             }
-        }
 
-        // contact.page_01 ============================================
-        &.contact.page_01 {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        .box_wrap {
-                            label {
-                                font-size: 14px;
-                                letter-spacing: -0.16px;
-                                padding-left: 9px;
-                            }
 
-                            input,
-                            textarea {
-                            }
-
-                            input::placeholder {}
-                        }
-
-                        .contact_01 {
-                            .box_wrap {
-                                width: 100%;
-
-                                &:last-child  {
-                                    input {
-                                        margin-right: 0;
-                                    }
-                                }
-
-                                input {
-                                    margin-right: 10px;
-                                }
-                                
-                            }
-                        }
-
-                        .contact_02 {
-
-                            textarea {
-                            }
-                        }
-
-                        .contact_03 {
-
-                            .box_wrap {
-
-                                input {
-                                    font-size: 16px;
-                                    &:hover {
-                                    }
-                                }
-                            }
-
-                        }
-
-                    }
-                }
-            }
-
-            .sub_section_02 {
-                background: #f4f4f4;
-
+            .sub_section_03 {
                 .content {
-                    padding: 0 5%;
-                }
-
-                .content_01 {
-                    padding-top: 40px;
-
-                    .content_wrap {
-                        display: flex;
-                            .content_list {
-                                &:last-child {}
-    
-                                width: 50%;
-                                border-right: none;
-                                margin-bottom: 20px;
-    
-                                >a {
-                                    >div {
-                                        img {}
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02.img_item {
+                                .img_item_list {
+                                    // flex-direction: column;
+                                    // 767에서 지우자
+                                    &:not(:first-child) {
+                                        margin-top: 80px;
                                     }
-    
-                                    figcaption {
-                                        span {}
-    
-                                        .text_01 {}
-    
+                                    &.column {
+                                    }
+                                    > .text_wrap {
                                         .text_02 {
-                                            margin-top: 10px;
+                                            .detail {
+                                            }
                                         }
-    
-                                        .text_02,
                                         .text_03 {
-                                            font-size: 16px;
+                                            margin-top: 30px;
+                                            .point_dots {
+                                                &::marker {
+                                                }
+                                            }
                                         }
                                     }
-    
-                                    // hover, active
-                                    &:hover {
-                                        span {}
+                                    > .img_wrap {
+                                        margin-left: 25px;
+                                        img{
+                                            &:nth-child(2) {
+                                                margin-top: 10px;
+                                            }
+                                        }
+                                    }
+                                    > .img_wrap_02 {
+                                        margin-top: 25px;
+                                        justify-content: center;
+                                        .img_list {
+                                            margin-left: 10px;
+                                            &:first-child {}
+                                            img {}
+                                            figcaption {
+                                                font-size: 15px;
+                                            }
+                                        }
+                                        .detail_text {
+                                            margin-top: 25px;
+                                            font-size: 15px;
+                                        }
+                                        .detail_table {
+                                            margin-top: 25px;
+                                            caption {
+                                                font-size: 15px; 
+                                                small {
+                                                }
+                                            }
+                                            tr {
+                                                th,td {
+                                                    padding: 5px 0;
+                                                    font-size: 15px;
+                                                }
+                                                th{
+                                                }
+                                                td{
+                                                    &.long {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    > .img_wrap_03 {
+                                        .img_list {
+                                            &.cross {
+                                                // 767에서 세로
+                                                left: 0;
+                                            }
+                                            &.cross_02 {
+                                                left: 0;
+                                            }
+                                            img {
+                                                width: 100%;
+                                            }
+                                            figcaption {
+                                                > span {
+                                                    &.text_01 {
+                                                    }
+                                                    &.text_02 {
+                                                        margin-top: 5px;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+
+                                    > .text_wrap_02 {
+                                        margin-top: 20px;
+                                        &.list_02 {
+                                            margin-top: 40px;
+                                        }
+                                        .content_box {
+                                            .text_wrap {
+                                                .text_01 {
+                                                    font-size: 15px;
+                                                }
+                                                .text_02 {
+                                                    margin-top: 10px;
+                                                }
+                                            }
+                                            .img_wrap {
+                                                transform: translateX(-100%);
+                                                // 767에서 지우셈
+                                                img {}
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .graph_item {
+                                    margin-top: 45px;
+                                    .graph_item_wrap {
+                                        .graph_item_list {
+                                            // 767에서 세로
+                                            &:nth-child(n+3) {
+                                                margin-top: 40px;
+                                            }
+                                            img {
+                                                width: 100%;
+                                            }
+                                            figcaption {
+                                                margin-top: 20px;
+                                                font-size:15px;
+                                            }
+                                        }
+                                    }
+                                    &.img_2 {
+                                        .graph_item_wrap {
+                                            .graph_item_list {
+                                                img {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .table_item{
+                                    margin-top: 30px;
+                                    table {
+                                        tr {
+                                            th, td {
+                                                font-size: 15px;
+                                            }
+                                            th {
+                                            }
+                                            td {
+                                            }
+                                        }
+                                        thead {
+                                            tr {
+                                            }
+                                        }
+                                        tbody {
+                                            tr{
+                                                td {
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
+                        }
                     }
-                }
-
-                .content_02 {
-                    margin-top: 60px;
-                    padding-bottom: 100px;
+                
                 }
             }
-        }
 
-        // community.sns ============================================
-        &.community.sns {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        .sns_wrap {
-                            &.sns_01 {}
+            // sub_section_04 
+            .sub_section_04 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02 {
+                                overflow: scroll;
+                                margin-top: 20px;
+                                .table_item {
+                                    table {
+                                        width: 1000px;
+                                        th, tr, td {
+                                            font-size: 15px;
+                                        }
+                                        thead {
+                                            tr {
+                                                background: #f1f1f1;
+                                                th {
+                                                    font-weight: normal;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.content_02 {
+                        .content_wrap {}
+                    }
+                }
+            }
 
-                            &.sns_02 {}
-
+            // sub_section_05 
+            .sub_section_05 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02 {
+                                .check_point {
+                                    .check_point_wrap {
+                                        .check_box {
+                                            &:first-child {
+                                                margin-top: 20px;
+                                            }
+                                            .box_01 {
+                                                min-width: 100px; min-height: 100px;
+                                            }
+                                            .box_02 {
+                                                .text_01 {
+                                                    .point_color {
+                                                    }
+                                                }
+                                                .text_02 {
+                                                    font-size: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
 
-            .sub_section_02 {
-                padding: 0 5% 50px 5%;
 
-                .content_01 {
-                }
-            }
-
-            .sns_info {
-                img {
-                    max-width: 100px;
-                    max-height: 100px;
-                }
-
-                figcaption {
-                    margin-left: 20px;
-                    >span {
+            // sub_section_06 
+            .sub_section_06 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02 {
+                                .text_wrap {
+                                    margin-top: 30px;
+                                    &:first-child {
+                                        margin-top: 0;
+                                    }
+                                }
+                            }
+                        }
                     }
-
-                    .text_01 {
-                    }
-
-                    .text_02 {
+                    &.content_02 {
+                        .content_wrap {}
                     }
                 }
             }
 
-            .sns_detail {
-                >a {
-                }
 
-                figure {
-                    max-width: 200px;
-                    max-height: 200px;
-                    width: 100%;
-                    margin-bottom: 20px;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
         }
 
 
+
+       
         // ==========================sub_page==========================
 
 
@@ -1353,35 +895,22 @@
 
 
     // ==========================footer==========================
-    #footer {
-        .footer_wrap {
-            padding: 40px 5%;
 
-            .content_01 {
-                .link_wrap {
-                    .footer_link {
-                        &:not(:first-child) {}
-
-                        a {}
-                    }
-                }
-
-                .info_wrap {
-                    margin-top: 15px;
-
-                    .footer_info {
-                        >a {
-                            &:hover {}
-                        }
-
-                        &.direction {}
-
-                        &.copyright {}
-                    }
-                }
-            }
-        }
-    }
+   #footer {
+       padding: 0 5%;
+       .footer_wrap {
+           flex-direction: column;
+           .content_01 {
+               margin-left: 0;
+               .info_wrap {
+                   margin-top: 30px;
+                   .footer_info {
+                       margin-top: 10px;
+                   }
+               }
+           }
+       }
+   }
 
 }
 
@@ -1744,488 +1273,8 @@
         }
         // sub_page default (main visual / sub menu bar)
 
-      
 
 
-        // about_ceo ============================================
-        &.about.ceo {
-            .sub_section_01 {
-
-                .content_01 {
-                    >figure {
-                        img {
-                            opacity: .4;
-                        }
-
-                        figcaption {
-                            span {}
-
-                            .text_01 {}
-
-                            .text_02 {}
-
-                            .text_03 {}
-                        }
-                    }
-                }
-
-                .content_02 {
-                    .text_wrap {
-                        .text_01 {}
-                    }
-                }
-            }
-        }
-
-        // about_history ============================================
-        &.about.history {
-            .sub_section_01 {
-                .history_line {
-                    .history_wrap {
-
-                        // margin-top: 50px;
-                        .after_bar,
-                        .before_bar {}
-
-                        .after_bar {}
-
-                        .before_bar {}
-
-
-
-                        .history_ul {
-
-                            &.first::after {}
-
-                            &:last-child::before {}
-
-                            &:first-child {}
-
-                            >li {
-
-                                &.history_year {
-
-                                    >p {}
-                                }
-
-                                &.history_text_wrap {
-
-                                    .history_list {
-
-                                        .text_01 {}
-
-                                        .text_02 {}
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-
-        // about_certifi ============================================
-        &.about.certifi {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        
-                        .certifi_list {
-                            width: calc(50% - 10px);
-                            margin-right: 10px;
-                            &:nth-child(even) {
-                                margin-right: 0;
-                            }
-                            img {}
-
-                            figcaption {
-                                font-size: 16px;
-
-                                .text_01 {
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .content_02 {
-                    .btn_wrap {
-                        font-size: 14px;
-
-                        .btn_ico {
-                            &:first-child {
-                                margin-right: 30px;
-                            }
-
-                            &:last-child {
-                                margin-left: 30px;
-                            }
-                        }
-
-                        .btn_num {}
-
-
-
-                        .btn_num {
-
-                            &.active,
-                            &:hover {}
-                        }
-                    }
-                }
-            }
-        }
-
-
-        // about_direction ============================================
-        &.about.direction {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        .content_list {
-                            &:last-child {}
-
-                            >a {
-                                >div {
-                                    img {}
-                                }
-
-                                figcaption {
-                                    span {}
-
-                                    .text_01 {}
-
-                                    .text_02 {}
-
-                                    .text_02,
-                                    .text_03 {}
-                                }
-
-                                // hover, active
-                                &:hover {
-                                    span {}
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .content_02 {}
-            }
-        }
-
-        // shop ============================================
-        &.shop {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        .content_list {
-                            width: 50%;
-                            text-align: center;
-                            >a {
-                                &:hover {
-                                    .text_01 {}
-                                }
-
-                                >div {
-                                    img {
-                                        max-width: 100px;
-                                    }
-                                }
-
-                                figcaption {
-                                    .text_01 {}
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        // product ============================================
-        &.product {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        .product_navi {
-                            >ul {
-                                li {
-                                    width: auto;
-
-                                    &:not(:last-child) {}
-
-                                    a {}
-
-                                    // active,hover
-                                    &.active {
-                                        a {}
-                                    }
-                                }
-                            }
-                        }
-
-                        .product_wrap {
-                            .product_list {
-                                .product_item {
-                                    width: calc(50% - 10px);
-                                    margin-right: 10px;
-                                    &:nth-child(2n) {
-                                        margin-right: 0;
-                                    }
-                                    >a {
-                                        figure {
-                                            img {}
-
-                                            figcaption {
-                                                span {}
-
-                                                .text_01 {}
-
-                                                .text_02 {}
-                                            }
-                                        }
-                                    }
-                                }
-
-                                &.active {}
-                            }
-
-                            // active, hover 
-
-                        }
-                    }
-                }
-
-                .content_02 {}
-            }
-        }
-
-        // product_more ============================================
-        &.product_more {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {}
-                }
-
-                .content_02 {
-                    margin-top: 50px;
-
-                    .product_more {
-                        .product_wrap {
-                            flex-wrap: wrap;
-                            flex-direction: column;
-                            justify-content: center;
-
-                            .product_img {
-                                width: 100%;
-
-                                .product_thum {
-                                    img {}
-                                }
-
-                                .product_thum_sub {
-                                    margin-top: 10px;
-                                    overflow: scroll;
-                                    overflow-y: hidden;
-                                    justify-content: flex-start;
-
-                                    img {
-                                        &:hover {}
-                                    }
-                                }
-                            }
-
-                            .product_info {
-                                margin-top: 20px;
-                                width: 100%;
-
-                                >span {}
-
-                                .text_01 {}
-
-                                .text_02 {
-                                    margin-top: 20px;
-                                    font-size: 14px;
-                                }
-
-                                .btn {
-                                    display: block;
-                                    margin-top: 15px;
-                                    text-align: center;
-
-                                    &:hover {}
-                                }
-                            }
-                        }
-
-                    }
-                }
-
-                .content_03 {
-                    background: none;
-                    .content_wrap {
-                        .product_table_wrap {
-                            padding: 0;
-                            .product_table_title {}
-
-                            .product_table {
-                                tbody {
-                                    >tr {
-                                        th {}
-
-                                        td {}
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        // contact.page_01 ============================================
-        &.contact.page_01 {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        .box_wrap {
-                            label {}
-
-                            input,
-                            textarea {}
-
-                            input::placeholder {}
-                        }
-
-                        .contact_01 {
-                            flex-wrap: wrap;
-                            .box_wrap {
-                                margin-top: 10px;
-                                input {
-                                    max-width: 100%;
-                                    margin-right: 0;
-                                }
-                            }
-                        }
-
-                        .contact_02 {
-                            textarea {}
-                        }
-
-                        .contact_03 {
-                            .box_wrap {
-                                input {
-                                    &:hover {}
-                                }
-                            }
-
-                        }
-
-                    }
-                }
-            }
-
-            .sub_section_02 {
-                .content {}
-
-                .content_01 {
-                    .content_wrap {
-                        .content_list {
-                            &:last-child {}
-
-                            >a {
-
-                                >div {
-
-                                    img {}
-                                }
-
-                                figcaption {
-
-                                    span {}
-
-                                    .text_01 {}
-
-                                    .text_02 {}
-
-                                    .text_02,
-                                    .text_03 {}
-                                }
-
-                                // hover, active
-                                &:hover {
-                                    span {}
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .content_02 {}
-            }
-        }
-
-   
-        // community.sns ============================================
-        &.community.sns {
-            .sub_section_01 {
-                .content_01 {
-                    .content_wrap {
-                        .sns_wrap {
-                            &.sns_01 {}
-
-                            &.sns_02 {}
-
-                        }
-                    }
-                }
-            }
-
-            .sub_section_02 {
-                .content_01 {
-                }
-            }
-
-            .sns_info {
-                img {
-                    max-width: 60px;
-                    max-height: 60px;
-                }
-
-                figcaption {
-                    margin-left: 20px;
-                    >span {
-                    }
-
-                    .text_01 {
-                    }
-
-                    .text_02 {
-                    }
-                }
-            }
-
-            .sns_detail {
-                >a {
-                }
-
-                figure {
-                    max-width: 150px;
-                    max-height: 150px;
-                    width: 100%;
-                    margin-bottom: 10px;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-        }
 
         // ==========================sub_page==========================
 
@@ -2238,40 +1287,6 @@
 
 
     // ==========================footer==========================
-    #footer {
-        .footer_wrap {
-            flex-direction: column;
-
-            .content_01 {
-                order: 2;
-
-                .link_wrap {
-                    .footer_link {
-                        &:not(:first-child) {}
-
-                        a {}
-                    }
-                }
-
-                .info_wrap {
-                    .footer_info {
-                        >a {
-                            &:hover {}
-                        }
-
-                        &.direction {}
-
-                        &.copyright {}
-                    }
-                }
-            }
-
-            .content_02 {
-                order: 1;
-                margin-bottom: 20px;
-            }
-        }
-    }
 }
 
 
@@ -2408,367 +1423,4 @@
         }
     }
 
-
-
-    main {
-
-        // ==========================main_index==========================
-        &.main_wrap {
-            .main_section {
-                &:not(:first-child) {}
-
-                &.main_section_01 {
-                    .main_visual_scroll {
-                        .bar_warp {
-                            span {}
-
-                            .bar_background,
-                            .bar_move {}
-
-                            .bar_background {}
-
-                            .bar_move {
-                                .bar_dot {}
-                            }
-                        }
-
-                        .bar_img {}
-                    }
-
-
-                    .mv_wrap {
-
-                        .mv {
-                            &.mv_01 {}
-
-                            &.mv_02 {}
-
-                            &.mv_03 {}
-
-                            .mv_img {}
-
-                            .mv_text {
-                                span {}
-
-                                .text_01 {
-                                    i {}
-
-                                    strong {}
-                                }
-
-                                .text_02 {}
-
-                                .view_more {}
-                            }
-                        }
-                    }
-                }
-
-                &.main_section_02,
-                &.main_section_03 {
-                    .content_wrap {
-                        .content_title {
-                            .text_01 {
-                                strong {}
-                            }
-
-                            .text_02 {}
-
-                            .text_03 {
-                                strong {}
-                            }
-                        }
-                    }
-
-                    .content_detail.main_about {
-                        figure {
-                            img {}
-
-                            figcaption {}
-
-                            &:nth-child(odd) {}
-
-                            &:hover {
-                                img {}
-                            }
-                        }
-
-                    }
-                }
-
-                &.main_section_03 {
-                    .content_wrap {
-                        .main_product {
-                            .main_product_wrap {
-
-                                // swiper-button
-                                .swiper-button-next,
-                                .swiper-button-prev {}
-
-                                .swiper-button-next {}
-
-                                .swiper-button-prev {}
-
-                                .swiper_wrap {
-                                    .main_product_slide_01 {
-                                        .swiper-wrapper {
-                                            .product_01 {
-                                                &:hover {
-                                                    i {
-                                                        img {}
-                                                    }
-                                                }
-
-                                                img {}
-
-                                                .product_text_wrap {
-                                                    >p {
-                                                        .text_01 {}
-
-                                                        .text_02 {}
-                                                    }
-
-                                                    i {
-                                                        img {}
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-
-                                .more_text_wrap {
-
-                                    .view_more {}
-                                }
-                            }
-                        }
-                    }
-
-                }
-
-                &.main_section_04 {
-                    .content_wrap {
-                        .swiper-container.main_product_slide_02 {
-                            .swiper-wrapper {
-                                .swiper-slide {
-                                    .text_wrap {
-                                        .text_01 {}
-
-                                        .text_02 {}
-                                    }
-
-                                    img {}
-                                }
-                            }
-
-
-                            .swiper_navi {
-                                display: none;
-
-                                .swiper_navi_wrap {
-
-                                    .swiper-button-prev,
-                                    .swiper-button-next {}
-
-                                    .swiper-button-prev {}
-
-                                    .swiper-button-next {}
-
-                                    .product_pagination_02 {
-                                        .swiper-pagination-current {}
-
-                                        .swiper-pagination-total {}
-                                    }
-                                }
-
-                            }
-
-                        }
-                    }
-                }
-
-
-                &.main_section_05 {
-                    .content_wrap {
-                        .swiper-container {
-                            .swiper-wrapper {
-                                .swiper-slide {
-                                    display: flex;
-                                    flex-direction: column;
-
-                                    img {
-                                        max-height: 300px;
-                                        margin-left: 0;
-                                        width: 100%;
-                                    }
-
-                                    figcaption {
-                                        margin-top: 10px;
-                                        order: 2;
-                                        width: 100%;
-
-                                        span {}
-
-                                        .text_01 {}
-
-                                        .text_02 {
-                                            .main_event_date {}
-                                        }
-
-                                        .text_04.view_more {
-                                            &::after {}
-                                        }
-                                    }
-
-                                    &.swiper-slide-active {}
-                                }
-                            }
-                        }
-
-                        .swiper_navi {
-                            .swiper_navi_wrap {
-                                .text_wrap {
-                                    >p {
-                                        .text_01 {
-                                            strong {}
-                                        }
-
-                                        .text_02 {
-                                            strong {}
-                                        }
-                                    }
-                                }
-
-                                .swiper-button-next,
-                                .swiper-button-prev {
-                                    &:hover {}
-                                }
-
-                                .swiper-button-prev {}
-
-                                .swiper-button-next {}
-                            }
-                        }
-                    }
-                }
-
-
-                &.main_section_06 {
-                    .content_wrap {
-                        >.contact_wrap {
-                            >div {}
-
-                            .contact_img {
-                                height: 120px;
-
-                                img {}
-                            }
-
-                            .contact_box {
-                                .box_wrap {
-                                    .text_wrap {
-                                        .text_01 {
-                                            strong {}
-                                        }
-
-                                        .text_02 {}
-                                    }
-
-                                    .form_box {
-                                        .content {
-                                            label {}
-
-                                            input,
-                                            .inq_box {}
-                                        }
-
-                                        .content.full {}
-
-                                        .box_01 {
-                                            .content:nth-child(even) {}
-                                        }
-
-                                        .box_02 {
-                                            .inq_box {}
-                                        }
-
-                                        .box_submit {
-                                            .btn_submit {
-                                                &:hover {}
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-
-            }
-
-         
-            
-        }
-
-        &.sub {
-            .sub_section.visual {
-                height: 250px;
-            }
-        }
-       
-
-        // ==========================main_index==========================
-
-        // ==========================sub_page==========================
-
-
-        // ==========================sub_page==========================
-
-
-    }
-
-
-    // ==========================footer==========================
-    #footer {
-        .footer_wrap {
-            flex-direction: column;
-
-            .content_01 {
-                order: 2;
-
-                .link_wrap {
-                    .footer_link {
-                        margin-right: 10px;
-                        &:not(:first-child) {
-                            margin-left: 0;
-                        }
-
-                        a {
-                        }
-                    }
-                }
-
-                .info_wrap {
-                    .footer_info {
-                        >a {
-                            display: inline-block;
-                            &:hover {}
-                        }
-
-                        &.direction {}
-
-                        &.copyright {}
-                    }
-                }
-            }
-
-            .content_02 {
-                order: 1;
-                margin-bottom: 20px;
-            }
-        }
-    }
 }

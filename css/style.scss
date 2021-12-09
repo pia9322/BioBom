@@ -505,6 +505,9 @@
                     justify-content: center;
                     position: relative;
                     transition: all .15s;
+                    &.active, &:hover {
+                        color: #44c1a3;
+                    }
                 }
 
                 .depth_01 {
@@ -566,7 +569,7 @@
                 cursor: pointer;
                 &.active {
                     span {
-                        border-color: #fff !important;
+                        border-color: #44c1a3 !important;
                         &:nth-of-type(1) {
                             top: calc( 50% - 1px );
                             transform: rotate(45deg);
@@ -1023,16 +1026,14 @@ main {
 
 
     }
-
-
-    
-
     // sub_page default (main visual / sub menu bar)
 
 
     // about_product_info ============================================
     &.about.product_info {
-
+        > section:not(:first-child) {
+            margin-top: 150px;
+        }
         .content_wrap {
             display: flex; justify-content: space-between;
             > div {
@@ -1082,10 +1083,11 @@ main {
                 }
             }
         }
+
+
         .sub_section_01 {
             .content {
                 &.content_01 {
-                    margin-top: 170px;
                     .content_wrap {}
                 }
                 &.content_02 {
@@ -1115,7 +1117,6 @@ main {
 
         }       
         .sub_section_02 {
-            margin-top: 150px;
             background: #f5fcfa;
             .content {
                 &.content_01 {
@@ -1127,7 +1128,7 @@ main {
                         .item_list_wrap {
                             @include max-width-880();
                             margin-top: 100px;
-                            display: flex;
+                            display: flex; flex-wrap: wrap;
                             width: 100%;
                             .item_list_01 {
                                 margin-right: 20px;
@@ -1193,7 +1194,6 @@ main {
 
 
         .sub_section_03 {
-            margin-top: 150px;
             .content {
                 &.content_01 {
                     .content_wrap {
@@ -1431,7 +1431,6 @@ main {
 
         // sub_section_04 
         .sub_section_04 {
-            margin-top: 150px;
             .content {
                 &.content_01 {
                     .content_wrap {
@@ -1467,7 +1466,6 @@ main {
 
         // sub_section_05 
         .sub_section_05 {
-            margin-top: 150px;
             .content {
                 &.content_01 {
                     .content_wrap {
@@ -1517,7 +1515,6 @@ main {
 
         // sub_section_06 
         .sub_section_06 {
-            margin-top: 150px;
             .content {
                 &.content_01 {
                     .content_wrap {
