@@ -1,283 +1,439 @@
-<!-----------------------------header----------------------------->
-<?php include_once('../include/header.html') ?>
-<!-- ---------------------------header--------------------------- -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바이오봄</title>
+
+    <!-- --------------------SEO-------------------- -->
+    <link rel="canonical" href="https://cookieswork4.cafe24.com/">
+
+    <meta name="description" content="바이오봄 BIOBOM">
+    <meta name="author" content="piajj">
+    <meta name="keywords" content="바이오봄, BIOBOM">
+
+    <meta property="og:title" content="바이오봄">
+    <meta property="og:site_name" content="바이오봄">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="../images/og_img.png">
+    <meta property="og:description" content="바이오봄 BIOBOM">
+
+    <meta name="twitter:card" content="...">
+    <meta name="twitter:title" content="...">
+    <meta name="twitter:description" content="...">
+    <meta name="twitter:image" content="...">
+    <!-- --------------------SEO-------------------- -->
 
 
+    <!-- --------------------CSS-------------------- -->
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="icon" href="../images/ico/favicon.ico" type="image/x-icon">
+
+    <!-- --------------------CSS-------------------- -->
 
 
-<!-- ========================main======================== -->
-<main class="sub rnd_02 nopal">
-    <section class="sub_section visual">
+    <!-- --------------------Script-------------------- -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <!-- --------------------Script-------------------- -->
+</head>
 
-        <figure class="visual_img">
-            <figcaption class="visual_title">
-                <span class="text_01">연구개발</span>
-                <span class="text_02">생명을 살리는 전문인, 생명을 증진하는 연구인, 생명의 가치를 높이는 실행인</span>
-            </figcaption>
-        </figure>
-    </section>
+<body>
 
-    <section class="sub_section_00">
-        <article class="content content_01" data-aos="fade-up">
-            <div class="sub_content_wrap">
+    <!-- ========================new_header======================== -->
+    <header id="header">
+        <nav class="header_wrap">
 
-                <div class="text_wrap sub_page_layout">
-                    <p class="point_title">
-                        LIFE, JOY, VALUE
-                        BIOBOM NOPAL
-                    </p>
+            <h1 class="header_left">
+                <a href="../main/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 85 40" style="enable-background:new 0 0 85 40;" xml:space="preserve">
+                        <g>
+                            <path class="st0" d="M17.49,29.81h0.94c0.17,0,0.32-0.14,0.32-0.32V18.47c0-0.17-0.14-0.32-0.32-0.32h-0.94   c-0.17,0-0.32,0.14-0.32,0.32v11.02C17.18,29.67,17.32,29.81,17.49,29.81z" />
+                            <path class="st0" d="M31.19,5.41c-3.21,0-5.82,2.61-5.82,5.82c0,3.21,2.61,5.82,5.82,5.82c3.21,0,5.82-2.61,5.82-5.82   C37.01,8.02,34.4,5.41,31.19,5.41z M31.19,15.48c-2.34,0-4.25-1.91-4.25-4.25s1.91-4.25,4.25-4.25c2.34,0,4.25,1.91,4.25,4.25   S33.53,15.48,31.19,15.48z" />
+                            <path class="st0" d="M59.05,11.23c0-3.21-2.61-5.82-5.82-5.82c-3.21,0-5.82,2.61-5.82,5.82c0,3.21,2.61,5.82,5.82,5.82   C56.44,17.06,59.05,14.44,59.05,11.23z M48.98,11.23c0-2.34,1.91-4.25,4.25-4.25c2.34,0,4.25,1.91,4.25,4.25s-1.91,4.25-4.25,4.25   C50.88,15.48,48.98,13.58,48.98,11.23z" />
+                            <path class="st0" d="M42.21,11.39c2.86,0,5.2-2.33,5.2-5.2c0-2.86-2.33-5.19-5.2-5.19c-2.86,0-5.19,2.33-5.19,5.19   C37.01,9.06,39.34,11.39,42.21,11.39z M42.21,2.57c2,0,3.62,1.62,3.62,3.62c0,2-1.62,3.62-3.62,3.62c-2,0-3.62-1.62-3.62-3.62   C38.59,4.2,40.21,2.57,42.21,2.57z" />
+                            <path class="st0" d="M27.73,17.53c-3.56,0-6.45,2.9-6.45,6.45c0,3.56,2.9,6.45,6.45,6.45c3.56,0,6.45-2.9,6.45-6.45   C34.18,20.42,31.28,17.53,27.73,17.53z M27.73,28.86c-2.69,0-4.88-2.19-4.88-4.88c0-2.69,2.19-4.88,4.88-4.88   c2.69,0,4.88,2.19,4.88,4.88C32.61,26.67,30.42,28.86,27.73,28.86z" />
+                            <path class="st0" d="M56.69,17.53c-3.56,0-6.45,2.9-6.45,6.45c0,3.56,2.9,6.45,6.45,6.45c3.56,0,6.45-2.9,6.45-6.45   C63.15,20.42,60.25,17.53,56.69,17.53z M56.69,28.86c-2.69,0-4.88-2.19-4.88-4.88c0-2.69,2.19-4.88,4.88-4.88   c2.69,0,4.88,2.19,4.88,4.88C61.57,26.67,59.38,28.86,56.69,28.86z" />
+                            <path class="st0" d="M13.48,23.26c0.55-0.56,0.87-1.32,0.87-2.11c0-1.65-1.34-2.99-2.99-2.99l-7.08,0c-0.17,0-0.31,0.14-0.31,0.31   v11.02c0,0.17,0.14,0.31,0.31,0.31h7.04c1.74,0,3.27-1.21,3.6-2.92C15.18,25.47,14.61,24.07,13.48,23.26z M5.53,19.73h5.8   c0.65,0,1.24,0.43,1.39,1.06c0.23,0.93-0.48,1.77-1.37,1.77H5.53V19.73z M11.32,28.23h-5.8v-4.09h5.82c1.27,0,2.27,1.16,2,2.47   C13.17,27.57,12.3,28.23,11.32,28.23z" />
+                            <path class="st0" d="M78.67,18.32l-5.61,9.71l-5.61-9.71c-0.06-0.1-0.16-0.16-0.27-0.16h-1.2c-0.17,0-0.32,0.14-0.32,0.32v11.02   c0,0.17,0.14,0.31,0.31,0.31h0.95c0.17,0,0.31-0.14,0.31-0.31v-8.41l4.95,8.57c0.06,0.1,0.16,0.16,0.27,0.16h1.21   c0.11,0,0.22-0.06,0.27-0.16l4.95-8.57v8.41c0,0.17,0.14,0.32,0.32,0.32h0.94c0.17,0,0.32-0.14,0.32-0.32V18.47   c0-0.17-0.14-0.32-0.32-0.32h-1.2C78.83,18.16,78.73,18.22,78.67,18.32z" />
+                            <g>
+                                <path class="st0" d="M35.57,32.8h-0.5c-0.03,0-0.06,0.03-0.06,0.06v5.86c0,0.03,0.03,0.06,0.06,0.06h0.5    c0.03,0,0.06-0.03,0.06-0.06V35h0.8c0.03,0,0.06-0.03,0.06-0.06v-0.51c0-0.03-0.03-0.06-0.06-0.06h-0.8v-1.51    C35.64,32.83,35.61,32.8,35.57,32.8z" />
+                                <path class="st0" d="M41.52,38.78h0.5c0.04,0,0.06-0.03,0.06-0.06v-5.86c0-0.03-0.03-0.06-0.06-0.06h-0.5    c-0.03,0-0.06,0.03-0.06,0.06v5.86C41.46,38.75,41.49,38.78,41.52,38.78z" />
+                                <path class="st0" d="M33.75,34.06h-1.89v-1.2c0-0.04-0.03-0.06-0.06-0.06h-0.5c-0.04,0-0.06,0.03-0.06,0.06v3.65    c0,0.03,0.03,0.06,0.06,0.06h3.03c0.03,0,0.06-0.03,0.06-0.06v-3.65c0-0.03-0.03-0.06-0.06-0.06h-0.51    c-0.03,0-0.06,0.03-0.06,0.06V34.06z M33.75,34.69v1.26h-1.89v-1.26H33.75z" />
+                                <path class="st0" d="M49.32,38.78h3.65c0.03,0,0.06-0.03,0.06-0.06v-1.76c0-0.04-0.03-0.06-0.06-0.06h-3.65    c-0.03,0-0.06,0.03-0.06,0.06v1.76C49.25,38.75,49.28,38.78,49.32,38.78z M52.4,38.15h-2.52v-0.63h2.52V38.15z" />
+                                <path class="st0" d="M51.46,35.78v-0.46h1.51c0.04,0,0.06-0.03,0.06-0.06v-2.39c0-0.03-0.03-0.06-0.06-0.06h-0.5    c-0.03,0-0.06,0.03-0.06,0.06v0.57h-2.52v-0.57c0-0.03-0.03-0.06-0.06-0.06h-0.5c-0.03,0-0.06,0.03-0.06,0.06v2.39    c0,0.04,0.03,0.06,0.06,0.06h1.51v0.46h-2.3c-0.03,0-0.06,0.03-0.06,0.06v0.51c0,0.03,0.03,0.06,0.06,0.06h5.23    c0.04,0,0.06-0.03,0.06-0.06v-0.5c0-0.04-0.03-0.06-0.06-0.06H51.46z M52.4,34.06v0.63h-2.52v-0.63H52.4z" />
+                                <path class="st0" d="M45.71,36.63c1-0.16,1.75-1.08,1.64-2.15c-0.09-0.91-0.82-1.65-1.73-1.75c-1.19-0.13-2.19,0.79-2.19,1.96    c0,0.98,0.72,1.79,1.65,1.94v0.89h-2.3c-0.04,0-0.06,0.03-0.06,0.06v0.5c0,0.03,0.03,0.06,0.06,0.06h5.23    c0.03,0,0.06-0.03,0.06-0.06v-0.5c0-0.04-0.03-0.06-0.06-0.06h-2.3V36.63z M44.06,34.69c0-0.74,0.6-1.34,1.34-1.34    c0.74,0,1.34,0.6,1.34,1.34c0,0.74-0.6,1.34-1.34,1.34C44.66,36.03,44.06,35.43,44.06,34.69z" />
+                                <path class="st0" d="M38.94,32.72c-1.09,0-1.97,0.88-1.97,1.97c0,1.09,0.88,1.97,1.97,1.97c1.09,0,1.97-0.88,1.97-1.97    C40.91,33.6,40.03,32.72,38.94,32.72z M38.94,36.03c-0.74,0-1.34-0.6-1.34-1.34c0-0.74,0.6-1.34,1.34-1.34    c0.74,0,1.34,0.6,1.34,1.34C40.28,35.43,39.68,36.03,38.94,36.03z" />
+                            </g>
+                            <path class="st0" d="M46.54,23.26C46.54,23.26,46.54,23.26,46.54,23.26c0.55-0.56,0.86-1.32,0.86-2.11c0-1.65-1.34-2.99-2.99-2.99   l-7.08,0c-0.17,0-0.32,0.14-0.32,0.32v11.01c0,0.18,0.14,0.32,0.32,0.32h7.01c1.97,0,3.64-1.55,3.69-3.53   C48.06,25.08,47.5,23.96,46.54,23.26z M38.59,19.73h5.78c0.76,0,1.42,0.59,1.46,1.35c0.04,0.81-0.61,1.48-1.42,1.48h-5.82   c0,0,0,0,0,0L38.59,19.73C38.59,19.74,38.59,19.73,38.59,19.73z M44.36,28.23h-5.77c0,0,0,0,0,0v-4.08c0,0,0,0,0,0h5.82   c1.15,0,2.09,0.96,2.04,2.12C46.42,27.37,45.47,28.23,44.36,28.23z" />
+                        </g>
+                    </svg>
+                </a>
+            </h1>
+
+            <ul class="header_center">
+                <li>
+                    <a href="../about/philosophy.html">기업소개</a>
+                    <ul class="depth_01 h_2depth_color">
+                        <li><a href="../about/philosophy.html">경영철학</a></li>
+                        <li><a href="../about/ceo.html">CEO&nbsp;인사말</a></li>
+                        <li><a href="../about/cibi.html">CI&nbsp;&&nbsp;BI</a></li>
+                        <li><a href="../about/partner.html">관계사</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../rnd/info.html">연구개발</a>
+                    <ul class="depth_01">
+                        <li><a href="../rnd/info.html">연구소&nbsp;소개</a></li>
+                        <li><a href="../rnd/nopal.html">당뇨천연물신소재,&nbsp;노팔</a></li>
+                        <li><a href="../rnd/hongsam.html">바이오&nbsp;봄&nbsp;특허,&nbsp;홍삼</a></li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a href="../product_info/dang.html">제품소개</a>
+                    <ul class="depth_01">
+                        <li><a href="../product_info/dang.html">바이오봄&nbsp;당케어&nbsp;프리미엄</a></li>
+                        <li><a href="../product_info/him.html">바이오봄&nbsp;힘</a></li>
+                        <li><a href="../product_info/hue.html">바이오봄&nbsp;휴</a></li>
+                        <li><a href="../product_info/soo.html">바이오봄&nbsp;당뚝&nbsp;수</a></li>
+                        <li><a href="../product_info/jin.html">바이오봄&nbsp;발효홍삼&nbsp;진</a></li>
+                        <li><a href="../product_info/gold.html">바이오봄&nbsp;사포닌골드</a></li>
+                        <li><a href="../product_info/lotion.html">바이오봄&nbsp;노팔바디로숀</a></li>
+                    </ul>
+                </li> -->
+                <li>
+                    <a href="../product_info/dang.html">제품소개</a>
+                    <ul class="depth_01">
+                        <li><a href="../product_info/dang.html">바이오봄&nbsp;당케어&nbsp;프리미엄</a></li>
+                        <li><a href="../product_info/soo.html">바이오봄&nbsp;당뚝&nbsp;수</a></li>
+                        <li><a href="../product_info/jin.html">바이오봄&nbsp;발효홍삼&nbsp;진</a></li>
+                        <li><a href="../product_info/him.html">바이오봄&nbsp;힘</a></li>
+                        <li><a href="../product_info/hue.html">바이오봄&nbsp;휴</a></li>
+                        <li><a href="../product_info/gold.html">바이오봄&nbsp;사포닌골드</a></li>
+                        <li><a href="../product_info/lotion.html">바이오봄&nbsp;노팔바디로숀</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" onclick="alert('준비중입니다 🎈')">대리점</a>
+                    <ul class="depth_01">
+                        <li><a href="#none"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../health/art.html">AI헬스케어</a>
+                    <ul class="depth_01">
+                        <li><a href="../health/art.html">문화예술&nbsp;복합공간</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../petfood/bio.html">펫푸드</a>
+                    <ul class="depth_01">
+                        <li><a href="../petfood/bio.html">바이오&nbsp;기술</a></li>
+                        <li><a href="../petfood/cultural.html">문화&nbsp;융합</a></li>
+                        <li><a href="../petfood/trademark.html">보유&nbsp;상표권</a></li>
+                    </ul>
+                </li>
+                <!-- <div class="header_bg"></div> -->
+            </ul>
+
+            <nav class="header_right">
+                <div class="header_ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+            </nav>
 
-                <div class="point_bg">
-                    <div class="point_text_wrap sub_page_layout">
-                        <div class="point_info new_font_01">
-                            바이오봄의 당뇨 천연물 신소재
-                            <br class="pc_only">
-                            노팔(Nopal) 식약처 개별인정 1건, 특허 2건
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-    </section>
-    <!-- 
-    <section class="sub_page_layout sub_section_01">
-        <article class="content content_01" data-aos="fade-up">
-            <div class="sub_content_wrap">
-                <div class="left_content">
-                    <p class="text_wrap">
-                        <span class="text_bar"></span>
-                        <span class="text_title">
-                            바이오봄의 노팔
-                        </span>
-                    </p>
-                </div>
-
-                <div class="right_content">
-
-                    <div class="img_wrap wrap_01">
-                        <img src="../images/rnd/nopal/nopal_01.png" alt="선인장">
-                    </div>
-
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">
-                            바이오봄의 당뇨 천연물 신소재
-                            <br class="pc_only">
-                            노팔(Nopal)식약처 개별인정 1건, 특허 2건
-                        </span>
-                    </p>
-
-
-                    <div class="img_wrap wrap_02">
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_02_01.png" alt="인증서_01">
-                            <img src="../images/rnd/nopal/nopal_02_02.png" alt="인증서_02">
-                            <img src="../images/rnd/nopal/nopal_02_03.png" alt="인증서_02">
-                        </figure>
-                    </div>
-
-                    <p class="text_wrap wrap_02">
-                        <span class="text_01">노팔은 하늘에서 준 선물로 천연물 신소재, 미래의 대체 의학 식물, 그린 슈퍼푸드입니다.</span>
-                        <span class="text_02">
-                            <em class="point_01">당뇨 건강기능식품 식약처 개별인정 1건</em>
-                            <br>
-                            기능성 내용 : 식후 혈당조절에 도움을 줄 수 있습니다.
-                            <br>
-                            <br>
-                            <em class="point_01">당뇨 특허 2건</em>
-                            <br>
-                            특허1. 효소처리된 노팔 추출물을 함유하는 혈당조절용 조성물을 가지고 있습니다.
-                            <br>
-                            특허2. 비만 및 비만으로부터 유도된 대사증후군의 예방 및 치료용 약학 조성물 및 건강기능식품 조성물을 가지고 있습니다.
-                        </span>
-                    </p>
-
-                </div>
-
-            </div>
-        </article>
-
-        <article class="content content_02" data-aos="fade-up">
-            <div class="sub_content_wrap">
-                <div class="left_content">
-                    <p class="text_wrap">
-                        <span class="text_bar"></span>
-                        <span class="text_title">
-                            노팔 관련 특허정보
-                        </span>
-                    </p>
-                </div>
-
-                <div class="right_content">
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">
-                            비만 및 비만으로부터 유도된 대사증후군의 예방 및 치료용 약학 조성물 및 건강기능식품 조성물
-                        </span>
-                        <a href="https://doi.org/10.8080/1020170137756" target="_blank" class="text_02 point_border_01">
-                            자세히보기 <i class="arrow_right"></i>
-                        </a>
-                    </p>
-
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">
-                            효소처리된 노팔 추출물을 함유하는 혈당조절용 조성물
-                        </span>
-                        <a href="https://doi.org/10.8080/1020120059250" target="_blank" class="text_02 point_border_01">
-                            자세히보기 <i class="arrow_right"></i>
-                        </a>
-                    </p>
-
-
-                </div>
-            </div>
-        </article>
-
-        <article class="content content_03" data-aos="fade-up">
-            <div class="sub_content_wrap">
-                <div class="left_content">
-                    <p class="text_wrap">
-                        <span class="text_bar"></span>
-                        <span class="text_title">
-                            당뇨 개별인정 노팔
-                            <br>
-                            천연물 신소재
-                        </span>
-                    </p>
-                </div>
-
-                <div class="right_content">
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">
-                            노팔은 하늘에서 준 선물, 미래 대체 의학식물, 그린 슈퍼푸드로 알려져 있습니다.
-                        </span>
-                    </p>
-
-                    <ul class="text_wrap wrap_02">
-                        당뇨 건강기능식품 개별인정 1건(2개사)
-                        <li>
-                            건강기능식품 기능성 원료 인정서, 제2009-39호, 인성제약㈜, 원료명 : 노팔 추출물
-                            기능성 내용 : “식후 혈당조절에 도움을 줄 수 있습니다“(기타기능II)
+            <nav class="header_full">
+                <div class="header_full_wrap">
+                    <ul class="header_full_list">
+                        <li class="depth_01"><a href="#none">기업소개</a>
+                            <ul class="depth_02">
+                                <li><a href="../about/philosophy.html">경영철학</a></li>
+                                <li><a href="../about/ceo.html">CEO&nbsp;인사말</a></li>
+                                <li><a href="../about/cibi.html">CI&nbsp;&&nbsp;BI</a></li>
+                                <li><a href="../about/partner.html">관계사</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            건강기능식품 기능성 원료 인정서, 제2010-10호, 한국푸디팜㈜, s원료명 : 노팔 추출물
-                            기능성 내용 : “식후 혈당조절에 도움을 줄 수 있습니다“(기타기능II)
+
+                        <li class="depth_01"><a href="#none">연구개발</a>
+                            <ul class="depth_02">
+                                <li><a href="../rnd/info.html">연구소&nbsp;소개</a></li>
+                                <li><a href="../rnd/nopal.html">당뇨천연물신소재,&nbsp;노팔</a></li>
+                                <li><a href="../rnd/hongsam.html">바이오&nbsp;봄&nbsp;특허,&nbsp;홍삼</a></li>
+                            </ul>
+                        </li>
+                        <!-- 
+                        <li class="depth_01"><a href="#none">제품소개</a>
+                            <ul class="depth_02">
+                                <li><a href="../product_info/dang.html">바이오봄&nbsp;당케어&nbsp;프리미엄</a></li>
+                                <li><a href="../product_info/him.html">바이오봄&nbsp;힘</a></li>
+                                <li><a href="../product_info/hue.html">바이오봄&nbsp;휴</a></li>
+                                <li><a href="../product_info/soo.html">바이오봄&nbsp;당뚝&nbsp;수</a></li>
+                                <li><a href="../product_info/jin.html">바이오봄&nbsp;발효홍삼&nbsp;진</a></li>
+                                <li><a href="../product_info/gold.html">바이오봄&nbsp;사포닌골드</a></li>
+                                <li><a href="../product_info/lotion.html">바이오봄&nbsp;노팔바디로숀</a></li>
+                            </ul>
+                        </li>
+                        -->
+
+                        <li class="depth_01"><a href="#none">제품소개</a>
+                            <ul class="depth_02">
+                                <li><a href="../product_info/dang.html">바이오봄&nbsp;당케어&nbsp;프리미엄</a></li>
+                                <li><a href="../product_info/soo.html">바이오봄&nbsp;당뚝&nbsp;수</a></li>
+                                <li><a href="../product_info/jin.html">바이오봄&nbsp;발효홍삼&nbsp;진</a></li>
+                                <li><a href="../product_info/him.html">바이오봄&nbsp;힘</a></li>
+                                <li><a href="../product_info/hue.html">바이오봄&nbsp;휴</a></li>
+                                <li><a href="../product_info/gold.html">바이오봄&nbsp;사포닌골드</a></li>
+                                <li><a href="../product_info/lotion.html">바이오봄&nbsp;노팔바디로숀</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="depth_01"><a href="#none" onclick="alert('준비중입니다 🎈')">대리점</a>
+                            <ul class="depth_02">
+                            </ul>
+                        </li>
+                        <li class="depth_01"><a href="../health/art.html">AI헬스케어</a>
+                            <ul class="depth_02">
+                            </ul>
+                        </li>
+
+                        <li class="depth_01"><a href="#none">펫푸드</a>
+                            <ul class="depth_02">
+                                <li><a href="../petfood/bio.html">바이오&nbsp;기술</a></li>
+                                <li><a href="../petfood/cultural.html">문화&nbsp;융합</a></li>
+                                <li><a href="../petfood/trademark.html">보유&nbsp;상표권</a></li>
+                            </ul>
                         </li>
                     </ul>
-
-
-
-
-
-                    <ul class="text_wrap wrap_02">
-                        당뇨 등록특허 2건
-                        <li>
-                            효소처리된 노팔 추출물을 함유하는 혈당조절용 조성물, 특허 제10-1257797호 (2013.04.18)
-                            (Composition for regulation of blood glucose containing enzyme modified extract of nopal)
-                        </li>
-                        <li>
-                            비만 및 비만으로부터 유도된 대사증후군의 예방 및 치료용 약학 조성물 및 건강기능식품 조성물, 특허 제10-1868066호 (2018.06.08)
-                            (Pharmaceutical Composition and Health Functional Food Composition containing Extract of Nopal and Germinated Buck
-                            wheat for preventing or treating obesity and metabolic syndrome induced therefrom)
-
-                        </li>
-                    </ul>
-
                 </div>
-            </div>
-        </article>
+            </nav>
+        </nav>
+    </header>
 
 
-        <article class="content content_04" data-aos="fade-up">
-            <div class="sub_content_wrap">
-                <div class="left_content">
-                    <p class="text_wrap">
-                        <span class="text_bar"></span>
-                        <span class="text_title">
-                            추출물의 기능성
-                        </span>
-                    </p>
-                </div>
 
-                <div class="right_content">
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">
-                            식품의약품안전청 건강기능식품 기능성 원료 인증서
-                        </span>
-                    </p>
 
-                    <div class="img_wrap wrap_01">
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_03_01.png" alt="원료인증서 01">
-                            <img src="../images/rnd/nopal/nopal_03_02.png" alt="원료인증서 02">
-                        </figure>
+    <!-- ========================main======================== -->
+    <main class="sub rnd_02 nopal">
+        <section class="sub_section visual">
+            <figure class="visual_img">
+                <figcaption class="visual_title">
+                    <span class="text_01">연구개발</span>
+                    <span class="text_02">생명을 살리는 전문인, 생명을 증진하는 연구인, 생명의 가치를 높이는 실행인</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="sub_section_00">
+            <article class="content content_01">
+                <div class="sub_content_wrap">
+
+                    <div class="text_wrap sub_page_layout">
+                        <p class="point_title">
+                            LIFE, JOY, VALUE
+                            BIOBOM NOPAL
+                        </p>
                     </div>
 
+                    <div class="point_bg">
+                        <div class="point_text_wrap sub_page_layout">
+
+                            <div class="point_info point_info_01 new_font_01">
+                                바이오봄의 당뇨 천연물 신소재
+                                <br class="pc_only">
+                                노팔(Nopal) 식약처 개별인정 1건, 특허 2건
+                            </div>
+
+                            <div class="point_info point_info_02">
+                                <p class="new_font_03">
+                                    <span class="text_01">노팔(Nopal) 식약처 개별인정 1건</span>
+                                    <span class="text_02">1</span>
+                                </p>
+                                <p class="new_font_03">
+                                    <span class="text_01">노팔(Nopal) 식약처 특허 2건</span>
+                                    <span class="text_02">2</span>
+                                </p>
+                            </div>
 
 
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-                    <p class="text_wrap wrap_02">
-                        <span class="text_01">
-                            특허청 등록특허 10-1257797
-                        </span>
+        </section>
 
-                        <span class="text_02 clear_margin">
-                            건강기능성 원료로 개별인정된 원료를 함유하는 혈당 조절용 특허 조성물 인슐린 비의존성 당뇨에 있어서의 노팔의 혈당강하효과
-                        </span>
-                    </p>
+        <section class="sub_page_layout sub_section_01">
+            <article class="content content_01">
+                <div class="sub_content_wrap">
 
-
-                    <div class="img_wrap wrap_02">
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_04_01.png" alt="글루코스 그래프">
-                            <figcaption>
-                                <span class="text_01">GLUCOSE</span>
-                                <span class="text_02">혈당강하효과 물 대비 유의하게 17.6% 감소(P &#60; 0.01)</span>
-                            </figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_04_02.png" alt="인슐린 그래프">
-                            <figcaption>
-                                <span class="text_01">INSULIM</span>
-                                <span class="text_02">인슐린분비감소효과 물 대비 유의하게 50.2% 감소(P &#60; 0.05)</span>
-                            </figcaption>
-                        </figure>
-
+                    <div class="left_content">
+                        <p class="text_wrap">
+                            <span class="text_bar"></span>
+                            <span class="text_title new_font_02">
+                                노팔 관련 특허정보
+                            </span>
+                        </p>
                     </div>
 
+                    <div class="right_content">
 
-                </div>
-            </div>
-        </article>
+                        <p class="new_text_wrap wrap_01">
+                            <span class="new_font_01">
+                                노팔은 하늘에서 준 선물로
+                                <br class="pc_only">
+                                미래 대체 의학식물, 그린 슈퍼푸드입니다.
+                            </span>
+                        </p>
 
 
-        <article class="content content_05" data-aos="fade-up">
-            <div class="sub_content_wrap">
-                <div class="left_content">
-                    <p class="text_wrap">
-                        <span class="text_bar"></span>
-                        <span class="text_title">
-                            노팔의 특장점
-                        </span>
-                    </p>
-                </div>
+                        <div class="new_img_wrap wrap_01">
+                            <figure>
+                                <img src="../images/rnd_02/nopal/img_02.png" alt="인증서_02">
+                            </figure>
+                        </div>
 
-                <div class="right_content">
-                    <div class="img_wrap wrap_01">
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_05.png" alt="푸른 하늘과 선인장들">
-                        </figure>
+                        <p class="new_text_wrap wrap_02">
+                            <span class="new_font_02">
+                                당뇨 건강기능식품 개별인정 1건(2개사)
+                            </span>
+                            <span class="new_font_03 text_01">
+                                <i class="point_dots_01"></i>건강기능식품 기능성 원료 인정서, 제2009-39호, 인성제약㈜, 원료명 : 노팔 추출물
+                                <br class="pc_only">
+                                <i class="point_dots_02"></i>기능성 내용 : “식후 혈당조절에 도움을 줄 수 있습니다“(기타기능II)
+                                <br>
+                                <i class="point_dots_01"></i>건강기능식품 기능성 원료 인정서, 제2010-10호, 한국푸디팜㈜, 원료명 : 노팔 추출물
+                                <br class="pc_only">
+                                <i class="point_dots_02"></i>기능성 내용 : “식후 혈당조절에 도움을 줄 수 있습니다“(기타기능II)
+                            </span>
+                        </p>
+                        <br>
+                        <br>
+
+                        <p class="new_text_wrap wrap_03">
+                            <span class="new_font_02">
+                                당뇨 등록특허 2건
+                            </span>
+                            <span class="new_font_03 text_01">
+                                <i class="point_dots_01"></i>효소처리된 노팔 추출물을 함유하는 혈당조절용 조성물, 특허 제10-1257797호 (2013.04.18)
+                                <br class="pc_only">
+                                <i class="point_dots_02"></i>(Composition for regulation of blood glucose containing enzyme modified extract of nopal)
+                                <br>
+                                <i class="point_dots_01"></i>비만 및 비만으로부터 유도된 대사증후군의 예방 및 치료용 약학 조성물 및 건강기능식품 조성물, 특허 제10-1868066호 (2018.06.08)
+                                <br class="pc_only">
+                                <i class="point_dots_02"></i>(Pharmaceutical Composition and Health Functional Food Composition containing Extract of Nopal and Germinated Buck
+                                <i class="point_dots_02"></i>wheat for preventing or treating obesity and metabolic syndrome induced therefrom)
+                            </span>
+                        </p>
                     </div>
 
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">
-                            노팔이란?
-                        </span>
-                        <span class="text_02">
+                </div>
+            </article>
+
+
+            <article class="content content_02">
+                <div class="sub_content_wrap">
+
+                    <div class="left_content">
+                        <p class="text_wrap">
+                            <span class="text_bar"></span>
+                            <span class="text_title new_font_02">
+                                노팔 관련 특허정보
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="right_content">
+                        <p class="new_text_wrap wrap_01">
+                            <span class="new_font_03 text_01">
+                                비만 및 비만으로부터 유도된 대사증후군의 예방 및 치료용 약학 조성물 및 건강기능식품 조성물
+                            </span>
+                            <a href="https://doi.org/10.8080/1020170137756" target="_blank" class="text_02">
+                                자세히보기 <i class="arrow_right"></i>
+                            </a>
+                        </p>
+
+                        <p class="new_text_wrap wrap_01">
+                            <span class="new_font_03 text_01">
+                                효소처리된 노팔 추출물을 함유하는 혈당조절용 조성물
+                            </span>
+
+                            <a href="https://doi.org/10.8080/1020120059250" target="_blank" class="text_02">
+                                자세히보기 <i class="arrow_right"></i>
+                            </a>
+                        </p>
+
+
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="content content_03">
+                <div class="sub_content_wrap">
+
+                    <div class="left_content">
+                        <p class="text_wrap">
+                            <span class="text_bar"></span>
+                            <span class="text_title new_font_02">
+                                추출물의 기능성
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="right_content">
+                        <p class="new_text_wrap wrap_01">
+                            <span class="new_font_01 text_01">
+                                노팔관련 특성 및 기술성
+                            </span>
+                            <span class="new_font_03 text_02">
+                                건강기능성 원료로 개별인정된 원료를 함유하는 혈당 조절용 특허 조성물 인슐린 비의존성 당뇨에 있어서의 노팔의 혈당강하효과
+                            </span>
+                        </p>
+
+
+                        <div class="img_wrap wrap_01">
+                            <figure>
+                                <img src="../images/rnd/nopal/nopal_04_01.png" alt="글루코스 그래프">
+                                <figcaption>
+                                    <span class="text_01">GLUCOSE</span>
+                                    <span class="text_02">혈당강하효과 물 대비 유의하게 17.6% 감소(P &#60; 0.01)</span>
+                                </figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="../images/rnd/nopal/nopal_04_02.png" alt="인슐린 그래프">
+                                <figcaption>
+                                    <span class="text_01">INSULIM</span>
+                                    <span class="text_02">인슐린분비감소효과 물 대비 유의하게 50.2% 감소(P &#60; 0.05)</span>
+                                </figcaption>
+                            </figure>
+
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="sub_section_02">
+            <article class="content content_01">
+                <div class="sub_content_wrap">
+                    <div class="new_text_wrap">
+                        <span class="text_01 new_font_01">노팔이란?</span>
+                        <span class="text_02 new_font_03">
                             멕시코 사막 순청정지역에 주로 자생하는 선인장의 일종입니다.
                             <br class="pc_only">
                             노팔은 섬유소가 많고 무기질, 비타민이 다량 함유되어 있어 인체 흡수에 좋을 뿐 아니라, 갈증 해소와 소화 기능을 돕습니다.
@@ -285,362 +441,446 @@
                             최근에는 미국 슈퍼마켓에서도 노팔의 어린 줄기를 판매할 정도로 인기가 많습니다.
                         </span>
 
-                    </p>
-                </div>
-            </div>
-        </article>
-
-        <article class="content content_06" data-aos="fade-up">
-            <div class="sub_content_wrap">
-                <div class="left_content">
-                    <p class="text_wrap">
-                        <span class="text_bar"></span>
-                        <span class="text_title">
-                            언론으로 본 노팔의 효능
-                        </span>
-                    </p>
-                </div>
-
-                <div class="right_content">
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">
-                            한국경제 - 항산화 효과 뛰어난 알칼리성 식물 [노팔 선인장]을 아세요?
-                        </span>
-                        <span class="text_02">
-                            미국 남부 및 멕시코 인근 사막지역에 자생하는 노팔 선인장(Nopal Cactus · 학명 Opuntia Ficus Indica)의 우수한 항산화 효과가 건강식품
-                            업계에서 주목받고 있다. 채수규 을지대 식품과학부 교수는 심포지엄에서 기존 연구논문을 인용해 노팔 선인장은 항산화기능을 가진 파이토케
-                            미컬의 함량이 높아 잘못된 식생활,운동 부족,스트레스,흡연과 음주,환경 오염 등으로 산화된 인체의 회복에 유익하고 성인병 예방,비만 억제,
-                            혈당 개선에 도움이 된다며 특히 이소함네틴 성분은 몸에 해로운 저밀도지단백(LDL) 결합 콜레스테롤 감소에 매우 효과적인 성분이라고 설명
-                            했다.
-                        </span>
-                    </p>
-
-
-                    <p class="text_wrap wrap_02">
-                        <span class="text_01">
-                            디지털타임스 - 바디라인의 핵심은 뱃살! 자연에서 찾은 노팔이 그 핵심!
-                        </span>
-                        <span class="text_02">
-                            최근 뱃살이 많아 일명 D 라인이라 불리는 몸을 가진 사람들이 큰 폭의 증가 추세를 보이고 있다. 집중적인 운동, 식이요법 등 다양한 방법을 통
-                            해 뱃살을 빼려 하지만 쉽지 않고 영양결핍, 골다공증, 위장장애 등 부작용에 대한 우려가 있다. 이에 전문가들은 영양제, 기능식품 등의 약을 통
-                            한 방법도 있겠지만, 자연식품에서 영양분 섭취하기를 권장하고 있다. 최근 주목받고 있는 자연식품은 바로 '노팔' 선인장이다. 보검 선인장이
-                            라고도 하는 노팔 선인장은 손바닥 선인장으로 익히 알려져 있다. 노팔이 함유하고 있는 여러 영양성분 중에서도 식이섬유는 불용성, 수용성 식
-                            이섬유 모두 함유하고 있어 변비로 배변에 어려움을 겪는 이들에게 편하고 상쾌한 배변을 하는데 도움을 준다.
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="content content_07" data-aos="fade-up">
-            <div class="sub_content_wrap">
-                <div class="left_content">
-                    <p class="text_wrap">
-                        <span class="text_bar"></span>
-                        <span class="text_title">
-                            방송으로 본 노팔의 효능
-                        </span>
-                    </p>
-                </div>
-
-                <div class="right_content">
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">
-                            JTBC &lt;알짜왕&gt; - 노팔의 효능 편
-                        </span>
-                    </p>
-
-                    <div class="img_wrap wrap_01">
-                        <figure>
-                            <img class="img_01" src="../images/rnd/nopal/nopal_06_01.png" alt="알짜왕 배너">
-                            <img class="img_02" src="../images/rnd/nopal/nopal_06_02.png" alt="알짜왕_게스트 남자(의사)">
-                            <img class="img_03" src="../images/rnd/nopal/nopal_06_03.png" alt="알짜왕_게스트 남자">
-                            <img class="img_04" src="../images/rnd/nopal/nopal_06_04.png" alt="알짜왕_자막(식이섬유)">
-                        </figure>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </article>
-
-
-        <article class="content content_08" data-aos="fade-up">
-            <div class="sub_content_wrap">
-                <div class="left_content">
-                    <p class="text_wrap">
-                        <span class="text_bar"></span>
-                        <span class="text_title">
-                            노팔의 영양성분 및
-                            <br class="pc_only">
-                            성분비교
-                        </span>
-                    </p>
-                </div>
-
-                <div class="right_content">
-
-                    <div class="img_wrap wrap_01">
-                        <figure>
-                            <img class="img_01" src="../images/rnd/nopal/nopal_07_01.png" alt="식이섬유 그래프">
-                            <figcaption>식이섬유</figcaption>
-                        </figure>
-                        <figure>
-                            <img class="img_01" src="../images/rnd/nopal/nopal_07_02.png" alt="플라보노이드 그래프">
-                            <figcaption>플라보노이드</figcaption>
-                        </figure>
-                        <figure>
-                            <img class="img_01" src="../images/rnd/nopal/nopal_07_03.png" alt="칼슘 그래프">
-                            <figcaption>칼슘</figcaption>
-                        </figure>
-                        <figure>
-                            <img class="img_01" src="../images/rnd/nopal/nopal_07_04.png" alt="비타민C 그래프">
-                            <figcaption>비타민 C</figcaption>
-                        </figure>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </article>
-
-
-        <article class="content content_09" data-aos="fade-up">
-            <div class="sub_content_wrap">
-                <div class="left_content">
-                    <p class="text_wrap">
-                        <span class="text_bar"></span>
-                        <span class="text_title">
-                            숫자로 보는 노팔의 특징
-                        </span>
-                    </p>
-                </div>
-
-                <div class="right_content">
-
-
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">노팔의 8가지 효능</span>
-                    </p>
-
-                    <div class="img_wrap wrap_01">
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_08_01.png" alt="적/백혈구 픽토그램">
-                            <figcaption>신체&nbsp;면역&nbsp;기능&nbsp;강화</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_08_02.png" alt="손위에 하트">
-                            <figcaption>정력&nbsp;강화</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_08_03.png" alt="항산화, 항노화">
-                            <figcaption>항산화,&nbsp;항노화</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_08_04.png" alt="변비 예방">
-                            <figcaption>변비&nbsp;예방</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_08_05.png" alt="대장암 예방">
-                            <figcaption>대장암&nbsp;예방</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_08_06.png" alt="성인병 위험 감소">
-                            <figcaption>성인병&nbsp;위험&nbsp;감소</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_08_07.png" alt="다이어트 효과">
-                            <figcaption>다이어트&nbsp;효과</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="../images/rnd/nopal/nopal_08_08.png" alt="피부 미용">
-                            <figcaption>피부&nbsp;미용</figcaption>
-                        </figure>
                     </div>
                 </div>
-            </div>
-        </article>
-    </section>
+            </article>
 
-    <section class="sub_section_02">
-        <article class="content content_01">
-            <div class="sub_content_wrap">
-                <div class="left_content"></div>
-                <div class="right_content">
+        </section>
 
-                    <p class="text_wrap wrap_01">
-                        <span class="text_01">
-                            숫자로 살펴보는 노팔의 특성
-                        </span>
-                    </p>
+        <section class="sub_page_layout sub_section_03">
 
-                    <div class="text_wrap wrap_02">
+            <article class="content content_01">
 
-                        <div class="text_01_wrap">
-                            <p class="text_01">
-                                HEAVEN’S&nbsp;PRESENT,
-                                NOPAL
-                            </p>
+                <div class="sub_content_wrap">
+                    <div class="left_content">
+                        <p class="text_wrap">
+                            <span class="text_bar"></span>
+                            <span class="text_title new_font_02">
+                                언론으로 본 노팔의 효능
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="right_content">
+
+                        <p class="new_text_wrap wrap_01">
+                            <span class="new_font_02 text_01">
+                                <i><img src="../images/rnd_02/nopal/img_05_01.png" alt="한국경제로고"></i>
+                                항산화 효과 뛰어난 알칼리성 식물 [노팔 선인장]을 아세요?
+                            </span>
+                            <span class="new_font_03 text_02">
+                                미국 남부 및 멕시코 인근 사막지역에 자생하는 노팔 선인장(Nopal Cactus · 학명 Opuntia Ficus Indica)의 우수한 항산화 효과가 건강식품
+                                업계에서 주목받고 있다. 채수규 을지대 식품과학부 교수는 심포지엄에서 기존 연구논문을 인용해 노팔 선인장은 항산화기능을 가진 파이토케
+                                미컬의 함량이 높아 잘못된 식생활,운동 부족,스트레스,흡연과 음주,환경 오염 등으로 산화된 인체의 회복에 유익하고 성인병 예방,비만 억제,
+                                혈당 개선에 도움이 된다며 특히 이소함네틴 성분은 몸에 해로운 저밀도지단백(LDL) 결합 콜레스테롤 감소에 매우 효과적인 성분이라고 설명
+                                했다.
+                            </span>
+                        </p>
+
+
+                        <p class="new_text_wrap wrap_01">
+                            <span class="new_font_02 text_01">
+                                <i><img src="../images/rnd_02/nopal/img_05_02.png" alt="디지털타임스"></i>
+                                바디라인의 핵심은 뱃살! 자연에서 찾은 노팔이 그 핵심!
+                            </span>
+                            <span class="new_font_03 text_02">
+                                최근 뱃살이 많아 일명 D 라인이라 불리는 몸을 가진 사람들이 큰 폭의 증가 추세를 보이고 있다. 집중적인 운동, 식이요법 등 다양한 방법을 통
+                                해 뱃살을 빼려 하지만 쉽지 않고 영양결핍, 골다공증, 위장장애 등 부작용에 대한 우려가 있다. 이에 전문가들은 영양제, 기능식품 등의 약을 통
+                                한 방법도 있겠지만, 자연식품에서 영양분 섭취하기를 권장하고 있다. 최근 주목받고 있는 자연식품은 바로 '노팔' 선인장이다. 보검 선인장이
+                                라고도 하는 노팔 선인장은 손바닥 선인장으로 익히 알려져 있다. 노팔이 함유하고 있는 여러 영양성분 중에서도 식이섬유는 불용성, 수용성 식
+                                이섬유 모두 함유하고 있어 변비로 배변에 어려움을 겪는 이들에게 편하고 상쾌한 배변을 하는데 도움을 준다.
+                            </span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="content content_02">
+                <div class="sub_content_wrap">
+                    <div class="left_content">
+                        <p class="text_wrap">
+                            <span class="text_bar"></span>
+                            <span class="text_title new_font_02">
+                                방송으로 본 노팔의 효능
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="right_content">
+                        <p class="new_text_wrap wrap_01">
+                            <span class="text_01 new_font_02">
+                                JTBC &lt;알짜왕&gt; - 노팔의 효능 편
+                            </span>
+                        </p>
+
+                        <div class="img_wrap wrap_01">
+                            <figure>
+                                <img class="img_01" src="../images/rnd/nopal/nopal_06_01.png" alt="알짜왕 배너">
+                                <img class="img_02" src="../images/rnd/nopal/nopal_06_02.png" alt="알짜왕_게스트 남자(의사)">
+                                <img class="img_03" src="../images/rnd/nopal/nopal_06_03.png" alt="알짜왕_게스트 남자">
+                                <img class="img_04" src="../images/rnd/nopal/nopal_06_04.png" alt="알짜왕_자막(식이섬유)">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content content_03" data-aos="fade-up">
+                <div class="sub_content_wrap">
+                    <div class="left_content">
+                        <p class="text_wrap">
+                            <span class="text_bar"></span>
+                            <span class="text_title new_font_02">
+                                노팔의 영양성분 및
+                                <br class="pc_only">
+                                성분비교
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="right_content">
+
+                        <div class="img_wrap wrap_01">
+                            <figure>
+                                <img class="img_01" src="../images/rnd/nopal/nopal_07_01.png" alt="식이섬유 그래프">
+                                <figcaption>식이섬유</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="img_01" src="../images/rnd/nopal/nopal_07_02.png" alt="플라보노이드 그래프">
+                                <figcaption>플라보노이드</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="img_01" src="../images/rnd/nopal/nopal_07_03.png" alt="칼슘 그래프">
+                                <figcaption>칼슘</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="img_01" src="../images/rnd/nopal/nopal_07_04.png" alt="비타민C 그래프">
+                                <figcaption>비타민 C</figcaption>
+                            </figure>
                         </div>
 
-                        <div class="text_02_wrap">
-                            <ul class="nopal_list_wrap">
 
-                                <li class="nopal_list">
-                                    <p>
-                                        <span class="title">
-                                            콜레스테롤 수치를
-                                            <br class="pc_only">
-                                            34% 줄여주는 천연식물소재
-                                        </span>
-                                        <strong class="num" id="counting_01">34</strong>
-                                    </p>
-                                </li>
 
-                                <li class="nopal_list">
-                                    <p>
-                                        <span class="title">
-                                            식이섬유 함량이
-                                            <br class="pc_only">
-                                            과일보다 20배 더!
-                                        </span>
-                                        <strong class="num" id="counting_02">20</strong>
-                                    </p>
-                                </li>
+                    </div>
+                </div>
+            </article>
 
-                                <li class="nopal_list">
-                                    <p>
-                                        <span class="title">
-                                            <br>
-                                            칼슘이 멸치의 9배
-                                        </span>
-                                        <strong class="num" id="counting_03">9</strong>
-                                    </p>
-                                </li>
 
-                                <li class="nopal_list">
-                                    <p>
-                                        <span class="title">
-                                            피부를 팔팔하게!
-                                            <br class="pc_only">
-                                            비타민 C가 알로에의 8배
-                                        </span>
-                                        <strong class="num" id="counting_04">8</strong>
-                                    </p>
-                                </li>
 
-                                <li class="nopal_list">
-                                    <p>
-                                        <span class="title">
-                                            플라보노이드의 보고
-                                            <br class="pc_only">
-                                            칡 뿌리보다도 2배 더!
-                                        </span>
-                                        <strong class="num" id="counting_05">2</strong>
-                                    </p>
-                                </li>
-                            </ul>
+        </section>
+
+        <section class="sub_section_04">
+            <article class="content content_01" data-aos="fade-up">
+                <div class="sub_content_wrap">
+
+                    <div class="left_content">
+                        <p class="text_wrap">
+                            <span class="text_bar"></span>
+                            <span class="text_title new_font_02">
+                                노팔의 8가지 효능
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="full_content">
+                        <div class="swiper_wrap">
+                            <div class="swiper-container efficacy">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="../images/rnd_02/nopal/img_04_01.png" alt="">
+                                        <p class="new_font_03">신체 면역 기능 강화 </p>
+                                    </div>
+                                    <div class="swiper-slide"><img src="../images/rnd_02/nopal/img_04_02.png" alt="">
+                                        <p class="new_font_03">정력 강화</p>
+                                    </div>
+                                    <div class="swiper-slide"><img src="../images/rnd_02/nopal/img_04_03.png" alt="">
+                                        <p class="new_font_03">항산화, 항노화</p>
+                                    </div>
+                                    <div class="swiper-slide"><img src="../images/rnd_02/nopal/img_04_04.png" alt="">
+                                        <p class="new_font_03">변비 예방</p>
+                                    </div>
+                                    <div class="swiper-slide"><img src="../images/rnd_02/nopal/img_04_05.png" alt="">
+                                        <p class="new_font_03">대장암 예방</p>
+                                    </div>
+                                    <div class="swiper-slide"><img src="../images/rnd_02/nopal/img_04_06.png" alt="">
+                                        <p class="new_font_03">성인병 위험 감소</p>
+                                    </div>
+                                    <div class="swiper-slide"><img src="../images/rnd_02/nopal/img_04_07.png" alt="">
+                                        <p class="new_font_03">다이어트 효과</p>
+                                    </div>
+                                    <div class="swiper-slide"><img src="../images/rnd_02/nopal/img_04_08.png" alt="">
+                                        <p class="new_font_03">피부 미용</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+        </section>
+
+        <section class="sub_section_05">
+            <article class="content content_01">
+                <div class="sub_content_wrap">
+                    <div class="left_content"></div>
+                    <div class="right_content">
+
+                        <p class="text_wrap wrap_01">
+                            <span class="text_01">
+                                숫자로 살펴보는 노팔의 특성
+                            </span>
+                        </p>
+
+                        <div class="text_wrap wrap_02">
+
+                            <div class="text_01_wrap">
+                                <p class="text_01">
+                                    HEAVEN’S&nbsp;PRESENT,
+                                    NOPAL
+                                </p>
+                            </div>
+
+                            <div class="text_02_wrap">
+                                <ul class="nopal_list_wrap">
+
+                                    <li class="nopal_list">
+                                        <p>
+                                            <span class="title">
+                                                콜레스테롤 수치를
+                                                <br class="pc_only">
+                                                34% 줄여주는 천연식물소재
+                                            </span>
+                                            <strong class="num" id="counting_01">34</strong>
+                                        </p>
+                                    </li>
+
+                                    <li class="nopal_list">
+                                        <p>
+                                            <span class="title">
+                                                식이섬유 함량이
+                                                <br class="pc_only">
+                                                과일보다 20배 더!
+                                            </span>
+                                            <strong class="num" id="counting_02">20</strong>
+                                        </p>
+                                    </li>
+
+                                    <li class="nopal_list">
+                                        <p>
+                                            <span class="title">
+                                                <br>
+                                                칼슘이 멸치의 9배
+                                            </span>
+                                            <strong class="num" id="counting_03">9</strong>
+                                        </p>
+                                    </li>
+
+                                    <li class="nopal_list">
+                                        <p>
+                                            <span class="title">
+                                                피부를 팔팔하게!
+                                                <br class="pc_only">
+                                                비타민 C가 알로에의 8배
+                                            </span>
+                                            <strong class="num" id="counting_04">8</strong>
+                                        </p>
+                                    </li>
+
+                                    <li class="nopal_list">
+                                        <p>
+                                            <span class="title">
+                                                플라보노이드의 보고
+                                                <br class="pc_only">
+                                                칡 뿌리보다도 2배 더!
+                                            </span>
+                                            <strong class="num" id="counting_05">2</strong>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
 
                     </div>
-
                 </div>
+            </article>
+        </section>
+
+
+    </main>
+
+
+    <script>
+        $(function() {
+
+            gsap.registerPlugin(ScrollTrigger);
+            var startCount = {
+                var: 0
+            };
+
+            gsap.to(startCount, {
+                var: 34,
+                duration: 1.5,
+                onUpdate: changeNumber01,
+                scrollTrigger: {
+                    trigger: "#counting_01",
+                },
+            });
+
+            gsap.to(startCount, {
+                var: 20,
+                duration: 1.5,
+                onUpdate: changeNumber02,
+                scrollTrigger: {
+                    trigger: "#counting_02",
+                },
+            });
+
+            gsap.to(startCount, {
+                var: 9,
+                duration: 1.5,
+                onUpdate: changeNumber03,
+                scrollTrigger: {
+                    trigger: "#counting_03",
+                },
+            });
+
+            gsap.to(startCount, {
+                var: 8,
+                duration: 1.5,
+                onUpdate: changeNumber04,
+                scrollTrigger: {
+                    trigger: "#counting_04",
+                },
+            });
+
+            gsap.to(startCount, {
+                var: 2,
+                duration: 1.5,
+                onUpdate: changeNumber05,
+                scrollTrigger: {
+                    trigger: "#counting_05",
+                },
+            });
+
+
+            function changeNumber01() {
+                counting_01.innerHTML = (startCount.var).toFixed();
+            }
+
+            function changeNumber02() {
+                counting_02.innerHTML = (startCount.var).toFixed();
+            }
+
+            function changeNumber03() {
+                counting_03.innerHTML = (startCount.var).toFixed();
+            }
+
+
+            function changeNumber04() {
+                counting_04.innerHTML = (startCount.var).toFixed();
+            }
+
+            function changeNumber05() {
+                counting_05.innerHTML = (startCount.var).toFixed();
+            }
+
+
+            var effiswiper = new Swiper('.swiper-container.efficacy', {
+                slidesPerView: 5.2,
+                // centeredSlides: true,
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                },
+                spaceBetween: 20,
+                touchMoveStopPropagation: true,
+
+                navigation: {
+                    nextEl: '.swiper_next_02',
+                    prevEl: '.swiper_prev_02',
+                },
+                breakpoints: {
+                    "1700": {
+                        slidesPerView: 4,
+                        spaceBetween: 10,
+                    },
+                    "1500": {
+                        slidesPerView: 3,
+                    },
+                    "1200": {
+                        slidesPerView: 2,
+                    }
+                },
+            });
+
+
+        });
+    </script>
+
+
+
+
+
+    <footer id="footer">
+        <div class="footer_wrap">
+            <div class="content_02">
+                <a href="../main/index.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 85 40" style="enable-background:new 0 0 85 40;" xml:space="preserve">
+                        <g>
+                            <path class="st0" d="M17.49,29.81h0.94c0.17,0,0.32-0.14,0.32-0.32V18.47c0-0.17-0.14-0.32-0.32-0.32h-0.94c-0.17,0-0.32,0.14-0.32,0.32v11.02C17.18,29.67,17.32,29.81,17.49,29.81z" />
+                            <path class="st0" d="M31.19,5.41c-3.21,0-5.82,2.61-5.82,5.82c0,3.21,2.61,5.82,5.82,5.82c3.21,0,5.82-2.61,5.82-5.82C37.01,8.02,34.4,5.41,31.19,5.41z M31.19,15.48c-2.34,0-4.25-1.91-4.25-4.25s1.91-4.25,4.25-4.25c2.34,0,4.25,1.91,4.25,4.25S33.53,15.48,31.19,15.48z" />
+                            <path class="st0" d="M59.05,11.23c0-3.21-2.61-5.82-5.82-5.82c-3.21,0-5.82,2.61-5.82,5.82c0,3.21,2.61,5.82,5.82,5.82C56.44,17.06,59.05,14.44,59.05,11.23z M48.98,11.23c0-2.34,1.91-4.25,4.25-4.25c2.34,0,4.25,1.91,4.25,4.25s-1.91,4.25-4.25,4.25C50.88,15.48,48.98,13.58,48.98,11.23z" />
+                            <path class="st0" d="M42.21,11.39c2.86,0,5.2-2.33,5.2-5.2c0-2.86-2.33-5.19-5.2-5.19c-2.86,0-5.19,2.33-5.19,5.19C37.01,9.06,39.34,11.39,42.21,11.39z M42.21,2.57c2,0,3.62,1.62,3.62,3.62c0,2-1.62,3.62-3.62,3.62c-2,0-3.62-1.62-3.62-3.62C38.59,4.2,40.21,2.57,42.21,2.57z" />
+                            <path class="st0" d="M27.73,17.53c-3.56,0-6.45,2.9-6.45,6.45c0,3.56,2.9,6.45,6.45,6.45c3.56,0,6.45-2.9,6.45-6.45C34.18,20.42,31.28,17.53,27.73,17.53z M27.73,28.86c-2.69,0-4.88-2.19-4.88-4.88c0-2.69,2.19-4.88,4.88-4.88c2.69,0,4.88,2.19,4.88,4.88C32.61,26.67,30.42,28.86,27.73,28.86z" />
+                            <path class="st0" d="M56.69,17.53c-3.56,0-6.45,2.9-6.45,6.45c0,3.56,2.9,6.45,6.45,6.45c3.56,0,6.45-2.9,6.45-6.45C63.15,20.42,60.25,17.53,56.69,17.53z M56.69,28.86c-2.69,0-4.88-2.19-4.88-4.88c0-2.69,2.19-4.88,4.88-4.88c2.69,0,4.88,2.19,4.88,4.88C61.57,26.67,59.38,28.86,56.69,28.86z" />
+                            <path class="st0" d="M13.48,23.26c0.55-0.56,0.87-1.32,0.87-2.11c0-1.65-1.34-2.99-2.99-2.99l-7.08,0c-0.17,0-0.31,0.14-0.31,0.31v11.02c0,0.17,0.14,0.31,0.31,0.31h7.04c1.74,0,3.27-1.21,3.6-2.92C15.18,25.47,14.61,24.07,13.48,23.26z M5.53,19.73h5.8c0.65,0,1.24,0.43,1.39,1.06c0.23,0.93-0.48,1.77-1.37,1.77H5.53V19.73z M11.32,28.23h-5.8v-4.09h5.82c1.27,0,2.27,1.16,2,2.47C13.17,27.57,12.3,28.23,11.32,28.23z" />
+                            <path class="st0" d="M78.67,18.32l-5.61,9.71l-5.61-9.71c-0.06-0.1-0.16-0.16-0.27-0.16h-1.2c-0.17,0-0.32,0.14-0.32,0.32v11.02c0,0.17,0.14,0.31,0.31,0.31h0.95c0.17,0,0.31-0.14,0.31-0.31v-8.41l4.95,8.57c0.06,0.1,0.16,0.16,0.27,0.16h1.21c0.11,0,0.22-0.06,0.27-0.16l4.95-8.57v8.41c0,0.17,0.14,0.32,0.32,0.32h0.94c0.17,0,0.32-0.14,0.32-0.32V18.47c0-0.17-0.14-0.32-0.32-0.32h-1.2C78.83,18.16,78.73,18.22,78.67,18.32z" />
+                            <g>
+                                <path class="st0" d="M35.57,32.8h-0.5c-0.03,0-0.06,0.03-0.06,0.06v5.86c0,0.03,0.03,0.06,0.06,0.06h0.5c0.03,0,0.06-0.03,0.06-0.06V35h0.8c0.03,0,0.06-0.03,0.06-0.06v-0.51c0-0.03-0.03-0.06-0.06-0.06h-0.8v-1.51C35.64,32.83,35.61,32.8,35.57,32.8z" />
+                                <path class="st0" d="M41.52,38.78h0.5c0.04,0,0.06-0.03,0.06-0.06v-5.86c0-0.03-0.03-0.06-0.06-0.06h-0.5c-0.03,0-0.06,0.03-0.06,0.06v5.86C41.46,38.75,41.49,38.78,41.52,38.78z" />
+                                <path class="st0" d="M33.75,34.06h-1.89v-1.2c0-0.04-0.03-0.06-0.06-0.06h-0.5c-0.04,0-0.06,0.03-0.06,0.06v3.65c0,0.03,0.03,0.06,0.06,0.06h3.03c0.03,0,0.06-0.03,0.06-0.06v-3.65c0-0.03-0.03-0.06-0.06-0.06h-0.51c-0.03,0-0.06,0.03-0.06,0.06V34.06z M33.75,34.69v1.26h-1.89v-1.26H33.75z" />
+                                <path class="st0" d="M49.32,38.78h3.65c0.03,0,0.06-0.03,0.06-0.06v-1.76c0-0.04-0.03-0.06-0.06-0.06h-3.65c-0.03,0-0.06,0.03-0.06,0.06v1.76C49.25,38.75,49.28,38.78,49.32,38.78z M52.4,38.15h-2.52v-0.63h2.52V38.15z" />
+                                <path class="st0" d="M51.46,35.78v-0.46h1.51c0.04,0,0.06-0.03,0.06-0.06v-2.39c0-0.03-0.03-0.06-0.06-0.06h-0.5c-0.03,0-0.06,0.03-0.06,0.06v0.57h-2.52v-0.57c0-0.03-0.03-0.06-0.06-0.06h-0.5c-0.03,0-0.06,0.03-0.06,0.06v2.39c0,0.04,0.03,0.06,0.06,0.06h1.51v0.46h-2.3c-0.03,0-0.06,0.03-0.06,0.06v0.51c0,0.03,0.03,0.06,0.06,0.06h5.23c0.04,0,0.06-0.03,0.06-0.06v-0.5c0-0.04-0.03-0.06-0.06-0.06H51.46z M52.4,34.06v0.63h-2.52v-0.63H52.4z" />
+                                <path class="st0" d="M45.71,36.63c1-0.16,1.75-1.08,1.64-2.15c-0.09-0.91-0.82-1.65-1.73-1.75c-1.19-0.13-2.19,0.79-2.19,1.96c0,0.98,0.72,1.79,1.65,1.94v0.89h-2.3c-0.04,0-0.06,0.03-0.06,0.06v0.5c0,0.03,0.03,0.06,0.06,0.06h5.23c0.03,0,0.06-0.03,0.06-0.06v-0.5c0-0.04-0.03-0.06-0.06-0.06h-2.3V36.63z M44.06,34.69c0-0.74,0.6-1.34,1.34-1.34c0.74,0,1.34,0.6,1.34,1.34c0,0.74-0.6,1.34-1.34,1.34C44.66,36.03,44.06,35.43,44.06,34.69z" />
+                                <path class="st0" d="M38.94,32.72c-1.09,0-1.97,0.88-1.97,1.97c0,1.09,0.88,1.97,1.97,1.97c1.09,0,1.97-0.88,1.97-1.97C40.91,33.6,40.03,32.72,38.94,32.72z M38.94,36.03c-0.74,0-1.34-0.6-1.34-1.34c0-0.74,0.6-1.34,1.34-1.34c0.74,0,1.34,0.6,1.34,1.34C40.28,35.43,39.68,36.03,38.94,36.03z" />
+                            </g>
+                            <path class="st0" d="M46.54,23.26C46.54,23.26,46.54,23.26,46.54,23.26c0.55-0.56,0.86-1.32,0.86-2.11c0-1.65-1.34-2.99-2.99-2.99l-7.08,0c-0.17,0-0.32,0.14-0.32,0.32v11.01c0,0.18,0.14,0.32,0.32,0.32h7.01c1.97,0,3.64-1.55,3.69-3.53C48.06,25.08,47.5,23.96,46.54,23.26z M38.59,19.73h5.78c0.76,0,1.42,0.59,1.46,1.35c0.04,0.81-0.61,1.48-1.42,1.48h-5.82c0,0,0,0,0,0L38.59,19.73C38.59,19.74,38.59,19.73,38.59,19.73z M44.36,28.23h-5.77c0,0,0,0,0,0v-4.08c0,0,0,0,0,0h5.82c1.15,0,2.09,0.96,2.04,2.12C46.42,27.37,45.47,28.23,44.36,28.23z" />
+                        </g>
+                    </svg>
+                </a>
             </div>
-        </article>
-    </section> -->
+
+            <div class="content_01">
+                <ul class="link_wrap">
+                    <li class="footer_link"><a href="#none">기업소개</a></li>
+                    <li class="footer_link"><a href="#none">연구개발</a></li>
+                    <li class="footer_link"><a href="#none">오시는길</a></li>
+                    <li class="footer_link"><a href="#none">고객지원</a></li>
+                </ul>
+                <ul class="info_wrap">
+                    <li class="footer_info direction">
+                        <a href="http://naver.me/x7cocJtm" target="_blank">
+                            (우) 12801 경기도 광주시 곤지암읍 광여로 63 2층 주식회사 바이오봄
+                        </a>
+                    </li>
+                    <li class="footer_info">
+                        <a href="tel:010-2191-6500">T.010-2191-6500</a>
+                        <a href="tel:031-769-1007">T.031-769-1007</a>
+                        <a href="tel:031-769-1057">F.031-769-1057</a>
+                        <a href="mailto:haeun3450@daum.net">E.haeun3450@daum.net</a>
+                    </li>
+                </ul>
+            </div>
 
 
-
-</main>
-
-
-<script>
-    $(function() {
-
-        gsap.registerPlugin(ScrollTrigger);
-        var startCount = {
-            var: 0
-        };
-
-        gsap.to(startCount, {
-            var: 34,
-            duration: 1.5,
-            onUpdate: changeNumber01,
-            scrollTrigger: {
-                trigger: "#counting_01",
-            },
-        });
-
-        gsap.to(startCount, {
-            var: 20,
-            duration: 1.5,
-            onUpdate: changeNumber02,
-            scrollTrigger: {
-                trigger: "#counting_02",
-            },
-        });
-
-        gsap.to(startCount, {
-            var: 9,
-            duration: 1.5,
-            onUpdate: changeNumber03,
-            scrollTrigger: {
-                trigger: "#counting_03",
-            },
-        });
-
-        gsap.to(startCount, {
-            var: 8,
-            duration: 1.5,
-            onUpdate: changeNumber04,
-            scrollTrigger: {
-                trigger: "#counting_04",
-            },
-        });
-
-        gsap.to(startCount, {
-            var: 2,
-            duration: 1.5,
-            onUpdate: changeNumber05,
-            scrollTrigger: {
-                trigger: "#counting_05",
-            },
-        });
+        </div>
+    </footer>
 
 
-        function changeNumber01() {
-            counting_01.innerHTML = (startCount.var).toFixed();
-        }
+    <script src="../js/common.js"></script>
+</body>
 
-        function changeNumber02() {
-            counting_02.innerHTML = (startCount.var).toFixed();
-        }
-
-        function changeNumber03() {
-            counting_03.innerHTML = (startCount.var).toFixed();
-        }
-
-
-        function changeNumber04() {
-            counting_04.innerHTML = (startCount.var).toFixed();
-        }
-
-        function changeNumber05() {
-            counting_05.innerHTML = (startCount.var).toFixed();
-        }
-
-    });
-</script>
-
-
-
-
-
-
-
-<!-----------------------------header----------------------------->
-<?php include_once('../include/footer.html') ?>
-<!-- ---------------------------header--------------------------- -->
+</html>
