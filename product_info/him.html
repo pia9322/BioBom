@@ -1,0 +1,65 @@
+<!-----------------------------header----------------------------->
+<?php include_once('../include/header.html') ?>
+<!-- ---------------------------header--------------------------- -->
+
+
+
+
+<!-- ========================main======================== -->
+<main class="sub about product_info">
+    <section class="sub_section visual">
+
+        <figure class="visual_img">
+            <figcaption class="visual_title">
+                <span class="text_01">제품소개</span>
+                <span class="text_02">이 땅에 기쁨과 치료와 생명을 선사하는 바이오봄</span>
+            </figcaption>
+        </figure>
+    </section>
+
+
+    <section class="sub_page_layout sub_section_01">
+        <article class="content content_01" data-aos="fade-up">
+			<img src="./images/him.jpg" style="width:100%; height:auto; padding-bottom:85px;">
+        </article>
+    </section>
+</main>
+
+
+
+
+
+
+
+
+<!-- ========================main======================== -->
+
+<script>
+    $(function() {
+
+        function productChange() {
+            let product_navi = document.querySelectorAll('.product_navi li'),
+                product_list = document.querySelectorAll('.product_list');
+
+
+            for (let i = 0; i < product_navi.length; i++) {
+                const idx = $('.product_navi ul li').eq(i).index();
+
+                product_navi[i].addEventListener('click', function(e) {
+                    e.preventDefault();
+                    $('.product_navi ul li').removeClass('active');
+                    $(this).addClass('active');
+                    $('.product_list').removeClass('active');
+                    $('.product_list').eq(idx).addClass('active');
+                });
+            };
+        }
+
+    });
+</script>
+
+
+
+<!-----------------------------header----------------------------->
+<?php include_once('../include/footer.html') ?>
+<!-----------------------------header----------------------------->

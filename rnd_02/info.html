@@ -1,0 +1,95 @@
+<!-----------------------------header----------------------------->
+<?php include_once('../include/header.html') ?>
+<!-- ---------------------------header--------------------------- -->
+
+
+
+
+<!-- ========================main======================== -->
+<main class="sub rnd info">
+    <section class="sub_section visual">
+
+        <figure class="visual_img">
+            <figcaption class="visual_title">
+                <span class="text_01">연구개발</span>
+                <span class="text_02">생명을 살리는 전문인, 생명을 증진하는 연구인, 생명의 가치를 높이는 실행인</span>
+            </figcaption>
+        </figure>
+    </section>
+
+
+    <section class="about_page_bg"></section>
+
+    <section class="sub_page_layout sub_section_01">
+        <article class="content content_01" data-aos="fade-up">
+            <div class="sub_content_wrap">
+                <div class="left_content">
+                    <p class="text_wrap">
+                        <span class="text_bar"></span>
+                        <span class="text_title">
+                            연구소 소개
+                        </span>
+                    </p>
+                </div>
+
+                <div class="right_content">
+                    <p class="text_wrap wrap_01">
+                        <span class="text new_font_01">
+                            바이오봄의 연구소를 소개합니다.
+                        </span>
+                        <span class="text_01">
+                            바이오봄은 서울대학교 약학대학 고 신국현 교수(서울대 천연물 연구소 소장)를 본사의 연구소장으로 하여 신물질/신소재를 통한 천연물 신약
+                            개발을 위해 오랜 기간 연구해 왔습니다.
+                            <br>
+                            <br>
+                            바이오봄에는 현재 연구소장 이광휘 의사를 비롯한 여러 의사들과 서울대학교 약학대학을 위시한 대학교 교수 및 제약분야의 전문가들이 제품
+                            의 연구개발에 참여하고 있습니다.
+                            <br>
+                            <br>
+                            또한 휴온스네이처, 엠에스바이오텍 등 기업체와 제휴하여 신물질/신소재를 활용한 신약/건강기능식품/화장품/반려동물 용품들을 개발하고
+                            있습니다.
+                        </span>
+                    </p>
+
+                    <!-- 패스  -->
+                    <div class="img_wrap wrap_01">
+                        <figure>
+                            <img src="../images/health/art/art_05.png" alt="">
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+
+
+
+</main>
+
+
+<script>
+    $(function() {
+        let vsHei = $('.sub_section.visual').height(),
+            secHei = $('.sub_section_01').offset().top,
+            aboutBg = $('.about_page_bg');
+
+        aboutBg.css({
+            "top": vsHei,
+            "height": secHei,
+        });
+
+    });
+</script>
+
+
+
+
+
+
+
+<!-----------------------------header----------------------------->
+<?php include_once('../include/footer.html') ?>
+<!-- ---------------------------header--------------------------- -->

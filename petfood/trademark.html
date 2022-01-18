@@ -1,0 +1,107 @@
+<!-----------------------------header----------------------------->
+<?php include_once('../include/header.html') ?>
+<!-- ---------------------------header--------------------------- -->
+
+
+
+
+<!-- ========================main======================== -->
+<main class="sub petfood trademark">
+    <section class="sub_section visual">
+
+        <figure class="visual_img">
+            <figcaption class="visual_title">
+                <span class="text_01">펫푸드</span>
+                <span class="text_02">암, 당뇨, 고지혈증, 비만 등 난치병 환우들의 위한 문화, 예술 복합공간</span>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="sub_page_layout sub_section_01">
+
+        <article class="content content_01" data-aos="fade-up">
+            <div class="sub_content_wrap">
+                <div class="left_content">
+
+                    <p class="text_wrap">
+                        <span class="text_bar"></span>
+                        <span class="text_title">
+                            보유 상표권
+                        </span>
+                    </p>
+
+                </div>
+
+                <div class="right_content">
+
+                    <div class="appli_wrap">
+                        <!-- data.appli -->
+                    </div>
+
+
+                    <!-- script -->
+                    <script>
+                        $(function() {
+
+                            $.ajax({
+                                url: '../js/data.json',
+                                success: function(data) {
+
+                                    let type, imgSrc, text01, text02_link = '';
+
+                                    function dataFun(ty) {
+                                        tagList = '';
+                                        let i = 0;
+                                        for (idx in data) {
+                                            let tt = data.appli;
+
+                                            tt.forEach(function(value, key) {
+                                                if (value.type == ty) {
+
+                                                    imgSrc = value.imgSrc;
+                                                    text01 = value.text01;
+                                                    text02_link = value.text02_link;
+
+                                                    tagList = '<figure class="item"> <div class="img_wrap">'
+                                                    tagList += '<img src="../images/petfood/bio/apply_' + imgSrc + '.png" alt="' + imgSrc + '"></div>'
+                                                    tagList += '<figcaption class="text_wrap"> <span class="text_01">' + text01 + '</span>'
+                                                    tagList += '<span class="text_02">출원(국제등록)번호 ' + text02_link + '</span>'
+                                                    tagList += '<a class="text_03 point_border_01" href="https://doi.org/10.8080/' + text02_link + '" target="_blank">'
+                                                    tagList += '<span>자세히보기</span> <i><img src="../images/ico/arrow_right_01.png" alt=""></i> </a>'
+                                                    tagList += '</figcaption></figure>'
+                                                }
+                                                $('.appli_wrap').eq(i).append(tagList);
+                                            });
+                                            i++;
+                                        }
+                                    }
+                                    dataFun()
+                                }
+                            });
+                        });
+                    </script>
+                    <!-- script -->
+
+                </div>
+
+            </div>
+        </article>
+
+
+    </section>
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+<!-----------------------------header----------------------------->
+<?php include_once('../include/footer.html') ?>
+<!-- ---------------------------header--------------------------- -->

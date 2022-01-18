@@ -1,0 +1,100 @@
+{
+    "appli" : [
+        {"imgSrc": "01", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183009"},
+        {"imgSrc": "02", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183008"},
+        {"imgSrc": "03", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183007"},
+
+        {"imgSrc": "04", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183005"},
+        {"imgSrc": "05", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183006"},
+        {"imgSrc": "06", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200134158"},
+
+        {"imgSrc": "03", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183022"},
+        {"imgSrc": "03", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183012"},
+        {"imgSrc": "03", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183002"},
+
+        {"imgSrc": "05", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183021"},
+        {"imgSrc": "05", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183011"},
+        {"imgSrc": "05", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183001"},
+
+        {"imgSrc": "06", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200134170"},
+        {"imgSrc": "04", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183020"},
+        {"imgSrc": "04", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183010"},
+
+        {"imgSrc": "04", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183000"},
+        {"imgSrc": "01", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183029"},
+        {"imgSrc": "01", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183019"},
+
+        {"imgSrc": "06", "imgName_sub":"","text01": "바이오봄 BIOBOM", "text02_link": "4020200134169"},
+        {"imgSrc": "06", "imgName_sub":"","text01": "바이오봄 BIOBOM", "text02_link": "4020200134168"},
+        {"imgSrc": "02", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183028"},
+
+        {"imgSrc": "02", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183018"},
+        {"imgSrc": "04", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183025"},
+        {"imgSrc": "04", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183015"},
+
+        {"imgSrc": "01", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183024"},
+        {"imgSrc": "01", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183014"},
+        {"imgSrc": "01", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183004"},
+
+        {"imgSrc": "03", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183027"},
+        {"imgSrc": "03", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183017"},
+        {"imgSrc": "02", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183023"},
+
+        {"imgSrc": "02", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183013"},
+        {"imgSrc": "05", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183003"},
+        {"imgSrc": "05", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183026"},
+
+        {"imgSrc": "02", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200183016"},
+        {"imgSrc": "06", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200134166"},
+        {"imgSrc": "07", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020210004639"},
+
+        {"imgSrc": "21", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020210004637"},
+        {"imgSrc": "22", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200182995"},
+        {"imgSrc": "22", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200182996"},
+
+        {"imgSrc": "23", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200182999"},
+        {"imgSrc": "24", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200182998"},
+        {"imgSrc": "25", "imgName_sub":"","text01": "바이오봄", "text02_link": "4020200182997"},
+
+        {"imgSrc": "08", "imgName_sub":"","text01": "양이봄", "text02_link": "4020200134179"},
+        {"imgSrc": "09", "imgName_sub":"","text01": "양이펫", "text02_link": "4020210077919"},
+        {"imgSrc": "10", "imgName_sub":"","text01": "양이펫", "text02_link": "4020210077918"},
+
+        {"imgSrc": "11", "imgName_sub":"","text01": "B", "text02_link": "4020210223872"},
+        {"imgSrc": "11", "imgName_sub":"","text01": "B", "text02_link": "4020210223871"},
+        {"imgSrc": "11", "imgName_sub":"","text01": "B", "text02_link": "4020210223874"},
+
+        {"imgSrc": "11", "imgName_sub":"","text01": "B", "text02_link": "4020210223873"},
+        {"imgSrc": "11", "imgName_sub":"","text01": "B", "text02_link": "4020210223875"},
+        {"imgSrc": "11", "imgName_sub":"","text01": "B", "text02_link": "4020210223877"},
+
+        {"imgSrc": "11", "imgName_sub":"","text01": "B", "text02_link": "4020210223870"},
+        {"imgSrc": "11", "imgName_sub":"","text01": "B", "text02_link": "4020210223876"},
+        {"imgSrc": "12", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004652"},
+
+        {"imgSrc": "12", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004642"},
+        {"imgSrc": "13", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004651"},
+        {"imgSrc": "13", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004641"},
+
+        {"imgSrc": "14", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004650"},
+        {"imgSrc": "14", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004640"},
+        {"imgSrc": "15", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004649"},
+
+        {"imgSrc": "16", "imgName_sub":"","text01": "아지봄", "text02_link": "4020200134178"},
+        {"imgSrc": "17", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004648"},
+        {"imgSrc": "18", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004638"},
+
+        {"imgSrc": "14", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004645"},
+        {"imgSrc": "15", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004654"},
+        {"imgSrc": "15", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004644"},
+
+        {"imgSrc": "15", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004644"},
+        {"imgSrc": "12", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004647"},
+        {"imgSrc": "17", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004653"},
+        
+        {"imgSrc": "17", "imgName_sub":"","text01": "BIOBOM", "text02_link": "4020210004643"},
+        {"imgSrc": "13", "imgName_sub":"","text01": "BIOBOM", "text02_link": ""}
+    ]
+
+}   
+

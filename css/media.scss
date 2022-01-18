@@ -1,0 +1,3316 @@
+@mixin max-width-1180 {max-width: 1180px;margin: 0 auto;}
+@mixin max-width-880 {max-width: 880px;}
+@mixin max-width-280 {max-width: 280px;}
+
+@mixin layoutBoxColor {border: 2px solid #f00;}
+@mixin header-height {height: 100px;}
+
+@mixin margin-top-1920() {margin-top: 100px;}
+@mixin margin-bottom-1920() {margin-bottom: 100px;}
+
+@mixin margin-top-1100() {margin-top: 75px;}
+@mixin margin-bottom-1100() {margin-bottom: 75px;}
+
+
+
+@mixin header-height-1180 {
+    height: 60px;
+}
+
+@mixin absolute-left($left, $top) {
+    position: absolute;
+    left: $left; top: $top;
+    transform: translateX(-$left);
+}
+@mixin absolute-top($left, $top) {
+    position: absolute;
+    left: $left; top: $top;
+    transform: translateY(-$top);
+}
+@mixin absolute-center {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin visual-text {
+    width: 100%; height: 100%;
+    color: #fff;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    line-height: 1; letter-spacing: -0.6px;
+    font-weight: 500; text-transform: uppercase;
+}
+
+@mixin sub-menu-bar($height, $margin) {
+    content: '';
+    display: inline-block;
+    width: 1px; height: $height;
+    background: #7bcef1;
+    margin-left: $margin;
+}
+
+@mixin sub-page-title($fs) {
+    font-size: $fs;
+    letter-spacing: -0.4px;
+    color: #1e3c5a;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+
+// **********************************4K**********************************
+@media (min-width:2560px) {}
+
+
+// **********************************1100**********************************
+@media (max-width: 1180px) {
+
+    // ====================================global====================================
+    .view_more {
+
+        &::after {}
+
+        &:hover {
+            &::after {
+                height: 100%;
+            }
+        }
+    }
+
+    .table_wrap {
+        .table_header {
+            .table_company_select {
+                display: none;
+
+                .search_form {
+                    fieldset {
+                        legend {}
+
+                        .form_01_title {}
+
+                        .form_01_selectbox {
+                            select {}
+                        }
+                    }
+                }
+            }
+
+            .table_text_search {
+                margin-top: 3rem;
+                width: 100%;
+
+                .search_form {
+                    width: 100%;
+
+                    fieldset {
+                        width: 100%;
+
+                        .form_02_selectbox {
+                            display: flex;
+                            width: 100%;
+
+                            select {}
+
+                            input[type=text] {
+                                margin-left: 1.5rem;
+                                flex: 2;
+                            }
+
+                            input[type=submit] {
+                                margin-left: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .table_notice {
+
+            thead {
+                font-size: 16px;
+                tr {
+                    th {
+                        &:nth-of-type(1) {}
+
+                        &:nth-of-type(1) {}
+
+                        &:nth-of-type(2) {}
+
+                        &:nth-of-type(3) {}
+
+                        &:nth-of-type(4),
+                        &:nth-of-type(5) {}
+                    }
+
+                }
+            }
+
+            tbody {
+                font-size: 15px;
+
+                tr {
+                    td {
+                        &:nth-child(2) {
+                            span {}
+                        }
+
+                        &:nth-child(1) {}
+
+                        &:nth-child(3) {}
+                    }
+
+                    .notice_download {
+                        a {
+                            display: block;
+
+                            img {
+                                width: 15px;
+                            }
+                        }
+                    }
+                }
+
+                &.active {}
+            }
+
+
+
+
+        }
+
+        // table_news
+        .table_news {
+            .news_wrap {
+                > a {
+                    width: calc(50% - 10px);
+                    margin-right: 10px;
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                    .news_item {
+                        img {
+                        }
+                        figcaption {
+                            padding: 10px;
+                            > span {
+                            }
+                            .text_01 {
+                            }
+                            .text_02 {
+                                font-size: 14px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    // hover, active
+                    &:hover {
+                        .text_01 {
+                        }
+                    }
+                }
+            }
+        }
+
+        .table_notice_more {
+            >a {}
+        }
+    }
+
+    // left_title right_detail
+    .sub_content_wrap {
+        padding: 0 5%;
+        flex-direction: column;
+
+        .left_content {
+            max-width: 100%;
+            .text_wrap {
+                >span {}
+                .text_bar {}
+                .text_title {
+                    margin-top: 10px;
+                }
+            }
+
+        }
+
+        .right_content {
+            max-width: 100%;
+            margin-top: 20px;
+            .text_wrap {
+                &.wrap_02 {
+                    margin-top: 50px;
+                }
+                .text_01 {}
+                .text_02, .text_03 {}
+
+                .text_02 {
+                    margin-top: 10px
+                }
+
+            }
+
+        }
+    }
+    // left_title right_detail
+    // ====================================global====================================
+
+
+    // ==========================header==========================
+    #header {
+        @include header-height-1180;
+        &::after {
+            display: none;
+        }
+
+        &.active {}
+
+        a {}
+
+        .depth_01 {}
+
+        >.header_wrap {
+            padding: 0 2.5%;
+
+            // logo
+            .header_left {
+                a {
+                    width: 80px;
+                }
+            }
+
+            // center_menu
+            .header_center {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            // header_right 
+            .header_right {
+
+                // header_ham
+                .header_ham {
+                    width: 25px;
+                    &.active {
+                        span {}
+                    }
+
+                    span {
+                        &:nth-of-type(1) {}
+
+                        &:nth-of-type(2) {}
+
+                        &:nth-of-type(3) {}
+                    }
+                }
+
+
+                &.active {
+                    span:nth-of-type(1) {}
+
+                    span:nth-of-type(2) {}
+
+                    span:nth-of-type(3) {}
+                }
+            }
+
+
+            // full_header
+            .header_full {
+                &.active {}
+
+                .header_full_wrap {
+                    margin-top: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    a {
+                        &:hover {}
+                    }
+
+                    .header_full_list {
+                        .depth_01 {
+                            width: 100%;
+
+                            >a {
+                                padding-top: 15px;
+                            }
+
+                            &:nth-child(1) {
+                                >a {}
+                            }
+
+                            // depth_02
+                            .depth_02 {
+                            
+
+                                >li {
+                                    >a {
+                                        padding: 15px 0 0 15px;
+                                    }
+
+                                    // depth_03
+                                    .depth_03 {
+                                        >li {
+                                            >a {
+                                                padding: 15px 0 0 15px;
+
+                                                &:hover {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // hover, active 
+            &:hover {
+                background: transparent;
+
+                .header_center {
+                    .depth_01 {
+                        display: none;
+                    }
+                    .header_bg {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &.active {
+            // background: transparent;
+        }
+
+
+    }
+
+    // ==========================main==========================
+    main {
+
+        // ==========================main_index==========================
+        &.main_wrap {
+            .main_section {
+                
+                &:not(:first-child) {
+                }
+    
+                &.main_section_01 {
+                    .mv_wrap {
+                        
+                        .mv {
+                            .slide-bgimg {
+                            }
+                            &.mv_01 {
+                                .mv_img_01 {}
+                            }
+                            &.mv_02 {
+                                .mv_img_02 {}
+                            }
+                            &.mv_03 {
+                                .mv_img_03 {}
+                            }
+                            
+                            .mv_text {
+                                .text_warp {
+                                    &.wrap_02 {
+                                    }
+                                    span {
+                                    }
+                                    .text_02, .view_more {
+                                    }
+                                    .text_01 {
+                                        i {
+                                        }
+                                        strong {
+                                        }
+                                    }
+                                    .text_02 {
+                                        margin-top: 10px;
+                                    }
+                                    .view_more {
+                                        span {
+                                        }
+                                    }
+                                }
+                            
+                            }
+                        }
+                        .swiper-slide-active {
+                            .mv_text {
+                                .text_warp {
+                                }
+                             
+                            }
+                        }
+                    }
+                    .main_arrow_wrap {
+                        .swiper-button-next ,.swiper-button-prev {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        .swiper-button-prev {
+                            left: 5%;
+                            &::after {
+                            }
+                            &::before {
+                            }
+                        }
+                        .swiper-button-next {
+                            right: 5%;
+                            &::after{
+                                right: 50%;
+                            }
+                            &::before {
+                                right: 50%;
+                            }
+                        }
+                        
+                   
+                    }
+                
+                }
+            }
+        }
+    
+        // ==========================main_index==========================
+
+
+        // ==========================sub_page==========================
+        // sub_page default (main visual / sub menu bar)
+        &.sub {
+            &.product_info .visual {}
+            &.about .visual {}
+            &.product .visual {}
+            &.shop .visual {}
+            &.community .visual {}
+            &.contact .visual {}
+
+            .sub_section.visual {
+                height: 300px;
+
+                .visual_img {
+                    .visual_title {
+                        .text_01 {}
+                        .text_02 {
+                            font-size: 16px;
+                            margin-top: 15px;
+                            line-height: 1.5;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        // sub_page default (main visual / sub menu bar)
+
+
+            
+        // product_info.dang ============================================
+        &.product_info.dang {
+            > section:not(:first-child) {
+                margin-top: 80px;
+                padding: 0 5%;
+            }
+            .content_wrap {
+                flex-direction: column;
+                > div {
+                }
+                .item_01 {
+                    .text_wrap {
+                        > span {
+                        }
+                        .text_bar {
+                        }
+                        .text_title {
+                            margin-top: 10px;
+                        }
+                    }
+                    
+                }
+                .item_02 {
+                    max-width: 100%;
+                    .text_wrap {
+                        > span {
+                        }
+                        .text_01 {
+                        }
+                        .text_02, .text_03 {
+                            font-size: 15px;
+                        }
+                        .point_number {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+
+
+            .sub_section_01 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {}
+                    }
+                    &.content_02 {
+                        margin: 90px auto 150px;
+                        .content_wrap {
+                            .item_point {
+                                .img_01 {
+                                    position: relative;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .img_02 {
+                                    position: relative;
+                                    right: 75px;
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .item_point_text {
+                                    font-size: 8rem;
+                                }
+                            }
+                        }
+                    }
+                    &.content_03 {
+                    }
+                }
+
+            }       
+            .sub_section_02 {
+                .content {
+                    &.content_01 {
+                        padding-top: 80px;
+                    }
+                    &.content_02 {
+                        .content_wrap {
+                            .item_list_wrap {
+                                justify-content: center;
+                                max-width: 100%;
+                                margin-top: 50px;
+                                .item_list_01 {
+                                    margin-right: 10px;
+                                    width: calc(25% - 10px);
+                                    &.last {}
+                                    .content_item {
+                                        position: relative;
+                                        > img {
+                                            width: 100%
+                                        }
+                                        > figcaption {
+                                            > span {
+                                                &.text_01 {
+                                                }
+                                                &.text_02 { margin-top: 10px; }
+                                                &.text_02, &.text_03 {
+                                                    font-size: 15px;
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.content_03 {
+                        padding-bottom: 80px;
+                        .content_wrap {
+                            align-items: center;
+                            .item_list_wrap {
+                                justify-content: center;
+                                margin-top: 50px;
+                                .item_list_01 {
+                                    margin: 0 5px 20px 0;
+                                    width: calc(20% - 5px);
+                                    &:nth-child(5n) {
+                                        margin-right: 0;
+                                    }
+                                    .content_item {
+                                        > img {
+                                            width: 100%;
+                                        }
+                                        > figcaption {
+                                            > span {
+                                                &.text_01 {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .sub_section_03 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02.img_item {
+                                .img_item_list {
+                                    // flex-direction: column;
+                                    // 767에서 지우자
+                                    &:not(:first-child) {
+                                        margin-top: 80px;
+                                    }
+                                    &.column {
+                                    }
+                                    > .text_wrap {
+                                        .text_02 {
+                                            .detail {
+                                            }
+                                        }
+                                        .text_03 {
+                                            margin-top: 30px;
+                                            .point_dots {
+                                                &::marker {
+                                                }
+                                            }
+                                        }
+                                    }
+                                    > .img_wrap {
+                                        margin-left: 25px;
+                                        img{
+                                            &:nth-child(2) {
+                                                margin-top: 10px;
+                                            }
+                                        }
+                                    }
+                                    > .img_wrap_02 {
+                                        margin-top: 25px;
+                                        justify-content: center;
+                                        .img_list {
+                                            margin-left: 10px;
+                                            &:first-child {}
+                                            img {}
+                                            figcaption {
+                                                font-size: 15px;
+                                            }
+                                        }
+                                        .detail_text {
+                                            font-size: 15px;
+                                        }
+                                        .detail_table {
+                                            margin-top: 25px;
+                                            caption {
+                                                font-size: 15px; 
+                                                small {
+                                                }
+                                            }
+                                            tr {
+                                                th,td {
+                                                    padding: 5px 0;
+                                                    font-size: 15px;
+                                                }
+                                                th{
+                                                }
+                                                td{
+                                                    &.long {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    > .img_wrap_03 {
+                                        .img_list {
+                                            &.cross {
+                                                // 767에서 세로
+                                                left: 0;
+                                            }
+                                            &.cross_02 {
+                                                left: 0;
+                                            }
+                                            img {
+                                                width: 100%;
+                                            }
+                                            figcaption {
+                                                > span {
+                                                    &.text_01 {
+                                                    }
+                                                    &.text_02 {
+                                                        margin-top: 5px;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+
+                                    > .text_wrap_02 {
+                                        margin-top: 20px;
+                                        &.list_02 {
+                                            margin-top: 40px;
+                                        }
+                                        .content_box {
+                                            .text_wrap {
+                                                .text_01 {
+                                                    font-size: 15px;
+                                                }
+                                                .text_02 {
+                                                    margin-top: 10px;
+                                                }
+                                            }
+                                            .img_wrap {
+                                                display: none;
+                                                img {}
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .graph_item {
+                                    margin-top: 45px;
+                                    .graph_item_wrap {
+                                        .graph_item_list {
+                                            // 767에서 세로
+                                            &:nth-child(n+3) {
+                                                margin-top: 40px;
+                                            }
+                                            img {
+                                                width: 100%;
+                                            }
+                                            figcaption {
+                                                margin-top: 20px;
+                                                font-size:15px;
+                                            }
+                                        }
+                                    }
+                                    &.img_2 {
+                                        .graph_item_wrap {
+                                            .graph_item_list {
+                                                img {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .table_item{
+                                    margin-top: 30px;
+                                    overflow: scroll;
+                                    table {
+                                    width: 1000px;
+                                        tr {
+                                            th, td {
+                                                font-size: 15px;
+                                            }
+                                            th {
+                                            }
+                                            td {
+                                            }
+                                        }
+                                        thead {
+                                            tr {
+                                            }
+                                        }
+                                        tbody {
+                                            tr{
+                                                td {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+                }
+            }
+
+            // sub_section_04 
+            .sub_section_04 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02 {
+                                overflow: scroll;
+                                margin-top: 20px;
+                                .table_item {
+                                    table {
+                                        width: 1000px;
+                                        th, tr, td {
+                                            font-size: 15px;
+                                        }
+                                        thead {
+                                            tr {
+                                                background: #f1f1f1;
+                                                th {
+                                                    font-weight: normal;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.content_02 {
+                        .content_wrap {}
+                    }
+                }
+            }
+
+            // sub_section_05 
+            .sub_section_05 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02 {
+                                .check_point {
+                                    .check_point_wrap {
+                                        .check_box {
+                                            &:first-child {
+                                                margin-top: 20px;
+                                            }
+                                            .box_01 {
+                                                min-width: 100px; min-height: 100px;
+                                            }
+                                            .box_02 {
+                                                .text_01 {
+                                                    font-size: 16px;
+                                                    .point_color {
+                                                    }
+                                                }
+                                                .text_02 {
+                                                    font-size: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            // sub_section_06 
+            .sub_section_06 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02 {
+                                .text_wrap {
+                                    margin-top: 30px;
+                                    &:first-child {
+                                        margin-top: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.content_02 {
+                        .content_wrap {}
+                    }
+                }
+            }
+
+
+        }
+        // product_info.dang ============================================
+
+
+        
+            
+        // about ============================================
+        &.about {
+            .about_page_bg {
+            }
+            .sub_section_01 {
+                margin-top: 80px;
+                .right_content {
+                    .text_wrap {
+                        .text_01 {}
+                    }
+                }
+            }
+
+                
+            // about.philosophy    
+            &.philosophy {
+                .right_content {
+                    .text_wrap {
+                        &.wrap_01 {
+                            .text_01 {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+
+                    .img_wrap {
+                        margin-top: 50px;
+                        figure {
+                            &:first-child {
+                            }
+                            img {}
+                            figcaption { 
+                                
+                            }
+                        }
+                    }
+                }
+            }
+                
+            // about.cibi    
+            &.cibi {
+                .logo_img_wrap {
+                    margin-top: 40px;
+                    flex-direction: column;
+                    align-items: center;
+                    .logo_01 {
+                        width: 100%;
+                    }
+                    .logo_02 {
+                        max-width: 380px;
+                        width: 100%;
+                        margin: 20px 0 0 0;
+                    }
+                }
+            }
+
+                
+            // about.partner
+            &.partner {
+                .content {
+                    &.content_01 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .logo_img_wrap {
+                                    margin-top: 40px;
+                                    text-align: center;
+                                    img {
+                                        max-width: 100%;
+                                    }
+                                }
+                            }
+                            
+                        }  
+                    }
+                }
+            }
+
+        }
+        // about ============================================
+
+
+
+
+        // rnd ============================================
+        &.rnd {
+            .about_page_bg {
+            }
+            .sub_section_01 {
+                margin-top: 80px;
+            }
+
+                
+            // rnd.nopal 
+            &.nopal {
+                .sub_section_01 {
+                    .content {
+                        margin-top: 75px;
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    .img_wrap {
+                                        img {
+                                        }
+                                        &.wrap_01 {}
+                                        &.wrap_02 {
+                                            margin-top: 30px;
+                                            figure {
+                                                display: flex;
+                                                width: 100%;
+                                                img {
+                                                    margin-left: 10px; max-width: 100%;
+                                                    &:first-child {}
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+
+                                    .text_wrap {
+                                        margin-top: 30px;
+                                        &.wrap_01 {
+                                            .text_01 {}    
+                                        }
+                                        &.wrap_02 {
+                                            .text_01 {
+                                                font-size: 18px;
+                                            }
+                                            .text_02 {
+                                                .point_01 {}
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+
+                        &.content_02 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            margin-top: 20px;
+                                            padding-bottom: 15px;
+                                            &:first-child {}
+                                            span {}
+                                            .text_01 {}
+                                            .text_02 {
+                                                margin-top: 10px;
+                                                &:hover {}
+                                                .arrow_right {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        
+                        &.content_03 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            .text_01 {font-size: 18px;}
+                                        }
+                                        &.wrap_02 {
+                                            > li {
+                                                &::marker {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.content_04 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    .img_wrap {
+                                        &.wrap_01 {
+                                            margin-top: 20px;
+                                        }
+                                        &.wrap_02 {
+                                            margin-top: 50px;
+                                            > figure {
+                                                img {}
+                                                figcaption {
+                                                    > span {
+                                                        &.text_01 {
+                                                        }
+                                                        &.text_02 {
+                                                            margin-top: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .text_wrap { 
+                                        &.wrap_01, &.wrap_02 {
+                                            .text_01 { font-size: 18px;}
+                                        }
+                                        &.wrap_02 { margin-top: 25px; }
+                                    }
+                                }
+                            }
+                        }
+
+                        
+                        &.content_05 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            margin-top: 25px;
+                                            .text_01 {
+                                                font-size: 18px;
+                                            }
+                                        }
+                                    }
+                                    
+                                    .img_wrap {
+                                    }
+                                }
+                            }
+                        }
+
+
+                        &.content_06 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    
+                                    .text_wrap {
+                                        &.wrap_01, &.wrap_02 {
+                                            .text_01 {
+                                                font-size: 18px;
+                                            }
+                                        }
+                                        &.wrap_02 {
+                                            margin-top: 25px;
+                                        }
+                                    }
+                                    
+                                    .img_wrap {
+                                    }
+                                }
+                            }
+                        }
+
+                        
+                        &.content_07 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            .text_01 {
+                                                font-size: 18px;
+                                            }
+                                        }
+                                    }
+                                    
+                                    .img_wrap {
+                                        &.wrap_01 {
+                                            figure {
+                                                img {
+                                                    &.img_01 {
+                                                        margin-bottom: 10px;
+                                                    }
+                                                    &.img_02 {
+                                                        margin-left: 15px;
+                                                    }
+                                                    &.img_03 {}
+                                                    &.img_04 {
+                                                        margin-left: 15px;
+                                                        margin-top: 15px;
+                                                    }
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        
+                        &.content_08 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            .text_01 {
+                                            }
+                                        }
+                                    }
+
+                                    .img_wrap {
+                                        > figure {
+                                            width: 47%;
+                                            &:nth-child(n+3) { margin-top: 20px; }
+                                            img {}
+                                            figcaption { margin-top: 20px; }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        
+                        &.content_09 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            .text_01 {
+                                                font-size: 18px;
+                                            }
+                                        }
+                                    }
+                                    
+                                    .img_wrap {
+                                        margin-top: 20px;
+                                        &.wrap_01 {
+                                            > figure {
+                                                width: 30%;
+                                                margin: 0;
+                                                &:first-child, &:nth-child(6) {
+                                                    margin: 0;
+                                                }
+                                                img {}
+                                                figcaption {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .sub_section_02 {
+                    .content {
+                        &.content_01 {
+                            margin-top: 75px;
+                            .sub_content_wrap {
+                                padding: 0;
+                                .right_content {
+                                    padding: 30px 40px;
+                                    .text_wrap {
+                                        margin-top: 25px;
+                                        &.wrap_01 {
+                                            .text_01 {font-size: 18px; }
+                                        }
+                                        &.wrap_02 {
+                                            justify-content: space-between;
+                                            > div {
+                                            }
+                                            .text_01_wrap {
+                                                .text_01 {} 
+                                            }
+
+                                            .text_02_wrap {
+                                                margin-left: 50px;
+                                                .nopal_list_wrap {
+                                                    display: flex; flex-wrap: wrap;
+                                                    .nopal_list {
+                                                        margin: 0 0 50px 20px;
+                                                        &:first-child, &:nth-child(odd) {
+                                                            margin: 0 0 50px 0;
+                                                        }
+                                                        > p {
+                                                            width: 220px;
+                                                            .title {
+                                                                padding-bottom: 15px; margin-bottom: 20px;
+                                                            }
+                                                            .num {}
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }   
+            }
+
+            // rnd.hongsam
+            &.hongsam {
+                .sub_section_01 {
+                    .content {
+                        margin-top: 75px;
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    .img_wrap {
+                                        img {
+                                        }
+                                        &.wrap_01 {}
+                                        &.wrap_02 {
+                                            margin-top: 30px;
+                                            figure {
+                                                img {
+                                                    margin-left: 10px; max-width: 100%;
+                                                    &:first-child {}
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+
+                                    .text_wrap {
+                                        margin-top: 30px;
+                                        &.wrap_01 {
+                                            .text_01 {}    
+                                        }
+                                        &.wrap_02 {
+                                            .text_01 {
+                                                font-size: 18px;
+                                            }
+                                            .text_02 {
+                                                .point_01 {}
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+
+                        &.content_02 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            margin-top: 20px;
+                                            padding-bottom: 15px;
+                                            &:first-child {}
+                                            span {}
+                                            .text_01 {}
+                                            .text_02 {
+                                                margin-top: 10px;
+                                                &:hover {}
+                                                .arrow_right {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        
+                        &.content_03 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            .text_01 {font-size: 18px;}
+                                        }
+                                        &.wrap_02 {
+                                            > li {
+                                                &::marker {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.content_04 {
+                            .sub_content_wrap {
+                                .right_content {
+                                    .img_wrap {
+                                        &.wrap_01 {
+                                            margin-top: 20px;
+                                        }
+                                        &.wrap_02 {
+                                            > figure {
+                                                width: 50%;
+                                                img {}
+                                                figcaption {
+                                                    > span {
+                                                        &.text_01 {
+                                                        }
+                                                        &.text_02 {
+                                                            margin-top: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .text_wrap { 
+                                        &.wrap_01, &.wrap_02 {
+                                            .text_01 { font-size: 18px;}
+                                        }
+                                        &.wrap_02 { margin-top: 25px; }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        // rnd ============================================
+
+
+        // health ============================================
+        &.health {
+            .sub_section_01 {
+                margin-top: 80px;
+            }
+                
+            // health.art
+            &.art {
+                .sub_section_01 {
+                    .content {
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .left_content {}
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            margin-bottom: 30px;
+                                        }
+                                        &.wrap_02 {
+                                            margin-bottom: 30px;
+                                            .text_01 {
+                                                margin-bottom: 15px;
+                                                font-size: 18px;
+                                            }
+                                            .text_02 {}
+                                        }
+                                    } 
+                                    .img_wrap {
+                                        &.wrap_01 {
+                                            justify-content: space-around;
+                                            margin-bottom: 30px;
+                                            > img {
+                                                &:first-child {
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // health ============================================
+
+
+            
+        // petfood ============================================
+        &.petfood {
+            .about_page_bg {}
+            .sub_section_01 {
+                margin-top: 80px;
+            }
+            
+        
+
+            // petfood.bio
+            &.bio {
+                .sub_section_01 {
+                    .content {
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .left_content {}
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            .text_01 {}
+                                            .text_02 {}
+                                        }
+                                        &.wrap_02 {
+                                            .text_01 {}
+                                            .text_02 {}
+                                        }
+                                    }
+
+                                    .img_wrap {
+                                        &.wrap_01 {}
+                                        &.wrap_02 {}
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.cultural {
+                .sub_section_01 {
+                    .content {
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .left_content {}
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            .text_01 {
+                                                font-size: 18px;
+                                                .font_normal {}
+                                            }
+                                            .text_02 {}
+                                        }
+                                        &.wrap_02 {
+                                            .text_01 {}
+                                            .text_02 {}
+                                        }
+                                    }
+
+                                    .img_wrap {
+                                        &.wrap_01 {}
+                                        &.wrap_02 {}
+                                    }
+
+                                    .product_table_wrap {
+                                        margin: 15px 0 75px;
+                                        flex-direction: column; justify-content: center;
+                                        .table_wrap {
+                                            order: 2;
+                                            table {
+                                                max-width: 100%;
+                                                tr, th, td {
+                                                    i.font_500 {}
+                                                }
+                                                .top_start {}
+                                                thead {}
+                                                tbody {}
+                                            }
+                                        }
+                                        .img_wrap {
+                                            text-align: center;
+                                            img {}
+                                        }
+                                    }
+
+                                    .product_info_wrap {
+                                        .product_info {
+                                            flex-direction: column; align-items: flex-start;
+                                            &:first-child {}
+                                            .img_wrap {
+                                                border-radius: 0;
+                                                img {}
+                                            }
+                                            .text_wrap {
+                                                margin-left: 0;
+                                                .text_01 {
+                                                    font-size: 18px;
+                                                }
+                                                .text_02 {
+                                                    margin-top: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.trademark {
+                .sub_section_01 {
+                    .content {
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .left_content {}
+                                .right_content {
+                                    .appli_wrap {
+                                        display: flex; flex-wrap: wrap; justify-content: center;
+                                        .item {
+                                            width: 30%;
+                                            padding: 0;
+                                            display: flex; align-items: center; justify-content: center; flex-direction: column;
+                                            border: none;
+                                            &:first-child {}
+                                            &:nth-child(3n) {
+                                                padding: 0;
+                                            }
+                                            
+                                            .img_wrap {
+                                                width: 100%;
+                                                img {}
+                                            }
+                    
+                                            .text_wrap {
+                                                width: 100%;
+                                                .text_01 {
+                                                    font-size: 18px;
+                                                }
+                                                .text_02 {
+                                                    margin-top: 5px;
+                                                }
+                                                .text_03 {
+                                                    margin-top: 20px;
+                                                    font-size: 12px;
+                                                    span {}
+                                                    i {
+                                                        img {}
+                                                    }
+                                                    &:hover {}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        // petfood ============================================
+
+
+
+
+
+       
+        // ==========================sub_page==========================
+
+
+
+
+    }
+    // ==========================main==========================
+
+
+    // ==========================footer==========================
+
+   #footer {
+       padding: 0 5%;
+       margin-top: 100px;
+       .footer_wrap {
+           flex-direction: column;
+           .content_01 {
+               margin-left: 0;
+               .info_wrap {
+                   margin-top: 30px;
+                   .footer_info {
+                       margin-top: 10px;
+                   }
+               }
+           }
+       }
+   }
+
+}
+
+
+
+
+// **********************************767**********************************
+@media (max-width: 767px) {
+
+    .header_center {
+        display: none !important;
+    }
+
+    // ====================================global====================================
+    .product_info_title_img {
+        width:100%; height:auto; padding-bottom:40px;
+    }
+    // ====================================global====================================
+
+
+
+    // ==========================main===================i=======
+    main {
+
+        // ==========================main_index==========================
+        &.main_wrap {
+            .main_section {
+                &:not(:first-child) {}
+
+                &.main_section_01 {
+                    .mv_wrap {
+                        
+                        .mv {
+                            .slide-bgimg {
+                            }
+                                .mv_img_01 {}
+                                .mv_img_02 {}
+                                .mv_img_03 {}
+                                .mv_img_04 {}
+                                .mv_img_05 {}
+                                .mv_img_06 {}
+    
+                            
+                            .mv_text {
+                        
+                                
+                                .text_wrap {
+                                  
+                                    &.wrap_02 {
+                                    }
+                                    span {
+                                    }
+                                    .text_02, .view_more {
+                                    }
+                                    .text_01 {
+                                 
+                                        i {
+                                    
+                                        }
+                                        strong {
+                                  
+                                        }
+                                    }
+                                    .text_02 {
+                                     
+                                    }
+                                    .view_more {
+                                     
+                                        span {
+                                       
+                                        }
+                                    }
+                                }
+                            
+                            }
+                        }
+                        .swiper-slide-active {
+                            .mv_text {
+                                .text_wrap {
+                                    .text_01 { }
+                                    .text_02 {
+                                        font-size: 16px;
+                                    }
+                                    .view_more {}
+                                }
+                             
+                            }
+                        }
+                    }
+                    .main_arrow_wrap {
+                        display: none;
+                        .swiper-button-next ,.swiper-button-prev {
+                            
+                        }
+                        .swiper-button-prev {
+                            &::after {
+                            }
+                            &::before {
+                            }
+                        }
+                        .swiper-button-next {
+                            &::after{
+                                
+                            }
+                            &::before {
+                          
+                            }
+                        }
+                        
+                   
+                    }
+                
+                }
+            }
+        }
+
+        // ==========================main_index==========================
+
+
+        // ==========================sub_page==========================
+        // sub_page default (main visual / sub menu bar)
+        &.sub {
+            .sub_section.visual {
+                height: 250px;
+                .visual_img {
+                    .visual_title {
+                        .text_01 {}
+                        .text_02 {}
+                    }
+                }
+
+                .sub_depth {
+                    a {}
+
+                    .sub_ico {
+                        img {}
+
+                        &::after {}
+
+                        &:hover {
+                            img {}
+                        }
+                    }
+
+                    .sub_nav {
+                        .depth_01 {
+                            .depth_01_list {
+                                >a {}
+
+                                >i {
+                                    img {}
+                                }
+                            }
+
+                            &::after {}
+                        }
+
+
+                        .depth_02 {
+                            .depth_02_list {
+                                a {
+
+                                    // padding: 20px 0 0 30px;
+                                    &:hover {}
+                                }
+
+                                &:last-child {}
+                            }
+                        }
+
+                        // sub_nav hover,active
+                        &:hover {
+                            .depth_01 {
+                                i {
+                                    img {}
+                                }
+                            }
+
+                            .depth_02 {}
+                        }
+                    }
+
+                    .sub_nav_02 {}
+                }
+            }
+
+            .sub_page_layout {
+                &.sub_section_01 {
+                    .sub_page_title {
+                        >span {}
+
+                        .text_01 {
+                            img {}
+                        }
+
+                        .sub_title {
+                            margin-top: 15px;
+                            font-size: 15px;
+                        }
+                    }
+
+                    >article.content:last-child {}
+                }
+            }
+        }
+        // sub_page default (main visual / sub menu bar)
+
+        // left_title right_detail
+        .sub_content_wrap {
+            > div { }
+            .left_content {
+                .text_wrap {
+                    > span {
+                    }
+                    .text_bar {
+                    }
+                    .text_title {
+                        font-size: 20px;
+                    }
+                }
+                
+            }
+            .right_content {
+                .text_wrap {
+                    &.wrap_02 {}
+
+                    > span { }
+                    .text_01 {
+                    }
+                    .text_02, .text_03 {
+                    }
+                    .text_02 {
+                        .point_01 {
+                        }
+                    }
+                }
+            
+            }
+        }
+        // left_title right_detail
+
+
+
+
+            
+        // product_info.dang ============================================
+        &.product_info.dang {
+            > section:not(:first-child) {
+                margin-top: 60px;
+                padding: 0 5%;
+            }
+            .content_wrap {
+                > div {
+                }
+                .item_01 {
+                    .text_wrap {
+                        > span {
+                        }
+                        .text_bar {
+                        }
+                        .text_title {
+                        }
+                    }
+                    
+                }
+                .item_02 {
+                    .text_wrap {
+                        > span {
+                        }
+                        .text_01 {
+                            font-size: 16px;
+                        }
+                        .text_02, .text_03 {
+                            font-size: 14.5px;
+                        }
+                        .point_number {
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+
+
+            .sub_section_01 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {}
+                    }
+                    &.content_02 {
+                        .content_wrap {
+                            .item_point {
+                                .img_01 {
+                                    img {
+                                    }
+                                }
+                                .img_02 {
+                                    img {
+                                    }
+                                }
+                                .item_point_text {
+                                }
+                            }
+                        }
+                    }
+                    &.content_03 {
+                    }
+                }
+
+            }       
+            .sub_section_02 {
+                .content {
+                    &.content_01 {
+                        padding-top: 60px;
+                    }
+                    &.content_02 {
+                        .content_wrap {
+                            .item_list_wrap {
+                                flex-wrap: wrap; flex-direction: column; align-items: center;
+                                margin-top: 40px;
+                                .item_list_01 {
+                                    margin-right: 0;
+                                    margin-top: 15px;
+                                    width: 100%; max-width: 150px;
+                                    &:first-child {
+                                        margin-top: 0;
+                                    }
+                                    &.last {}
+                                    .content_item {
+                                        > img {
+                                        }
+                                        > figcaption {
+                                            > span {
+                                                &.text_01 {
+                                                    font-size: 16px;
+                                                }
+                                                &.text_02 { margin-top: 5px; }
+                                                &.text_02, &.text_03 {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.content_03 {
+                        padding-bottom: 60px;
+                        .content_wrap {
+                            .item_list_wrap {
+                                justify-content: flex-start;
+                                margin-top: 40px;
+                                .item_list_01 {
+                                    margin: 0 10px 20px 0;
+                                    width: calc(25% - 10px);
+                                    &:nth-child(4n) { margin-right: 0; }
+                                    &:nth-child(5n) { margin-right: 10px; }
+                                    .content_item {
+                                        > img {
+                                            width: 100%;
+                                        }
+                                        > figcaption {
+                                            > span {
+                                                &.text_01 {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .sub_section_03 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02.img_item {
+                                .img_item_list {
+                                    display: block;
+                                    margin-top: 60px;
+                                    &.column {
+                                    }
+                                    > .text_wrap {
+                                        .text_02 {
+                                            .detail {
+                                            }
+                                        }
+                                        .text_03 {
+                                            padding-left: 20px;
+                                            .point_dots {
+                                                &::marker {
+                                                }
+                                            }
+                                        }
+                                    }
+                                    > .img_wrap {
+                                        width: 100%;
+                                        margin: 10px 0;
+                                        img{
+                                            &:nth-child(2) {
+                                            }
+                                        }
+                                    }
+                                    > .img_wrap_02 {
+                                        .img_list {
+                                            margin-top: 15px;
+                                            &:first-child {}
+                                            img {}
+                                            figcaption {
+                                            }
+                                        }
+                                        .detail_text {
+                                            margin-top: 25px;
+                                            font-size: 14.5px;
+                                        }
+                                        .detail_table {
+                                            overflow: scroll;
+
+                                            caption {
+                                                small {
+                                                }
+                                            }
+                                            tr {
+                                                th,td {
+                                                    font-size: 14px;
+                                                }
+                                                th{
+                                                }
+                                                td{
+                                                    &.long {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    > .img_wrap_03 {
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+                                        .img_list {
+                                            max-width: 225px;
+                                            &.cross {
+                                                left: 0;
+                                            }
+                                            &.cross_02 {
+                                                left: 0;
+                                            }
+                                            img {
+                                            }
+                                            figcaption {
+                                                > span {
+                                                    &.text_01 {
+                                                    }
+                                                    &.text_02 {
+                                                        margin-top: 5px;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+
+                                    > .text_wrap_02 {
+                                        &.list_02 {
+                                            margin-top: 20px;
+                                        }
+                                        .content_box {
+                                            padding: 20px 30px;
+                                            .text_wrap {
+                                                width: 100%;
+                                                .text_01 {
+                                                    font-size: 16px;
+                                                }
+                                                .text_02 {
+                                                    margin-top: 10px;
+                                                }
+                                            }
+                                            .img_wrap {
+                                                display: none;
+                                                img {}
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .graph_item {
+                                    margin-top: 25px;
+                                    .graph_item_wrap {
+                                        flex-direction: column;
+                                        .graph_item_list {
+                                            width: 100%;
+                                            &:first-child {
+                                                margin-top: 0;
+                                            }
+                                            &:nth-child(n+3) {
+                                                margin-top: 0;
+                                            }
+                                            img {
+                                                max-width: 300px;
+                                                width: 100%;
+                                            }
+                                            figcaption {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                    &.img_2 {
+                                        .graph_item_wrap {
+                                            .graph_item_list {
+                                                img {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .table_item{
+                                    margin-top: 30px;
+                                    table {
+                                        tr {
+                                            th, td {
+                                                font-size: 15px;
+                                            }
+                                            th {
+                                            }
+                                            td {
+                                            }
+                                        }
+                                        thead {
+                                            tr {
+                                            }
+                                        }
+                                        tbody {
+                                            tr{
+                                                td {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+                }
+            }
+
+            // sub_section_04 
+            .sub_section_04 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02 {
+                                overflow: scroll;
+                                margin-top: 20px;
+                                .table_item {
+                                    table {
+                                        width: 1000px;
+                                        th, tr, td {
+                                            font-size: 15px;
+                                        }
+                                        thead {
+                                            tr {
+                                                background: #f1f1f1;
+                                                th {
+                                                    font-weight: normal;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.content_02 {
+                        .content_wrap {}
+                    }
+                }
+            }
+
+            // sub_section_05 
+            .sub_section_05 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02 {
+                                .check_point {
+                                    .check_point_wrap {
+                                        .check_box {
+                                            flex-direction: column;
+                                            border-radius: 0;
+                                            border-top-left-radius: 20px; border-top-right-radius: 20px;
+                                            &:first-child {
+                                                margin-top: 20px;
+                                            }
+                                            .box_01 {
+                                                padding: 7px 0;
+                                                min-width: 100%; min-height: 100%;
+                                                width: 100%; height: auto; 
+                                                border-radius: 0;
+                                                border-top-left-radius: 20px; border-top-right-radius: 20px;
+                                            }
+                                            .box_02 {
+                                                margin-left: 0; margin-top: 0;
+                                                padding: 20px;
+                                                .text_01 {
+                                                    .point_color {
+                                                    }
+                                                }
+                                                .text_02 {
+                                                    font-size: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            // sub_section_06 
+            .sub_section_06 {
+                .content {
+                    &.content_01 {
+                        .content_wrap {
+                            .item_02 {
+                                .text_wrap {
+                                    margin-top: 20px;
+                                    &:first-child {
+                                        margin-top: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.content_02 {
+                        .content_wrap {}
+                    }
+                }
+            }
+
+
+        }
+
+
+
+        
+             
+        // about ============================================
+        &.about {
+            .about_page_bg {
+            }
+            .sub_section_01 {
+                margin-top: 60px;
+                .right_content {
+                    .text_wrap {
+                        .text_01 {}
+                    }
+                }
+            }
+        }
+        // about.philosophy ============================================
+        &.about.philosophy {
+            .right_content {
+                .text_wrap {
+                    &.wrap_01 {
+                        .text_01 {
+                        }
+                    }
+                }
+
+                .img_wrap {
+                    flex-direction: column; align-items: center;
+                    ;
+                    figure {
+                        margin: 20px 0 0 0;
+                        &:first-child {
+                            margin: 0;
+                        }
+                        img {}
+                        figcaption { 
+                            top: 50%; left: 100%; 
+                            transform: translate(0, -50%);
+                            margin: 0 0 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        
+        // rnd ============================================
+        &.rnd {
+            .about_page_bg {
+            }
+            .sub_section_01 {
+                margin-top: 60px;
+            }
+        }
+
+        // rnd.nopal 
+        &.rnd.nopal {
+            .sub_section_01 {
+                .content {
+                    margin-top: 50px;
+                    &:first-child {
+                    }
+                    &.content_01 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .img_wrap {
+                                    img {
+                                    }
+                                    &.wrap_01 {}
+                                    &.wrap_02 {
+                                        figure {
+                                            justify-content: space-around;
+                                            img {
+                                                width: 30%; max-width: 130px;
+                                                margin-left: 0;
+                                                &:first-child {}
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {}    
+                                    }
+                                    &.wrap_02 {
+                                        .text_01 {
+                                        }
+                                        .text_02 {
+                                            .point_01 {}
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+
+                    &.content_02 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        &:first-child {}
+                                        span {}
+                                        .text_01 {}
+                                        .text_02 {
+                                            &:hover {}
+                                            .arrow_right {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    
+                    &.content_03 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {}
+                                    }
+                                    &.wrap_02 {
+                                        > li {
+                                            &::marker {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.content_04 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .img_wrap {
+                                    &.wrap_01 {
+                                        figure {
+                                            img {}
+                                        }
+                                    }
+                                    &.wrap_02 {
+                                        > figure {
+                                            img {}
+                                            figcaption {
+                                                > span {
+                                                    &.text_01 {
+                                                    }
+                                                    &.text_02 {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text_wrap { 
+                                    &.wrap_01, &.wrap_02 {
+                                        .text_01 {}
+                                    }
+                                    &.wrap_02 { }
+                                }
+                            }
+                        }
+                    }
+
+                    
+                    &.content_05 {
+                        .sub_content_wrap {
+                            .right_content {
+                                
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {
+                                        }
+                                    }
+                                }
+                                
+                                .img_wrap {
+                                }
+                            }
+                        }
+                    }
+
+
+                    &.content_06 {
+                        .sub_content_wrap {
+                            .right_content {
+                                
+                                .text_wrap {
+                                    &.wrap_01, &.wrap_02 {
+                                        .text_01 {
+                                        }
+                                    }
+                                    &.wrap_02 {
+                                    }
+                                }
+                                
+                                .img_wrap {
+                                }
+                            }
+                        }
+                    }
+
+                    
+                    &.content_07 {
+                        .sub_content_wrap {
+                            .right_content {
+                                
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {
+                                        }
+                                    }
+                                }
+                                
+                                .img_wrap {
+                                    &.wrap_01 {
+                                        figure {
+                                            flex-direction: column; justify-content: center;
+                                            img {
+                                                max-width: 100%;
+                                                margin-top: 20px; 
+                                                padding: 0 5%;
+                                                &:first-child {
+                                                    margin-top: 0;
+                                                }
+                                                &.img_01 {
+                                                    margin-bottom: 0;
+                                                }
+                                                &.img_02 {
+                                                    margin-left: 0;
+                                                }
+                                                &.img_03 {}
+                                                &.img_04 {
+                                                    margin-left: 0;
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    
+                    &.content_08 {
+                        .sub_content_wrap {
+                            .right_content {
+                                
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {
+                                        }
+                                    }
+                                }
+
+                                .img_wrap {
+                                    > figure {
+                                        width: 100%;
+                                        margin-top: 20px;
+                                        &:nth-child(n+3) { margin-top: 20px; }
+                                        img {}
+                                        figcaption { margin-top: 10px; }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    
+                    &.content_09 {
+                        .sub_content_wrap {
+                            .right_content {
+                                
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {
+                                        }
+                                    }
+                                }
+                                
+                                .img_wrap {
+                                    &.wrap_01 {
+                                        > figure {
+                                            width: 50%;
+                                            margin-bottom: 15px;
+                                            &:first-child, &:nth-child(6) {
+                                                margin-bottom: 15px;
+                                            }
+                                            img {}
+                                            figcaption {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .sub_section_02 {
+                .content {
+                    &.content_01 {
+                        margin-top: 50px;
+                        .sub_content_wrap {
+                            .right_content {
+                                padding: 15px 20px;
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {}
+                                    }
+                                    &.wrap_02 {
+                                        > div {
+                                        }
+                                        .text_01_wrap {
+                                            .text_01 {
+                                                font-size: 30px;
+                                            } 
+                                        }
+
+                                        .text_02_wrap {
+                                            margin-left: 25px;
+                                            .nopal_list_wrap {
+                                                .nopal_list {
+                                                    &:first-child, &:nth-child(odd) {
+                                                        margin: 0 0 50px 10px;
+                                                    }
+                                                    > p {
+                                                        width: 170px;
+                                                        .title {
+                                                            padding-bottom: 15px; margin-bottom: 15px;
+                                                        }
+                                                        .num {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }   
+        }
+
+        // rnd.hongsam 
+        &.rnd.hongsam {
+            .sub_section_01 {
+                .content {
+                    margin-top: 50px;
+                    &:first-child {
+                    }
+                    &.content_01 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .img_wrap {
+                                    img {
+                                    }
+                                    &.wrap_01 {}
+                                    &.wrap_02 {
+                                        figure {
+                                            justify-content: space-around;
+                                            img {
+                                                width: 30%; max-width: 130px;
+                                                margin-left: 0;
+                                                &:first-child {}
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {}    
+                                    }
+                                    &.wrap_02 {
+                                        .text_01 {
+                                        }
+                                        .text_02 {
+                                            .point_01 {}
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+
+                    &.content_02 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        &:first-child {}
+                                        span {}
+                                        .text_01 {}
+                                        .text_02 {
+                                            &:hover {}
+                                            .arrow_right {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    
+                    &.content_03 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {}
+                                    }
+                                    &.wrap_02 {
+                                        > li {
+                                            &::marker {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.content_04 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .img_wrap {
+                                    &.wrap_01 {
+                                        figure {
+                                            text-align: center;
+                                            img {}
+                                        }
+                                    }
+                                    &.wrap_02 {
+                                        flex-direction: column;
+                                        > figure {
+                                            margin: 0;
+                                            width: 100%;
+                                            margin-top: 30px;
+                                            &:first-child {
+                                                margin-top: 0;
+                                            }
+                                            img {}
+                                            figcaption {
+                                                > span {
+                                                    &.text_01 {
+                                                        margin-top: 10px;
+                                                    }
+                                                    &.text_02 {
+                                                        margin-top: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text_wrap { 
+                                    &.wrap_01, &.wrap_02 {
+                                        .text_01 {
+                                        }
+                                    }
+                                    &.wrap_01 {}
+                                    &.wrap_02 {
+                                        margin-top: 10px;
+                                        .text_01 {
+                                            text-align: center;
+                                        }
+                                    }
+                                    &.wrap_03 {
+                                        .text_01 {
+                                            font-size: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        
+        
+
+
+
+        
+        // health ============================================
+        &.health {
+            .sub_section_01 {
+                margin-top: 60px;
+            }
+                
+            // health.art
+            &.art {
+                .sub_section_01 {
+                    .content {
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .left_content {}
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {}
+                                        &.wrap_02 {
+                                            .text_01 { }
+                                            .text_02 {}
+                                        }
+                                    } 
+                                    .img_wrap {
+                                        &.wrap_01 {
+                                            > img { width: 47%; }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // health ============================================
+        
+        
+            
+        // petfood ============================================
+        &.petfood {
+            .about_page_bg {}
+            .sub_section_01 {
+                margin-top: 60px;
+            }
+            
+        
+
+            // petfood.bio
+            &.bio {
+                .sub_section_01 {
+                    .content {
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .left_content {}
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            .text_01 {}
+                                            .text_02 {}
+                                        }
+                                        &.wrap_02 {
+                                            .text_01 {}
+                                            .text_02 {}
+                                        }
+                                    }
+
+                                    .img_wrap {
+                                        &.wrap_01 {}
+                                        &.wrap_02 {}
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.cultural {
+                .sub_section_01 {
+                    .content {
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .left_content {}
+                                .right_content {
+                                    .text_wrap {
+                                        &.wrap_01 {
+                                            .text_01 {
+                                                .font_normal {}
+                                            }
+                                            .text_02 {}
+                                        }
+                                        &.wrap_02 {
+                                            .text_01 {}
+                                            .text_02 {}
+                                        }
+                                    }
+
+                                    .img_wrap {
+                                        &.wrap_01 {}
+                                        &.wrap_02 {}
+                                    }
+
+                                    .product_table_wrap {
+                                        .table_wrap {
+                                            overflow-x: scroll;
+                                            table {
+                                                min-width: 600px;
+                                                tr, th, td {
+                                                    i.font_500 {}
+                                                }
+                                                .top_start {}
+                                                thead {}
+                                                tbody {}
+                                            }
+                                        }
+                                        .img_wrap {
+                                            margin: 15px 0;
+                                            img {
+                                                max-height: 250px;
+                                            }
+                                        }
+                                    }
+
+                                    .product_info_wrap {
+                                        .product_info {
+                                            &:first-child {}
+                                            .img_wrap {
+                                                img {}
+                                            }
+                                            .text_wrap {
+                                                .text_01 {
+                                                }
+                                                .text_02 {
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.trademark {
+                .sub_section_01 {
+                    .content {
+                        &.content_01 {
+                            .sub_content_wrap {
+                                .left_content {}
+                                .right_content {
+                                    .appli_wrap {
+                                        justify-content: space-between;
+                                        .item {
+                                            width: 45%;
+                                            &:first-child {}
+                                            &:nth-child(3n) {
+                                            }
+                                            
+                                            .img_wrap {
+                                                img {
+                                                }
+                                            }
+                    
+                                            .text_wrap {
+                                                .text_01 {
+                                                }
+                                                .text_02 {
+                                                }
+                                                .text_03 {
+                                                    span {}
+                                                    i {
+                                                        img {}
+                                                    }
+                                                    &:hover {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        // petfood ============================================
+        
+        // ==========================sub_page==========================
+
+
+
+
+    }
+    // ==========================main==========================
+}
+
+
+
+
+
+
+// **********************************479**********************************
+@media (max-width: 479px) {
+
+    // ====================================global====================================
+    .table_wrap {
+        .table_header {
+            .table_company_select {
+                .search_form {
+                    fieldset {
+                        legend {}
+
+                        .form_01_title {}
+
+                        .form_01_selectbox {
+                            select {}
+                        }
+                    }
+                }
+            }
+
+            .table_text_search {
+                .search_form {
+                    fieldset {
+                        .form_02_selectbox {
+
+                            select {}
+
+                            input[type=text] {
+                                margin-right: 0 !important;
+                            }
+
+                            input[type=submit] {
+                                margin: 10px 0 0 0;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .table_notice {
+            table-layout: auto;
+
+            thead {
+                tr {
+                    th {
+                        padding: 2rem;
+
+                        &:nth-of-type(1),
+                        &:nth-of-type(3),
+                        &:nth-of-type(4) {}
+
+                        &:nth-of-type(2) {
+                            width: auto;
+                        }
+                    }
+
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: 20px;
+                    }
+
+                    .notice_download {
+                        a {}
+                    }
+                }
+
+                &.active {}
+            }
+
+
+
+
+        }
+
+
+        .table_rec {
+            table-layout: auto;
+
+            thead {
+                tr {
+                    th {
+
+                        &:nth-of-type(1),
+                        &:nth-of-type(4),
+                        &:nth-of-type(5) {
+                            width: auto;
+                        }
+
+                        &:nth-of-type(2) {
+                            width: auto;
+                        }
+
+                        &:nth-of-type(3) {
+                            width: auto;
+                        }
+                    }
+
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: 20px;
+
+                        &:nth-child(2) {
+                            span {}
+                        }
+
+                        &:nth-child(3) {}
+                    }
+
+                    .notice_download {
+                        a {}
+                    }
+                }
+
+                &.active {}
+            }
+
+
+
+
+        }
+    }
+    // ====================================global====================================
+
+
+
+    main.main_wrap .main_section.main_section_01 .mv_wrap .swiper-slide-active .mv_text .text_wrap .text_01 {
+        line-height: 1.2 !important;
+        font-size: 34px !important;
+    }
+    main {
+
+        
+    // rnd ============================================
+    // rnd.nopal 
+        &.rnd.nopal {
+            .sub_section_01 {
+                .content {
+
+                    &.content_04 {
+                        .sub_content_wrap {
+                            .right_content {
+                                .img_wrap {
+                                    &.wrap_01 {
+                                        figure {
+                                            text-align: center;
+                                            img {}
+                                        }
+                                    }
+                                    &.wrap_02 {
+                                        flex-direction: column; align-items: center;
+                                        > figure {
+                                            width: 100% ;
+                                            margin-top: 20px;
+                                            &:first-child{
+                                                margin-top: 0;
+                                            }
+
+                                            img {}
+                                            figcaption {
+                                                > span {
+                                                    &.text_01 {
+                                                    }
+                                                    &.text_02 {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .text_wrap { 
+                                    &.wrap_01, &.wrap_02 {
+                                        .text_01 {}
+                                    }
+                                    &.wrap_02 { }
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+
+
+            .sub_section_02 {
+                .content {
+                    &.content_01 {
+                        .sub_content_wrap {
+                            .right_content {
+                                padding: 15px 15px;
+                                .text_wrap {
+                                    &.wrap_01 {
+                                        .text_01 {}
+                                    }
+                                    &.wrap_02 {
+                                        > div {
+                                        }
+                                        .text_01_wrap {
+                                            .text_01 {
+                                            } 
+                                        }
+
+                                        .text_02_wrap {
+                                            margin-left: 25px;
+                                            .nopal_list_wrap {
+                                                justify-content: center;
+                                                .nopal_list {
+                                                    margin: 0 0 50px 0;
+                                                    &:first-child, &:nth-child(odd) {
+                                                        margin: 0 0 50px 0;
+                                                    }
+                                                    > p {
+                                                        width: 170px;
+                                                        .title {
+                                                            padding-bottom: 15px; margin-bottom: 15px;
+                                                        }
+                                                        .num {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }   
+        }
+            
+    }
+
+        
+}

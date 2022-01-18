@@ -1,0 +1,90 @@
+<!-----------------------------header----------------------------->
+<?php include_once('../include/header.html') ?>
+<!-- ---------------------------header--------------------------- -->
+
+
+
+
+<!-- ========================main======================== -->
+<main class="sub petfood bio">
+    <section class="sub_section visual">
+
+        <figure class="visual_img">
+            <figcaption class="visual_title">
+                <span class="text_01">펫푸드</span>
+                <span class="text_02">암, 당뇨, 고지혈증, 비만 등 난치병 환우들의 위한 문화, 예술 복합공간</span>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="about_page_bg"></section>
+
+
+    <section class="sub_page_layout sub_section_01">
+        <article class="content content_01" data-aos="fade-up">
+            <div class="sub_content_wrap">
+                <div class="left_content">
+
+                    <p class="text_wrap">
+                        <span class="text_bar"></span>
+                        <span class="text_title">
+                            펫푸드
+                        </span>
+                    </p>
+
+                </div>
+
+                <div class="right_content">
+
+                    <p class="text_wrap wrap_01">
+                        <span class="text_01">
+                            펫푸드에 바이오기술을 더하다
+                            <br class="pc_only">
+                            Bio아지펫, Bio양이펫
+                        </span>
+                        <span class="text_02">
+                            놀라운 생명력, 경이로운 회복력을 가지고 있는 자연!
+                            <br class="pc_only">
+                            그 근원에서 함께하는 문화, 예술 복합공간 바이오봄 AI헬스케어,
+                            <br class="pc_only">
+                            이제 오랜 기다림이 이루어집니다.
+                        </span>
+                    </p>
+
+
+                </div>
+
+            </div>
+        </article>
+
+    </section>
+
+
+
+
+</main>
+
+<script>
+    $(function() {
+        let vsHei = $('.sub_section.visual').height(),
+            secHei = $('.sub_section_01').offset().top,
+            aboutBg = $('.about_page_bg');
+
+        aboutBg.css({
+            "top": vsHei,
+            "height": secHei,
+        });
+
+    });
+</script>
+
+
+
+
+
+
+
+
+<!-----------------------------header----------------------------->
+<?php include_once('../include/footer.html') ?>
+<!-- ---------------------------header--------------------------- -->

@@ -1,0 +1,102 @@
+<!-----------------------------header----------------------------->
+<?php include_once('../include/header.html') ?>
+<!-- ---------------------------header--------------------------- -->
+
+
+
+
+<!-- ========================main======================== -->
+<main class="sub about ceo">
+
+    <section class="sub_section visual">
+        <figure class="visual_img">
+            <figcaption class="visual_title">
+                <span class="text_01">기업소개</span>
+                <span class="text_02">생명을 살리는 전문인, 생명을 증진하는 연구인, 생명의 가치를 높이는 실행인</span>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="about_page_bg"></section>
+
+    <section class="sub_page_layout sub_section_01">
+        <article class="content content_01" data-aos="fade-up">
+            <div class="sub_content_wrap">
+                <div class="left_content">
+                    <p class="text_wrap">
+                        <span class="text_bar"></span>
+                        <span class="text_title">
+                            인사말
+                        </span>
+                    </p>
+                </div>
+
+                <div class="right_content">
+                    <p class="text_wrap wrap_01">
+                        <span class="text_01 new_font_01">기쁨, 치료, 생명으로 사랑과 나눔을 모토로 하는 기업입니다.</span>
+                        <span class="text_02">
+                            바이오봄은 천연물 신소재를 이용한 건강기능식품 개발과 함께 AI 헬스케어를 통한
+                            암, 당뇨, 고지혈증, 비만 등 난치병 치료 및 케어로 사랑의 나눔을 실천하는 기업입니다.
+                            우리는 기업을 경영함에 있어 사람의 생명을 기본 원칙에 두고
+                            <br>
+                            <br>
+                            <em class="point_border_01">생명을 살리는 전문인 (Professional)</em>
+                            <br>
+                            <em class="point_border_01">생명을 증진하는 연구인 (Researcher)</em>
+                            <br>
+                            <em class="point_border_01">생명의 가치를 높이는 실행인 (Performer)</em>
+                            <br>
+                            <br>
+                        </span>
+
+                        <span class="text_03">
+                            이 되어 인간의 생명의 최고 가치를 실현해 나가고자 합니다.
+                            <br>
+                            이를 위해 우리 회사는
+                            <br>
+                            <i class="point_dots_01"></i>기업의 투명성을 통한 기업윤리를 확립하고,
+                            <br>
+                            <i class="point_dots_01"></i>이윤의 재투자를 통한 자연과학, 생명의학, 신기술의 개발과 전문가를 육성하며,
+                            <br>
+                            <i class="point_dots_01"></i>가난하고 외로운 이들의 친근한 벗이 되어 섬기려고 합니다.
+                            <br>
+                            <br>
+                            여러분의 성원을 힘입어 계속 정진하도록 하겠습니다.
+                            <br>
+                            감사합니다.
+                            <br>
+                            <br>
+                            <em class="ceo_name">회장 손 하 은</em>
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+
+
+
+</main>
+
+<script>
+    $(function() {
+        let vsHei = $('.sub_section.visual').height(),
+            secHei = $('.sub_section_01').offset().top,
+            aboutBg = $('.about_page_bg');
+
+        aboutBg.css({
+            "top": vsHei,
+            "height": secHei,
+        });
+
+    });
+</script>
+
+
+
+
+<!-----------------------------header----------------------------->
+<?php include_once('../include/footer.html') ?>
+<!-- ---------------------------header--------------------------- -->
