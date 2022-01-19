@@ -106,8 +106,8 @@ body {
     }
     
     // ***************************defualt css(220117)*************************** 
-    .new_font_01 { font-size: 3rem !important; font-weight: bold !important;   line-height: 1.5 !important; letter-spacing: -0.75px !important; }
-    .new_font_02 { font-size: 2rem !important; font-weight: 500 !important; line-height: 1.5 !important;   letter-spacing: -0.6px !important; }
+    .new_font_01 { font-size: 30px !important; font-weight: bold !important;   line-height: 1.5 !important; letter-spacing: -0.75px !important; }
+    .new_font_02 { font-size: 20px !important; font-weight: 500 !important; line-height: 1.5 !important;   letter-spacing: -0.6px !important; }
     .new_font_03 { font-size: 16px !important; font-weight: 400 !important; line-height: 1.875 !important; letter-spacing: -0.4px !important; }
     .margin_top_40 {margin-top: 40px;}
     .margin_top_80 {margin-top: 80px;}
@@ -2192,12 +2192,6 @@ main {
     }
     // product_info ============================================
 
-
-
-
-
-
-
     // about ============================================
     &.about {
         .about_page_bg {
@@ -2316,6 +2310,21 @@ main {
         }
         .sub_section_01 {
             margin-top: 170px;
+        }
+        
+        .new_text_wrap {
+            span {
+                display: block;
+            }
+        }
+
+        .arrow_right {
+            display: inline-block;
+            width: 7px; height: 7px;
+            border-right: 2px solid #000;
+            border-top: 2px solid #000;
+            transform: rotate(45deg);
+            margin-left: 10px;
         }
 
             
@@ -2980,33 +2989,11 @@ main {
             }
 
         }
-    }
-    // rnd ============================================
-    
 
-    // new_rnd ============================================
-    // new_rnd ============================================
-    // new_rnd ============================================
-
-    &.rnd_02 {
-
-        .new_text_wrap {
-            span {
-                display: block;
-            }
-        }
-
-        .arrow_right {
-            display: inline-block;
-            width: 7px; height: 7px;
-            border-right: 2px solid #000;
-            border-top: 2px solid #000;
-            transform: rotate(45deg);
-            margin-left: 10px;
-        }
-
-
-        &.nopal {
+        // new_rnd ============================================
+        // new_rnd ============================================
+        // new_rnd ============================================
+        &.new_nopal {
 
             .sub_section_00 {
                 margin-top: 207px;
@@ -3018,7 +3005,7 @@ main {
                         .text_wrap {
                             p.point_title {
                                 margin-top: 150px;
-                                font-size: 100px; font-weight: bold; line-height: normal; letter-spacing: -1px; color: #fff;
+                                font-size: 10rem; font-weight: bold; line-height: normal; letter-spacing: -1px; color: #fff;
                             }
                         }
                     }
@@ -3088,7 +3075,6 @@ main {
                         .new_img_wrap {
                             &.wrap_01 {
                                 @include margin-top-50();
-                          
                             }
     
                         }
@@ -3181,7 +3167,7 @@ main {
                         .sub_content_wrap {
                             .new_text_wrap {
                                 &.wrap_01 {
-                                    margin-top: 50px;
+                                    @include margin-top-50();
                                     &:first-child{margin-top: 0;}
                                     .text_01 {
                                         i {
@@ -3280,7 +3266,7 @@ main {
                 max-width: 1920px; margin: 0 auto;
                 .content {
                     &.content_01 {
-                        margin-top: 150px;
+                        @include margin-top-150();
                         .sub_content_wrap {
 
                             .right_content {
@@ -3348,7 +3334,7 @@ main {
     
         }
 
-        &.hongsam {
+        &.new_hongsam {
 
             .sub_section_00 {
                 margin-top: 207px;
@@ -3586,14 +3572,13 @@ main {
     
     
         }
+            
+        // new_rnd ============================================
+        // new_rnd ============================================
+        // new_rnd ============================================
     }
-
-
-    // new_rnd ============================================
-    // new_rnd ============================================
-    // new_rnd ============================================
-
-
+    // rnd ============================================
+    
 
     // health ============================================
     &.health {
