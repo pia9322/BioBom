@@ -1690,8 +1690,6 @@ main {
 
     }
 
-
-
     // new_page dang
     // new_page dang
     // new_page dang
@@ -1902,11 +1900,20 @@ main {
                 &.content_01 {
                     max-width: 1550px;
                     margin-left: 370px;
+                    .content_wrap {
+                        .swiper-slide {
+                            text-align: center
+                        }
+                    }
                 }
                 &.content_02 {
                     @include margin-top-50();
                     max-width: 1550px;
-                    .content_wrap {}
+                    .content_wrap {
+                        .swiper-slide {
+                            text-align: center
+                        }
+                    }
                 }
             }
         }
@@ -2300,6 +2307,7 @@ main {
 
     // rnd ============================================
     &.rnd {
+        @include max-width-1920();
         .about_page_bg {
             position: absolute;
             left: 0; /* top:0 */;
@@ -2995,6 +3003,7 @@ main {
         // new_rnd ============================================
         &.new_nopal {
 
+
             .sub_section_00 {
                 margin-top: 207px;
                 background: url('../images/rnd_02/nopal/img_01.png')no-repeat center/cover;
@@ -3345,8 +3354,8 @@ main {
                         position: relative;
                         .text_wrap {
                             p.point_title {
-                                margin-top: 150px;
-                                font-size: 100px; font-weight: bold; line-height: normal; letter-spacing: -1px; color: #fff;
+                                @include margin-top-150();
+                                font-size: 10rem; font-weight: bold; line-height: normal; letter-spacing: -1px; color: #fff;
                             }
                         }
                     }
@@ -3487,20 +3496,6 @@ main {
                                                         font-weight: bold;
                                                     }
                                                 }
-                                            }
-                                        }
-                                    }
-                                    &.wrap_03 {
-                                        margin-top: 75px;
-                                        figure {
-                                            img {max-width: 100%;}
-                                        }
-                                    }
-                                    &.wrap_04 {
-                                        margin-top: 50px;
-                                        figure {
-                                            img {
-                                                max-width: 100%;
                                             }
                                         }
                                     }

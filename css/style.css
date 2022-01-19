@@ -2641,9 +2641,17 @@ main.product_info.new_dang .sub_section_04 .content.content_01 {
   margin-left: 370px;
 }
 
+main.product_info.new_dang .sub_section_04 .content.content_01 .content_wrap .swiper-slide {
+  text-align: center;
+}
+
 main.product_info.new_dang .sub_section_04 .content.content_02 {
   margin-top: 50px;
   max-width: 1550px;
+}
+
+main.product_info.new_dang .sub_section_04 .content.content_02 .content_wrap .swiper-slide {
+  text-align: center;
 }
 
 main.product_info.new_dang .sub_section_05 .new_text_wrap.wrap_01 .text_01, main.product_info.new_dang .sub_section_06 .new_text_wrap.wrap_01 .text_01 {
@@ -3037,6 +3045,11 @@ main.about.partner .content.content_01 .sub_content_wrap .right_content .logo_im
 
 main.about.partner .content.content_01 .sub_content_wrap .right_content .logo_img_wrap img {
   max-width: 100%;
+}
+
+main.rnd {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 main.rnd .about_page_bg {
@@ -4078,7 +4091,7 @@ main.rnd.new_hongsam .sub_section_00 .content .sub_content_wrap {
 
 main.rnd.new_hongsam .sub_section_00 .content .sub_content_wrap .text_wrap p.point_title {
   margin-top: 150px;
-  font-size: 100px;
+  font-size: 10rem;
   font-weight: bold;
   line-height: normal;
   letter-spacing: -1px;
@@ -4252,22 +4265,6 @@ main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .righ
 
 main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_02 > figure figcaption > span strong {
   font-weight: bold;
-}
-
-main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_03 {
-  margin-top: 75px;
-}
-
-main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_03 figure img {
-  max-width: 100%;
-}
-
-main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_04 {
-  margin-top: 50px;
-}
-
-main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_04 figure img {
-  max-width: 100%;
 }
 
 main.rnd.new_hongsam .sub_section_02 .content.content_01 {

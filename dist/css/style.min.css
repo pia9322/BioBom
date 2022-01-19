@@ -881,7 +881,11 @@ main.product_info.new_dang .sub_section_04 .content p { margin-top: 20px; text-a
 
 main.product_info.new_dang .sub_section_04 .content.content_01 { max-width: 1550px; margin-left: 370px; }
 
+main.product_info.new_dang .sub_section_04 .content.content_01 .content_wrap .swiper-slide { text-align: center; }
+
 main.product_info.new_dang .sub_section_04 .content.content_02 { margin-top: 50px; max-width: 1550px; }
+
+main.product_info.new_dang .sub_section_04 .content.content_02 .content_wrap .swiper-slide { text-align: center; }
 
 main.product_info.new_dang .sub_section_05 .new_text_wrap.wrap_01 .text_01, main.product_info.new_dang .sub_section_06 .new_text_wrap.wrap_01 .text_01 { margin-top: 40px; }
 
@@ -1004,6 +1008,8 @@ main.about.philosophy .right_content .img_wrap figure figcaption { position: abs
 main.about.partner .content.content_01 .sub_content_wrap .right_content .logo_img_wrap { margin-top: 80px; }
 
 main.about.partner .content.content_01 .sub_content_wrap .right_content .logo_img_wrap img { max-width: 100%; }
+
+main.rnd { max-width: 1920px; margin: 0 auto; }
 
 main.rnd .about_page_bg { position: absolute; left: 0; /* top:0 */ width: 100%; height: 950px; z-index: -1; background: url("../images/about/about_page_pattern_01.png") center/cover no-repeat; }
 
@@ -1371,7 +1377,7 @@ main.rnd.new_hongsam .sub_section_00 { margin-top: 207px; background: url("../im
 
 main.rnd.new_hongsam .sub_section_00 .content .sub_content_wrap { position: relative; }
 
-main.rnd.new_hongsam .sub_section_00 .content .sub_content_wrap .text_wrap p.point_title { margin-top: 150px; font-size: 100px; font-weight: bold; line-height: normal; letter-spacing: -1px; color: #fff; }
+main.rnd.new_hongsam .sub_section_00 .content .sub_content_wrap .text_wrap p.point_title { margin-top: 150px; font-size: 10rem; font-weight: bold; line-height: normal; letter-spacing: -1px; color: #fff; }
 
 main.rnd.new_hongsam .sub_section_00 .content .point_bg { position: absolute; left: 0; top: calc(100% - 29px); }
 
@@ -1430,14 +1436,6 @@ main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .righ
 main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_02 > figure figcaption > span.text_01 { margin-top: 20px; }
 
 main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_02 > figure figcaption > span strong { font-weight: bold; }
-
-main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_03 { margin-top: 75px; }
-
-main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_03 figure img { max-width: 100%; }
-
-main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_04 { margin-top: 50px; }
-
-main.rnd.new_hongsam .sub_section_01 .content.content_03 .sub_content_wrap .right_content .new_img_wrap.wrap_04 figure img { max-width: 100%; }
 
 main.rnd.new_hongsam .sub_section_02 .content.content_01 { margin-top: 150px; }
 
