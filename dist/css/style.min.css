@@ -593,8 +593,6 @@ main.sub .product_top_visual > div img { width: 100%; max-height: 1000px; -o-obj
 
 main.sub .sub_page_layout { max-width: 1180px; margin: 0 auto; }
 
-main.sub .sub_page_layout_02 { max-width: 1250px; }
-
 main.sub .sub_page_layout_02 { max-width: 1550px; margin-left: auto; }
 
 main.product_info.dang > section:not(:first-child) { margin-top: 150px; }
@@ -941,7 +939,7 @@ main.product_info.new_dang .sub_section_06 .content.content_01 .content_wrap .ne
 
 main.product_info.new_dang .sub_section_06 .content.content_01 .content_wrap .new_table_wrap.wrap_01 table tbody tr td { width: 20%; }
 
-main.product_info.new_dang .sub_section_06 .content.content_01 .content_wrap .new_img_wrap.wrap_01 { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: 50px; }
+main.product_info.new_dang .sub_section_06 .content.content_01 .content_wrap .new_img_wrap.wrap_01 { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 main.product_info.new_dang .sub_section_06 .content.content_01 .content_wrap .new_img_wrap.wrap_01 .img_list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 15px; }
 

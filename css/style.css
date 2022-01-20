@@ -1780,10 +1780,6 @@ main.sub .sub_page_layout {
 }
 
 main.sub .sub_page_layout_02 {
-  max-width: 1250px;
-}
-
-main.sub .sub_page_layout_02 {
   max-width: 1550px;
   margin-left: auto;
 }
@@ -2822,7 +2818,6 @@ main.product_info.new_dang .sub_section_06 .content.content_01 .content_wrap .ne
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 50px;
 }
 
 main.product_info.new_dang .sub_section_06 .content.content_01 .content_wrap .new_img_wrap.wrap_01 .img_list {
