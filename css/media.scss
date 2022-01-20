@@ -440,8 +440,12 @@
                     }
             
                     .sub_section_09 {
+                        
                         .content {
                             &.content_01 {
+                                .left_content {
+                                    padding: 0 5%;
+                                }
                                 .right_content_02 {
                                     margin-left: 0; max-width: 100%;
                                     .background_img {
@@ -3863,7 +3867,7 @@
                                         .new_text_wrap {
                                             
                                             &.wrap_01 {
-                                                padding: 60px;
+                                                padding: 50px;
                                                 .text_01 {}
                                                 .text_02 {margin-top: 10px;}
                                             }

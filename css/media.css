@@ -186,6 +186,9 @@
   body main.sub.product_info.new_dang .sub_section_08 .content.content_01 .check_point .check_point_wrap .check_box .box_02 {
     margin-left: 20px;
   }
+  body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .left_content {
+    padding: 0 5%;
+  }
   body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 {
     margin-left: 0;
     max-width: 100%;
@@ -1686,7 +1689,7 @@
     max-width: 100%;
   }
   body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 .background_img .new_text_wrap.wrap_01 {
-    padding: 60px;
+    padding: 50px;
   }
   body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 .background_img .new_text_wrap.wrap_01 .text_02 {
     margin-top: 10px;

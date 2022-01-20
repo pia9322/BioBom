@@ -52,6 +52,7 @@
   body main.sub.product_info.new_dang .sub_section_07 .content.content_01 table th, body main.sub.product_info.new_dang .sub_section_07 .content.content_01 table tr, body main.sub.product_info.new_dang .sub_section_07 .content.content_01 table td { padding: 7px; }
   body main.sub.product_info.new_dang .sub_section_08 .content.content_01 .check_point .check_point_wrap .check_box .box_01 { min-width: 100px; min-height: 100px; }
   body main.sub.product_info.new_dang .sub_section_08 .content.content_01 .check_point .check_point_wrap .check_box .box_02 { margin-left: 20px; }
+  body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .left_content { padding: 0 5%; }
   body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 { margin-left: 0; max-width: 100%; }
   body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 .background_img .new_text_wrap.wrap_01 { padding: 60px; }
   body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 .background_img .new_text_wrap.wrap_01 .text_02 { margin-top: 10px; } }
@@ -469,7 +470,7 @@
   body main.sub.product_info.new_dang .sub_section_08 .content.content_01 .check_point .check_point_wrap .check_box .box_01 { min-width: 100px; min-height: 100px; }
   body main.sub.product_info.new_dang .sub_section_08 .content.content_01 .check_point .check_point_wrap .check_box .box_02 { margin-left: 20px; }
   body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 { margin-left: 0; max-width: 100%; }
-  body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 .background_img .new_text_wrap.wrap_01 { padding: 60px; }
+  body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 .background_img .new_text_wrap.wrap_01 { padding: 50px; }
   body main.sub.product_info.new_dang .sub_section_09 .content.content_01 .right_content_02 .background_img .new_text_wrap.wrap_01 .text_02 { margin-top: 10px; }
   body main.sub.about .sub_section_01 { margin-top: 60px; }
   body main.sub.about.philosophy .right_content .img_wrap { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }

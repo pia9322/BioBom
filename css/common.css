@@ -121,11 +121,12 @@ html {
 }
 @media (max-width: 1100px) {
 	html{font-size: 50% !important;}
+	.pc_only {display: none !important;}
 	/* html{font-size: 44% !important;} */
 }
 
 @media (max-width: 1023px) {
-	.pc_only, .ta_only {display: block !important;}
+	.ta_only {display: block !important;}
 	.mo_only {display: none !important;}
 	/* default */
 }
